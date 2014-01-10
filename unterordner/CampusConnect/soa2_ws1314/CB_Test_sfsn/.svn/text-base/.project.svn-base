@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>CB_Test_sfsn</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.softwareag.wsstack.ui.packaging.webServiceStackPackageBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.softwareag.wsstack.ui.packaging.webServiceStackNature</nature>
+	</natures>
+</projectDescription>

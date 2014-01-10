@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SAGWebServiceStack Version="8.2.2.0000-0234">
+  <Packages>
+    <Package Name="EXAMREG_SFSN" PackageLocation="" PackagerBundle="com.softwareag.entirex.ide.eclipse.soap"
+      PackagerClass="com.softwareag.entirex.ide.eclipse.soap.EntireXPackager">
+      <ServletURLS>
+        <ServletURL Host="sagbase" Location="/wsstack/sagdeployer" Name="sagbase-10010" Port="10010" transport="http" user="admin"/>
+      </ServletURLS>
+      <Services>
+        <Service Artefact="true" Location="" Name="EXAMREG_SFSN.wsdl" ServiceName="EXAMREG_SFSN"
+          ServiceURL="http://localhost:10010/wsstack/services/EXAMREG_SFSN" exx="true">
+          <EntireX-Service-Files>
+            <EntireX-Service-File Name="EXAMREG_SFSN.xmm" hasIDL="true"/>
+          </EntireX-Service-Files>
+        </Service>
+      </Services>
+      <Resources/>
+      <Files>
+        <File Artefact="true" Location="" Name="EXAMREG_SFSN.xmm" Package="EntireX" ReadOnly="true"/>
+        <File Artefact="true" Location=".wsstack\EXAMREG_SFSN" Name="xml-init.xml" Package="EntireX" ReadOnly="true"/>
+      </Files>
+    </Package>
+  </Packages>
+</SAGWebServiceStack>

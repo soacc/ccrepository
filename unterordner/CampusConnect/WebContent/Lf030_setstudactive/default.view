@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='Lf030_setstudactivedefaultviewview' />
+  <property name='preferencesBean' value='Lf030_setstudactive' />
+  <design-time-attribute name='portlet' value='LF030_setStudActive' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+      <design-time-attribute name='rolledUp' value='false' />
+      <property name='id' value='propertyLine1' />
+      <property name='label' value='Stud Id' />
+      <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+        <converter converter-id='javax.faces.BigDecimal'>
+        </converter>
+        <property name='id' value='htmlInputText' />
+        <property name='value' value='#{Lf030_setstudactivedefaultviewview.lf030_setstudactive.setStudActive.parameters.setStudActive.studId}' />
+        <property name='width' value='input20' />
+      </control>
+    </control>
+    <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+      <property name='id' value='propertyLine2' />
+      <property name='label' value='Active Status' />
+      <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+        <converter converter-id='javax.faces.BigDecimal'>
+        </converter>
+        <property name='id' value='htmlInputText1' />
+        <property name='value' value='#{Lf030_setstudactivedefaultviewview.lf030_setstudactive.setStudActive.parameters.setStudActive.activeStatus}' />
+        <property name='width' value='input20' />
+      </control>
+      <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
+        <property name='action' value='#{Lf030_setstudactivedefaultviewview.lf030_setstudactive.setStudActive.refresh}' />
+        <property name='id' value='button' />
+        <property name='value' value='Set' />
+      </control>
+    </control>
+    <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+      <property name='id' value='propertyLine3' />
+      <property name='label' value='Result' />
+      <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+        <property name='id' value='htmlOutputText1' />
+        <property name='raw' value='true' />
+        <property name='value' value='#{Lf030_setstudactivedefaultviewview.lf030_setstudactive.setStudActive.result.outputMessage}' />
+      </control>
+    </control>
+  </control>
+</view>

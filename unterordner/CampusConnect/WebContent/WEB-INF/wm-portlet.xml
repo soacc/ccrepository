@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wm-portlet-app version="1.0">
+
+	<wm-portlet>
+		<portlet-name>LF010_registerCourses</portlet-name>
+		<category>CampusConnect</category>
+		<portlet-preferences>
+			<preference>
+				<name>StudID</name>
+				<display-name>Stud ID</display-name>
+				<description></description>
+				<scope>content</scope>
+				<property-editor type="text"></property-editor>
+				<hidden>true</hidden>
+				<required>false</required>
+				<type>String</type>
+			</preference>
+			<preference>
+				<name>CourseID</name>
+				<display-name>Course ID</display-name>
+				<description></description>
+				<scope>content</scope>
+				<property-editor type="text"></property-editor>
+				<hidden>true</hidden>
+				<required>false</required>
+				<type>String</type>
+			</preference></portlet-preferences>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>LF010_loadFilteredCourses</portlet-name>
+		<category>CampusConnect</category>
+		<portlet-preferences>
+			<preference>
+				<name>StudID</name>
+				<display-name>Stud ID</display-name>
+				<description></description>
+				<scope>content</scope>
+				<property-editor type="text"></property-editor>
+				<hidden>true</hidden>
+				<required>false</required>
+				<type>String</type>
+			</preference>
+			<preference>
+				<name>CourseID</name>
+				<display-name>Course ID</display-name>
+				<description></description>
+				<scope>content</scope>
+				<property-editor type="text"></property-editor>
+				<hidden>true</hidden>
+				<required>false</required>
+				<type>String</type>
+			</preference></portlet-preferences>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>LF010_loadStudRegisteredCourses</portlet-name>
+		<category>CampusConnect</category>
+		<portlet-preferences>
+			<preference>
+				<name>StudID</name>
+				<display-name>Stud ID</display-name>
+				<description></description>
+				<scope>content</scope>
+				<property-editor type="text"></property-editor>
+				<hidden>true</hidden>
+				<required>false</required>
+				<type>String</type>
+			</preference>
+			<preference>
+				<name>CourseID</name>
+				<display-name>Course ID</display-name>
+				<description></description>
+				<scope>content</scope>
+				<property-editor type="text"></property-editor>
+				<hidden>true</hidden>
+				<required>false</required>
+				<type>String</type>
+			</preference></portlet-preferences>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>LF010_deregisterCourses</portlet-name>
+		<category>CampusConnect</category>
+		<portlet-preferences>
+			<preference>
+				<name>StudID</name>
+				<display-name>Stud ID</display-name>
+				<description></description>
+				<scope>content</scope>
+				<property-editor type="text"></property-editor>
+				<hidden>true</hidden>
+				<required>false</required>
+				<type>String</type>
+			</preference>
+			<preference>
+				<name>CourseID</name>
+				<display-name>Course ID</display-name>
+				<description></description>
+				<scope>content</scope>
+				<property-editor type="text"></property-editor>
+				<hidden>true</hidden>
+				<required>false</required>
+				<type>String</type>
+			</preference></portlet-preferences>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>LF020_registerExam</portlet-name>
+		<category>CampusConnect</category>
+		<portlet-preferences>
+			<preference>
+				<name>StudID</name>
+				<display-name>Stud ID</display-name>
+				<description></description>
+				<scope>content</scope>
+				<property-editor type="text"></property-editor>
+				<hidden>true</hidden>
+				<required>false</required>
+				<type>String</type>
+			</preference>
+		</portlet-preferences>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>LF020_deregisterExam</portlet-name>
+		<category>CampusConnect</category>
+		<portlet-preferences>
+			<preference>
+				<name>StudID</name>
+				<display-name>Stud ID</display-name>
+				<description></description>
+				<scope>content</scope>
+				<property-editor type="text"></property-editor>
+				<hidden>true</hidden>
+				<required>false</required>
+				<type>String</type>
+			</preference>
+		</portlet-preferences>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>LF030_saveStudInfos</portlet-name>
+		<category>CampusConnect</category>
+		<portlet-preferences>
+			<preference>
+				<name>StudID</name>
+				<display-name>Stud ID</display-name>
+				<description></description>
+				<scope>content</scope>
+				<property-editor type="text"></property-editor>
+				<hidden>true</hidden>
+				<required>false</required>
+				<type>String</type>
+			</preference></portlet-preferences></wm-portlet>
+	<wm-portlet>
+		<portlet-name>LF030_setStudActive</portlet-name>
+		<category>CampusConnect</category>
+		<portlet-preferences>
+			<preference>
+				<name>StudID</name>
+				<display-name>Stud ID</display-name>
+				<description></description>
+				<scope>content</scope>
+				<property-editor type="text"></property-editor>
+				<hidden>true</hidden>
+				<required>false</required>
+				<type>String</type>
+			</preference></portlet-preferences></wm-portlet>
+	<wm-portlet>
+		<portlet-name>LF030_showEnrolledStuds</portlet-name>
+		<category>CampusConnect</category>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>LF110_searchCourse</portlet-name>
+		<category>CampusConnect</category>
+	</wm-portlet>
+
+	<wm-portlet>
+		<portlet-name>LF070_showPersonalData</portlet-name>
+		<category>CampusConnect</category>
+		<portlet-preferences>
+			<preference>
+				<name>StudID</name>
+				<display-name>Stud ID</display-name>
+				<description></description>
+				<scope>content</scope>
+				<property-editor type="text"></property-editor>
+				<hidden>true</hidden>
+				<required>false</required>
+				<type>String</type>
+			</preference>
+			<preference>
+				<name>output</name>
+				<display-name>output</display-name>
+				<description></description>
+				<scope>content</scope>
+				<property-editor type="text"></property-editor>
+				<hidden>true</hidden>
+				<required>false</required>
+				<type>String</type>
+			</preference></portlet-preferences></wm-portlet>
+	<wm-portlet>
+		<portlet-name>LF070_savePersonalData</portlet-name>
+		<category>CampusConnect</category>
+		<portlet-preferences>
+			<preference>
+				<name>StudID</name>
+				<display-name>Stud ID</display-name>
+				<description></description>
+				<scope>content</scope>
+				<property-editor type="text"></property-editor>
+				<hidden>true</hidden>
+				<required>false</required>
+				<type>String</type>
+			</preference></portlet-preferences></wm-portlet></wm-portlet-app>
+

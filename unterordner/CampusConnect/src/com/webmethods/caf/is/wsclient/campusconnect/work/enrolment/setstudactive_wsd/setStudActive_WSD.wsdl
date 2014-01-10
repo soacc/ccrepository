@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="setStudActive_WSD" targetNamespace="http://192.168.0.204/CampusConnect.work.enrolment:setStudActive_WSD" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapjms="http://www.w3.org/2010/soapjms/" xmlns:tns="http://192.168.0.204/CampusConnect.work.enrolment:setStudActive_WSD" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://192.168.0.204/CampusConnect.work.enrolment:setStudActive_WSD" xmlns:tns="http://192.168.0.204/CampusConnect.work.enrolment:setStudActive_WSD" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+          <xsd:element name="setStudActive" type="tns:setStudActive"/>
+          <xsd:element name="setStudActiveResponse" type="tns:setStudActiveResponse"/>
+          <xsd:complexType name="setStudActive">
+            <xsd:sequence>
+              <xsd:element name="studId" nillable="true" type="xsd:decimal"/>
+              <xsd:element name="activeStatus" nillable="true" type="tns:activeStatus"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:simpleType name="activeStatus">
+            <xsd:restriction base="xsd:decimal">
+              <xsd:minInclusive value="0"/>
+              <xsd:maxInclusive value="1"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+          <xsd:complexType name="setStudActiveResponse">
+            <xsd:sequence>
+              <xsd:element name="outputMessage" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        	</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="setStudActive_WSD_PortType_setStudActive">
+    <wsdl:part name="parameters" element="tns:setStudActive">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setStudActive_WSD_PortType_setStudActiveResponse">
+    <wsdl:part name="parameters" element="tns:setStudActiveResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="setStudActive_WSD_PortType">
+    <wsdl:operation name="setStudActive">
+      <wsdl:input message="tns:setStudActive_WSD_PortType_setStudActive">
+    </wsdl:input>
+      <wsdl:output message="tns:setStudActive_WSD_PortType_setStudActiveResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CampusConnect_work_enrolment_setStudActive_WSD_Binder" type="tns:setStudActive_WSD_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="setStudActive">
+      <soap:operation soapAction="CampusConnect_work_enrolment_setStudActive_WSD_Binder_setStudActive" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CampusConnect.work.enrolment.setStudActive_WSD">
+    <wsdl:port name="CampusConnect_work_enrolment_setStudActive_WSD_Port" binding="tns:CampusConnect_work_enrolment_setStudActive_WSD_Binder">
+      <soap:address location="http://192.168.0.204:5555/ws/CampusConnect.work.enrolment.setStudActive_WSD/CampusConnect_work_enrolment_setStudActive_WSD_Port"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

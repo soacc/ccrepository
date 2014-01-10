@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="loadFilteredCourses_WSD" targetNamespace="http://192.168.0.204/CampusConnect.work.courseRegistration:loadFilteredCourses_WSD" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapjms="http://www.w3.org/2010/soapjms/" xmlns:tns="http://192.168.0.204/CampusConnect.work.courseRegistration:loadFilteredCourses_WSD" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://192.168.0.204/CampusConnect.work.courseRegistration:loadFilteredCourses_WSD" xmlns:tns="http://192.168.0.204/CampusConnect.work.courseRegistration:loadFilteredCourses_WSD" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+          <xsd:element name="loadFilteredCoursesInput" type="tns:loadFilteredCoursesInput"/>
+          <xsd:element name="loadFilteredCoursesOutput" type="tns:loadFilteredCoursesOutput"/>
+          <xsd:complexType name="loadFilteredCoursesInput">
+            <xsd:sequence>
+              <xsd:element name="studId" nillable="true" type="tns:studId"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:simpleType name="studId">
+            <xsd:restriction base="xsd:decimal">
+              <xsd:minInclusive value="1"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+          <xsd:complexType name="loadFilteredCoursesOutput">
+            <xsd:sequence>
+              <xsd:element maxOccurs="unbounded" name="fCL" nillable="true" type="tns:fCL"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="fCL">
+            <xsd:sequence>
+              <xsd:element name="courseId" nillable="true" type="xsd:string"/>
+              <xsd:element name="courseName" nillable="true" type="xsd:string"/>
+              <xsd:element name="maxParticipants" nillable="true" type="xsd:string"/>
+              <xsd:element name="profId" nillable="true" type="xsd:string"/>
+              <xsd:element name="profFirstName" nillable="true" type="xsd:string"/>
+              <xsd:element name="profLastName" nillable="true" type="xsd:string"/>
+              <xsd:element name="profTitle" nillable="true" type="xsd:string"/>
+              <xsd:element name="degreeProgram" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        	</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="loadFilteredCourses_WSD_PortType_loadFilteredCoursesInput">
+    <wsdl:part name="parameters" element="tns:loadFilteredCoursesInput">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="loadFilteredCourses_WSD_PortType_loadFilteredCoursesOutput">
+    <wsdl:part name="parameters" element="tns:loadFilteredCoursesOutput">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="loadFilteredCourses_WSD_PortType">
+    <wsdl:operation name="loadFilteredCourses">
+      <wsdl:input message="tns:loadFilteredCourses_WSD_PortType_loadFilteredCoursesInput">
+    </wsdl:input>
+      <wsdl:output message="tns:loadFilteredCourses_WSD_PortType_loadFilteredCoursesOutput">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CampusConnect_work_courseRegistration_loadFilteredCourses_WSD_Binder" type="tns:loadFilteredCourses_WSD_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="loadFilteredCourses">
+      <soap:operation soapAction="CampusConnect_work_courseRegistration_loadFilteredCourses_WSD_Binder_loadFilteredCourses" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CampusConnect.work.courseRegistration.loadFilteredCourses_WSD">
+    <wsdl:port name="CampusConnect_work_courseRegistration_loadFilteredCourses_WSD_Port" binding="tns:CampusConnect_work_courseRegistration_loadFilteredCourses_WSD_Binder">
+      <soap:address location="http://192.168.0.204:5555/ws/CampusConnect.work.courseRegistration.loadFilteredCourses_WSD/CampusConnect_work_courseRegistration_loadFilteredCourses_WSD_Port"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
