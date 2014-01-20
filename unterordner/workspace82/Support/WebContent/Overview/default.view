@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='OverviewDefaultviewView' />
+  <property name='preferencesBean' value='Overview' />
+  <design-time-attribute name='portlet' value='Overview' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm1' />
+    <control component-type='com.webmethods.caf.faces.output.Icon' renderer-type='com.webmethods.caf.faces.output.Icon'>
+      <property name='id' value='icon2121' />
+      <property name='url' value='http://s14.directupload.net/images/140113/temp/x9cfzouq.png' />
+      <property name='value' value='http://sagbase:8585/user.current.start.page' />
+    </control>
+    <control component-type='com.webmethods.caf.faces.output.Icon' renderer-type='com.webmethods.caf.faces.output.Icon'>
+      <property name='id' value='icon1' />
+      <property name='url' value='http://s7.directupload.net/images/140113/temp/mmc6ewb8.png' />
+    </control>
+    <control component-type='com.webmethods.caf.faces.output.Icon' renderer-type='com.webmethods.caf.faces.output.Icon'>
+      <property name='id' value='icon2' />
+      <property name='url' value='http://s1.directupload.net/images/140113/temp/p4bl6s55.png' />
+      <property name='value' value='http://sagbase:8585/meta/default/folder/0000009143' />
+    </control>
+    <control component-type='com.webmethods.caf.faces.output.Icon' renderer-type='com.webmethods.caf.faces.output.Icon'>
+      <property name='id' value='icon21' />
+      <property name='url' value='http://s14.directupload.net/images/140113/temp/q6lkjdlu.png' />
+      <property name='value' value='http://sagbase:8585/meta/default/folder/0000010181' />
+    </control>
+    <control component-type='com.webmethods.caf.faces.output.Icon' renderer-type='com.webmethods.caf.faces.output.Icon'>
+      <property name='id' value='icon211' />
+      <property name='url' value='http://s7.directupload.net/images/140113/temp/ppdnbnid.png' />
+      <property name='value' value='http://sagbase:8585/meta/default/folder/0000009403' />
+    </control>
+    <control component-type='com.webmethods.caf.faces.output.Icon' renderer-type='com.webmethods.caf.faces.output.Icon'>
+      <property name='id' value='icon212' />
+      <property name='url' value='http://s1.directupload.net/images/140113/temp/tky7v9ul.png' />
+      <property name='value' value='http://sagbase:8585/meta/default/folder/0000009749' />
+    </control>
+    <control component-type='com.webmethods.caf.faces.panel.PopupPanel' renderer-type='com.webmethods.caf.faces.panel.PopupPanel'>
+      <property name='closeOnClick' value='' />
+      <property name='for' value='defaultForm1:icon1' />
+      <property name='id' value='popupPanel1' />
+      <property name='styleClass' value='portlet-menu' />
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine13' />
+        <property name='label' value='1.' />
+        <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
+          <property name='id' value='htmlOutputLink31' />
+          <property name='label' value='Search Course' />
+          <property name='value' value='http://sagbase:8585/meta/default/folder/0000009188' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine12' />
+        <property name='label' value='2.' />
+        <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
+          <property name='id' value='htmlOutputLink' />
+          <property name='label' value='Course Registration' />
+          <property name='value' value='http://sagbase:8585/meta/default/folder/0000009091' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine14' />
+        <property name='label' value='3.' />
+        <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
+          <property name='id' value='htmlOutputLink21' />
+          <property name='label' value='Course Deregistration' />
+          <property name='value' value='http://sagbase:8585/meta/default/folder/0000009135' />
+        </control>
+      </control>
+    </control>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm11' />
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.panel.PopupPanel' renderer-type='com.webmethods.caf.faces.panel.PopupPanel'>
+      <property name='id' value='popupPanel' />
+      <property name='styleClass' value='portlet-menu' />
+    </control>
+  </control>
+</view>

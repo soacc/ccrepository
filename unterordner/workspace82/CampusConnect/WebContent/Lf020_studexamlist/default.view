@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='Lf020_studexamlistdefaultviewview' />
+  <property name='preferencesBean' value='Lf020_studexamlist' />
+  <design-time-attribute name='portlet' value='LF020_studExamList' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+      <property name='id' value='propertyGroup' />
+      <property name='label' value='Registered Exams' />
+      <control component-type='com.webmethods.caf.faces.table.AsyncTable' renderer-type='com.webmethods.caf.faces.table.AsyncTable'>
+        <property name='footerClass' value='portlet-section-footer' />
+        <property name='headerClass' value='portlet-section-subheader' />
+        <property name='id' value='asyncTable' />
+        <property name='rowClasses' value='portlet-section-body,portlet-section-alternate' />
+        <property name='rows' value='10' />
+        <property name='selectedRowClass' value='portlet-section-selected' />
+        <property name='value' value='#{Lf020_studexamlistdefaultviewview.lf020_studexamlist.studExamsList.result.outExams}' />
+        <property name='var' value='outExam' />
+        <property name='width' value='100%' />
+        <facet name='footer'>
+          <control component-type='com.webmethods.caf.faces.table.PrevNext' renderer-type='com.webmethods.caf.faces.table.PrevNext'>
+            <property name='id' value='prevNext' />
+            <control component-type='javax.faces.HtmlPanelGroup' renderer-type='com.webmethods.caf.faces.panel.BlockPanel'>
+              <property name='id' value='blockPanel' />
+              <property name='style' value='text-align:center;' />
+              <control component-type='com.webmethods.caf.faces.table.DataTotal' renderer-type='com.webmethods.caf.faces.table.DataTotal'>
+                <property name='id' value='dataTotal' />
+              </control>
+            </control>
+          </control>
+        </facet>
+        <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+          <property name='id' value='htmlTableColumn' />
+          <property name='label' value='_COURSEID' />
+          <property name='sort' value='#{outExam._COURSEID}' />
+          <property name='width' value='74px' />
+          <facet name='header'>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText1' />
+              <property name='raw' value='true' />
+              <property name='value' value='Course ID' />
+            </control>
+          </facet>
+          <control component-type='javax.faces.HtmlCommandLink' renderer-type='javax.faces.Link'>
+            <property name='action' value='#{Lf020_studexamlistdefaultviewview.lf020_studexamlist.courseIdSet}' />
+            <property name='id' value='htmlOutputText2' />
+            <property name='value' value='#{outExam._COURSEID}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+          <property name='id' value='htmlTableColumn2' />
+          <property name='label' value='_EXAMDATE' />
+          <property name='sort' value='#{outExam._EXAMDATE}' />
+          <facet name='header'>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText5' />
+              <property name='raw' value='true' />
+              <property name='value' value='Date' />
+            </control>
+          </facet>
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText6' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{outExam._EXAMDATE}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+          <property name='id' value='htmlTableColumn3' />
+          <property name='label' value='_EXAMTIME' />
+          <property name='sort' value='#{outExam._EXAMTIME}' />
+          <facet name='header'>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText7' />
+              <property name='raw' value='true' />
+              <property name='value' value='Time' />
+            </control>
+          </facet>
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText8' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{outExam._EXAMTIME}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+          <property name='id' value='htmlTableColumn4' />
+          <property name='label' value='_EXAMROOM' />
+          <property name='sort' value='#{outExam._EXAMROOM}' />
+          <facet name='header'>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText9' />
+              <property name='raw' value='true' />
+              <property name='value' value='Room' />
+            </control>
+          </facet>
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText10' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{outExam._EXAMROOM}' />
+          </control>
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
+        <property name='action' value='#{Lf020_studexamlistdefaultviewview.lf020_studexamlist.courseIdSet}' />
+        <property name='id' value='button' />
+        <property name='value' value='Refresh' />
+      </control>
+    </control>
+  </control>
+</view>

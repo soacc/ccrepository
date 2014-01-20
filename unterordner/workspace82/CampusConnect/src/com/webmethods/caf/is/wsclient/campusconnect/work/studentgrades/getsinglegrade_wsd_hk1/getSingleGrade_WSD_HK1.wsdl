@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="getSingleGrade_WSD_HK1" targetNamespace="http://192.168.0.204/CampusConnect.work.studentGrades:getSingleGrade_WSD_HK1" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapjms="http://www.w3.org/2010/soapjms/" xmlns:tns="http://192.168.0.204/CampusConnect.work.studentGrades:getSingleGrade_WSD_HK1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://192.168.0.204/CampusConnect.work.studentGrades:getSingleGrade_WSD_HK1" xmlns:tns="http://192.168.0.204/CampusConnect.work.studentGrades:getSingleGrade_WSD_HK1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+          <xsd:element name="getSingleGrade" type="tns:getSingleGrade"/>
+          <xsd:element name="getSingleGradeResponse" type="tns:getSingleGradeResponse"/>
+          <xsd:complexType name="getSingleGrade">
+            <xsd:sequence>
+              <xsd:element name="studId" nillable="true" type="tns:studId"/>
+              <xsd:element name="courseId" nillable="true" type="tns:courseId"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:simpleType name="studId">
+            <xsd:restriction base="xsd:decimal">
+              <xsd:minInclusive value="1"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+          <xsd:simpleType name="courseId">
+            <xsd:restriction base="xsd:decimal">
+              <xsd:minInclusive value="1"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+          <xsd:complexType name="getSingleGradeResponse">
+            <xsd:sequence>
+              <xsd:element name="grade" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        	</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getSingleGrade_WSD_HK1_PortType_getSingleGradeResponse">
+    <wsdl:part name="parameters" element="tns:getSingleGradeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getSingleGrade_WSD_HK1_PortType_getSingleGrade">
+    <wsdl:part name="parameters" element="tns:getSingleGrade">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="getSingleGrade_WSD_HK1_PortType">
+    <wsdl:operation name="getSingleGrade">
+      <wsdl:input message="tns:getSingleGrade_WSD_HK1_PortType_getSingleGrade">
+    </wsdl:input>
+      <wsdl:output message="tns:getSingleGrade_WSD_HK1_PortType_getSingleGradeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CampusConnect_work_studentGrades_getSingleGrade_WSD_HK1_Binder" type="tns:getSingleGrade_WSD_HK1_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getSingleGrade">
+      <soap:operation soapAction="CampusConnect_work_studentGrades_getSingleGrade_WSD_HK1_Binder_getSingleGrade" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CampusConnect.work.studentGrades.getSingleGrade_WSD_HK1">
+    <wsdl:port name="CampusConnect_work_studentGrades_getSingleGrade_WSD_HK1_Port" binding="tns:CampusConnect_work_studentGrades_getSingleGrade_WSD_HK1_Binder">
+      <soap:address location="http://192.168.0.204:5555/ws/CampusConnect.work.studentGrades.getSingleGrade_WSD_HK1/CampusConnect_work_studentGrades_getSingleGrade_WSD_HK1_Port"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

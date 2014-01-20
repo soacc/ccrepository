@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='Lf080_getsinglegradedefaultviewview' />
+  <property name='preferencesBean' value='Lf080_getsinglegrade' />
+  <design-time-attribute name='portlet' value='LF080_getSingleGrade' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+      <property name='id' value='propertyGroup' />
+      <property name='label' value='Note: If you already got a grade you cannont deregister!' />
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine' />
+        <property name='label' value='Gradee' />
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText' />
+          <property name='raw' value='true' />
+          <property name='value' value='#{Lf080_getsinglegradedefaultviewview.lf080_getsinglegrade.getSingleGrade.result.grade}' />
+        </control>
+      </control>
+    </control>
+  </control>
+</view>

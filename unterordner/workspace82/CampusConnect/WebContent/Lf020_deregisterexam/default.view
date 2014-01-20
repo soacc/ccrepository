@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='Lf020_deregisterexamdefaultviewview' />
+  <property name='preferencesBean' value='Lf020_deregisterexam' />
+  <design-time-attribute name='portlet' value='LF020_deregisterExam' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+      <property name='id' value='propertyGroup' />
+      <property name='label' value='Exam Deregistration' />
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine' />
+        <property name='label' value='Selected ID' />
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText1' />
+          <property name='raw' value='true' />
+          <property name='value' value='#{Lf020_deregisterexamdefaultviewview.lf020_deregisterexam.examID}' />
+        </control>
+        <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
+          <property name='action' value='#{Lf020_deregisterexamdefaultviewview.lf020_deregisterexam.deregisterExam.refresh}' />
+          <property name='id' value='button' />
+          <property name='value' value='Deregister' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine2' />
+        <property name='label' value='Result' />
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText' />
+          <property name='raw' value='true' />
+          <property name='value' value='#{Lf020_deregisterexamdefaultviewview.lf020_deregisterexam.deregisterExam.result.outputMessage}' />
+        </control>
+      </control>
+    </control>
+  </control>
+</view>

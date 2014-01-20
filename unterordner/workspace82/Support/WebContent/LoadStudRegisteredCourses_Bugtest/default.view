@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='LoadStudRegisteredCourses_BugtestDefaultviewView' />
+  <property name='preferencesBean' value='LoadStudRegisteredCourses_Bugtest' />
+  <design-time-attribute name='portlet' value='loadStudRegisteredCourses_Bugtest' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+      <property name='id' value='propertyGroup' />
+      <property name='label' value='Load Stud Registered Courses' />
+      <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+        <property name='id' value='propertyGroup1' />
+        <property name='label' value='Input Parameters' />
+        <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+          <property name='id' value='propertyGroup2' />
+          <property name='label' value='Load Stud Registered Courses' />
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine' />
+            <property name='label' value='Stud Id' />
+            <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlInputText' />
+              <property name='value' value='#{LoadStudRegisteredCourses_BugtestDefaultviewView.loadStudRegisteredCourses_Bugtest.loadStudRegisteredCourses.parameters.loadStudRegisteredCourses.studId}' />
+              <property name='width' value='input20' />
+            </control>
+          </control>
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+        <property name='id' value='propertyGroup3' />
+        <property name='label' value='Output Results' />
+        <control component-type='com.webmethods.caf.faces.table.AsyncTable' renderer-type='com.webmethods.caf.faces.table.AsyncTable'>
+          <property name='footerClass' value='portlet-section-footer' />
+          <property name='headerClass' value='portlet-section-subheader' />
+          <property name='id' value='asyncTable' />
+          <property name='rowClasses' value='portlet-section-body,portlet-section-alternate' />
+          <property name='rows' value='10' />
+          <property name='selectedRowClass' value='portlet-section-selected' />
+          <property name='value' value='#{LoadStudRegisteredCourses_BugtestDefaultviewView.loadStudRegisteredCourses_Bugtest.loadStudRegisteredCourses.result.outCourses}' />
+          <property name='var' value='outCourse' />
+          <property name='width' value='100%' />
+          <facet name='header'>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText' />
+              <property name='raw' value='true' />
+              <property name='value' value='Out Courses' />
+            </control>
+          </facet>
+          <facet name='footer'>
+            <control component-type='com.webmethods.caf.faces.table.PrevNext' renderer-type='com.webmethods.caf.faces.table.PrevNext'>
+              <property name='id' value='prevNext' />
+              <control component-type='javax.faces.HtmlPanelGroup' renderer-type='com.webmethods.caf.faces.panel.BlockPanel'>
+                <property name='id' value='blockPanel' />
+                <property name='style' value='text-align:center;' />
+                <control component-type='com.webmethods.caf.faces.table.DataTotal' renderer-type='com.webmethods.caf.faces.table.DataTotal'>
+                  <property name='id' value='dataTotal' />
+                </control>
+              </control>
+            </control>
+          </facet>
+          <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+            <property name='id' value='htmlTableColumn' />
+            <property name='label' value='_DEGREEPROGRAM' />
+            <property name='sort' value='#{outCourse._DEGREEPROGRAM}' />
+            <facet name='header'>
+              <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                <property name='id' value='htmlOutputText1' />
+                <property name='raw' value='true' />
+                <property name='value' value='_DEGREEPROGRAM' />
+              </control>
+            </facet>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText2' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{outCourse._DEGREEPROGRAM}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+            <property name='id' value='htmlTableColumn1' />
+            <property name='label' value='_EQUIVALENTID' />
+            <property name='sort' value='#{outCourse._EQUIVALENTID}' />
+            <facet name='header'>
+              <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                <property name='id' value='htmlOutputText3' />
+                <property name='raw' value='true' />
+                <property name='value' value='_EQUIVALENTID' />
+              </control>
+            </facet>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <converter converter-id='javax.faces.BigDecimal'>
+              </converter>
+              <property name='id' value='htmlOutputText4' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{outCourse._EQUIVALENTID}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+            <property name='id' value='htmlTableColumn2' />
+            <property name='label' value='_PROFESSORID' />
+            <property name='sort' value='#{outCourse._PROFESSORID}' />
+            <facet name='header'>
+              <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                <property name='id' value='htmlOutputText5' />
+                <property name='raw' value='true' />
+                <property name='value' value='_PROFESSORID' />
+              </control>
+            </facet>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <converter converter-id='javax.faces.BigDecimal'>
+              </converter>
+              <property name='id' value='htmlOutputText6' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{outCourse._PROFESSORID}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+            <property name='id' value='htmlTableColumn3' />
+            <property name='label' value='_COURSENAME' />
+            <property name='sort' value='#{outCourse._COURSENAME}' />
+            <facet name='header'>
+              <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                <property name='id' value='htmlOutputText7' />
+                <property name='raw' value='true' />
+                <property name='value' value='_COURSENAME' />
+              </control>
+            </facet>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText8' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{outCourse._COURSENAME}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+            <property name='id' value='htmlTableColumn4' />
+            <property name='label' value='_TERM' />
+            <property name='sort' value='#{outCourse._TERM}' />
+            <facet name='header'>
+              <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                <property name='id' value='htmlOutputText9' />
+                <property name='raw' value='true' />
+                <property name='value' value='_TERM' />
+              </control>
+            </facet>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText10' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{outCourse._TERM}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+            <property name='id' value='htmlTableColumn5' />
+            <property name='label' value='_MAXPARTICIPANTS' />
+            <property name='sort' value='#{outCourse._MAXPARTICIPANTS}' />
+            <facet name='header'>
+              <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                <property name='id' value='htmlOutputText11' />
+                <property name='raw' value='true' />
+                <property name='value' value='_MAXPARTICIPANTS' />
+              </control>
+            </facet>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <converter converter-id='javax.faces.BigDecimal'>
+              </converter>
+              <property name='id' value='htmlOutputText12' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{outCourse._MAXPARTICIPANTS}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+            <property name='id' value='htmlTableColumn6' />
+            <property name='label' value='_COURSEDAY' />
+            <property name='sort' value='#{outCourse._COURSEDAY}' />
+            <facet name='header'>
+              <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                <property name='id' value='htmlOutputText13' />
+                <property name='raw' value='true' />
+                <property name='value' value='_COURSEDAY' />
+              </control>
+            </facet>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText14' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{outCourse._COURSEDAY}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+            <property name='id' value='htmlTableColumn7' />
+            <property name='label' value='_COURSETIME' />
+            <property name='sort' value='#{outCourse._COURSETIME}' />
+            <facet name='header'>
+              <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                <property name='id' value='htmlOutputText15' />
+                <property name='raw' value='true' />
+                <property name='value' value='_COURSETIME' />
+              </control>
+            </facet>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText16' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{outCourse._COURSETIME}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+            <property name='id' value='htmlTableColumn8' />
+            <property name='label' value='_COURSEROOM' />
+            <property name='sort' value='#{outCourse._COURSEROOM}' />
+            <facet name='header'>
+              <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                <property name='id' value='htmlOutputText17' />
+                <property name='raw' value='true' />
+                <property name='value' value='_COURSEROOM' />
+              </control>
+            </facet>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText18' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{outCourse._COURSEROOM}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+            <property name='id' value='htmlTableColumn9' />
+            <property name='label' value='_COURSEFINISH' />
+            <property name='sort' value='#{outCourse._COURSEFINISH}' />
+            <facet name='header'>
+              <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                <property name='id' value='htmlOutputText19' />
+                <property name='raw' value='true' />
+                <property name='value' value='_COURSEFINISH' />
+              </control>
+            </facet>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <converter converter-id='javax.faces.BigDecimal'>
+              </converter>
+              <property name='id' value='htmlOutputText20' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{outCourse._COURSEFINISH}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+            <property name='id' value='htmlTableColumn10' />
+            <property name='label' value='_AMOUNTREGISTERED' />
+            <property name='sort' value='#{outCourse._AMOUNTREGISTERED}' />
+            <facet name='header'>
+              <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                <property name='id' value='htmlOutputText21' />
+                <property name='raw' value='true' />
+                <property name='value' value='_AMOUNTREGISTERED' />
+              </control>
+            </facet>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <converter converter-id='javax.faces.BigDecimal'>
+              </converter>
+              <property name='id' value='htmlOutputText22' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{outCourse._AMOUNTREGISTERED}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+            <property name='id' value='htmlTableColumn11' />
+            <property name='label' value='_COURSEID' />
+            <property name='sort' value='#{outCourse._COURSEID}' />
+            <facet name='header'>
+              <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                <property name='id' value='htmlOutputText23' />
+                <property name='raw' value='true' />
+                <property name='value' value='_COURSEID' />
+              </control>
+            </facet>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText24' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{outCourse._COURSEID}' />
+            </control>
+          </control>
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
+        <property name='action' value='#{LoadStudRegisteredCourses_BugtestDefaultviewView.loadStudRegisteredCourses_Bugtest.loadStudRegisteredCourses.refresh}' />
+        <property name='id' value='button' />
+        <property name='value' value='Refresh' />
+      </control>
+    </control>
+  </control>
+</view>

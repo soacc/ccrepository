@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='Lf070_showpersonaldatastuddefaultviewview' />
+  <property name='preferencesBean' value='Lf070_showpersonaldatastud' />
+  <design-time-attribute name='portlet' value='LF070_showPersonalDataStud' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+      <property name='id' value='propertyGroup4' />
+      <property name='label' value='Your Personal Data' />
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine10' />
+        <property name='label' value='Student ID' />
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText9' />
+          <property name='raw' value='true' />
+          <property name='value' value='#{Lf070_showpersonaldatastuddefaultviewview.lf070_showpersonaldatastud.showPersonalDataStud.result.studInfo._STUDENTID}' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine1' />
+        <property name='label' value='First Name' />
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText' />
+          <property name='raw' value='true' />
+          <property name='value' value='#{Lf070_showpersonaldatastuddefaultviewview.lf070_showpersonaldatastud.showPersonalDataStud.result.studInfo._FIRSTNAME}' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine2' />
+        <property name='label' value='Last Name' />
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText1' />
+          <property name='raw' value='true' />
+          <property name='value' value='#{Lf070_showpersonaldatastuddefaultviewview.lf070_showpersonaldatastud.showPersonalDataStud.result.studInfo._LASTNAME}' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine3' />
+        <property name='label' value='Address Line 1' />
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText2' />
+          <property name='raw' value='true' />
+          <property name='value' value='#{Lf070_showpersonaldatastuddefaultviewview.lf070_showpersonaldatastud.showPersonalDataStud.result.studInfo._ADDRESSLINE1}' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine4' />
+        <property name='label' value='Address Line 2' />
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText3' />
+          <property name='raw' value='true' />
+          <property name='value' value='#{Lf070_showpersonaldatastuddefaultviewview.lf070_showpersonaldatastud.showPersonalDataStud.result.studInfo._ADDRESSLINE2}' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine5' />
+        <property name='label' value='Degreeprogramm' />
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText4' />
+          <property name='raw' value='true' />
+          <property name='value' value='#{Lf070_showpersonaldatastuddefaultviewview.lf070_showpersonaldatastud.showPersonalDataStud.result.studInfo._DEGREEPROGRAM}' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine6' />
+        <property name='label' value='E-Mail' />
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText5' />
+          <property name='raw' value='true' />
+          <property name='value' value='#{Lf070_showpersonaldatastuddefaultviewview.lf070_showpersonaldatastud.showPersonalDataStud.result.studInfo._EMAIL}' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine7' />
+        <property name='label' value='Phone' />
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText6' />
+          <property name='raw' value='true' />
+          <property name='value' value='#{Lf070_showpersonaldatastuddefaultviewview.lf070_showpersonaldatastud.showPersonalDataStud.result.studInfo._PHONE}' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine8' />
+        <property name='label' value='Date of Birth' />
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText7' />
+          <property name='raw' value='true' />
+          <property name='value' value='#{Lf070_showpersonaldatastuddefaultviewview.lf070_showpersonaldatastud.showPersonalDataStud.result.studInfo._DOB}' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine9' />
+        <property name='label' value='Term' />
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText8' />
+          <property name='raw' value='true' />
+          <property name='value' value='#{Lf070_showpersonaldatastuddefaultviewview.lf070_showpersonaldatastud.showPersonalDataStud.result.studInfo._TERM}' />
+        </control>
+      </control>
+    </control>
+    <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
+      <property name='action' value='#{Lf070_showpersonaldatastuddefaultviewview.lf070_showpersonaldatastud.showPersonalDataStud.refresh}' />
+      <property name='id' value='button' />
+      <property name='value' value='Refresh' />
+    </control>
+  </control>
+</view>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="loadStudRegisteredCourses_WSD_Bugtest1" targetNamespace="http://192.168.0.204/CampusConnect.work.courseDeregistration:loadStudRegisteredCourses_WSD_Bugtest1" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapjms="http://www.w3.org/2010/soapjms/" xmlns:tns="http://192.168.0.204/CampusConnect.work.courseDeregistration:loadStudRegisteredCourses_WSD_Bugtest1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://192.168.0.204/CampusConnect.work.courseDeregistration:loadStudRegisteredCourses_WSD_Bugtest1" xmlns:tns="http://192.168.0.204/CampusConnect.work.courseDeregistration:loadStudRegisteredCourses_WSD_Bugtest1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+          <xsd:element name="loadStudRegisteredCourses" type="tns:loadStudRegisteredCourses"/>
+          <xsd:element name="loadStudRegisteredCoursesResponse" type="tns:loadStudRegisteredCoursesResponse"/>
+          <xsd:complexType name="loadStudRegisteredCourses">
+            <xsd:sequence>
+              <xsd:element name="studId" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="loadStudRegisteredCoursesResponse">
+            <xsd:sequence>
+              <xsd:element name="outCourses" nillable="true" type="tns:outCourses"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="outCourses">
+            <xsd:sequence>
+              <xsd:element maxOccurs="unbounded" name="course" nillable="true" type="tns:course"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="course">
+            <xsd:sequence>
+              <xsd:element name="_DEGREEPROGRAM" type="xsd:string"/>
+              <xsd:element name="_EQUIVALENTID" type="xsd:decimal"/>
+              <xsd:element name="_PROFESSORID" type="xsd:decimal"/>
+              <xsd:element name="_COURSENAME" type="xsd:string"/>
+              <xsd:element name="_TERM" type="xsd:string"/>
+              <xsd:element name="_MAXPARTICIPANTS" type="xsd:decimal"/>
+              <xsd:element name="_COURSEDAY" type="xsd:string"/>
+              <xsd:element name="_COURSETIME" type="xsd:string"/>
+              <xsd:element name="_COURSEROOM" type="xsd:string"/>
+              <xsd:element name="_COURSEFINISH" type="xsd:decimal"/>
+              <xsd:element name="_AMOUNTREGISTERED" type="xsd:decimal"/>
+              <xsd:element name="_COURSEID" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        	</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="loadStudRegisteredCourses_WSD_Bugtest1_PortType_loadStudRegisteredCoursesResponse">
+    <wsdl:part name="parameters" element="tns:loadStudRegisteredCoursesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="loadStudRegisteredCourses_WSD_Bugtest1_PortType_loadStudRegisteredCourses">
+    <wsdl:part name="parameters" element="tns:loadStudRegisteredCourses">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="loadStudRegisteredCourses_WSD_Bugtest1_PortType">
+    <wsdl:operation name="loadStudRegisteredCourses">
+      <wsdl:input message="tns:loadStudRegisteredCourses_WSD_Bugtest1_PortType_loadStudRegisteredCourses">
+    </wsdl:input>
+      <wsdl:output message="tns:loadStudRegisteredCourses_WSD_Bugtest1_PortType_loadStudRegisteredCoursesResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CampusConnect_work_courseDeregistration_loadStudRegisteredCourses_WSD_Bugtest1_Binder" type="tns:loadStudRegisteredCourses_WSD_Bugtest1_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="loadStudRegisteredCourses">
+      <soap:operation soapAction="CampusConnect_work_courseDeregistration_loadStudRegisteredCourses_WSD_Bugtest1_Binder_loadStudRegisteredCourses" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CampusConnect.work.courseDeregistration.loadStudRegisteredCourses_WSD_Bugtest1">
+    <wsdl:port name="CampusConnect_work_courseDeregistration_loadStudRegisteredCourses_WSD_Bugtest1_Port" binding="tns:CampusConnect_work_courseDeregistration_loadStudRegisteredCourses_WSD_Bugtest1_Binder">
+      <soap:address location="http://192.168.0.204:5555/ws/CampusConnect.work.courseDeregistration.loadStudRegisteredCourses_WSD_Bugtest1/CampusConnect_work_courseDeregistration_loadStudRegisteredCourses_WSD_Bugtest1_Port"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

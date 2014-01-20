@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='TestPopupPanelDefaultviewView' />
+  <property name='preferencesBean' value='TestPopupPanel' />
+  <design-time-attribute name='portlet' value='TestPopupPanel' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.output.HtmlButton' renderer-type='javax.faces.Button'>
+      <property name='id' value='htmlButton' />
+      <property name='label' value='Help' />
+    </control>
+    <control component-type='com.webmethods.caf.faces.panel.PopupPanel' renderer-type='com.webmethods.caf.faces.panel.PopupPanel'>
+      <property name='for' value='defaultForm:htmlButton' />
+      <property name='id' value='popupPanel' />
+      <property name='styleClass' value='portlet-menu' />
+      <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+        <property name='id' value='htmlOutputText' />
+        <property name='raw' value='true' />
+        <property name='value' value='Select your destination :)' />
+      </control>
+    </control>
+  </control>
+</view>

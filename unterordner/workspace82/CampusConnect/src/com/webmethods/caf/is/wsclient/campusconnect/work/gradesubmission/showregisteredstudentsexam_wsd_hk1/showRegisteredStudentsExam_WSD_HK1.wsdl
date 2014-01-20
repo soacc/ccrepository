@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="showRegisteredStudentsExam_WSD_HK1" targetNamespace="http://192.168.0.204/CampusConnect.work.gradeSubmission:showRegisteredStudentsExam_WSD_HK1" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapjms="http://www.w3.org/2010/soapjms/" xmlns:tns="http://192.168.0.204/CampusConnect.work.gradeSubmission:showRegisteredStudentsExam_WSD_HK1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://192.168.0.204/CampusConnect.work.gradeSubmission:showRegisteredStudentsExam_WSD_HK1" xmlns:tns="http://192.168.0.204/CampusConnect.work.gradeSubmission:showRegisteredStudentsExam_WSD_HK1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+          <xsd:element name="showRegisteredStudentsExam" type="tns:showRegisteredStudentsExam"/>
+          <xsd:element name="showRegisteredStudentsExamResponse" type="tns:showRegisteredStudentsExamResponse"/>
+          <xsd:complexType name="showRegisteredStudentsExam">
+            <xsd:sequence>
+              <xsd:element name="examId" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="showRegisteredStudentsExamResponse">
+            <xsd:sequence>
+              <xsd:element name="students" nillable="true" type="tns:students"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="students">
+            <xsd:sequence>
+              <xsd:element maxOccurs="unbounded" name="student" nillable="true" type="tns:student"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="student">
+            <xsd:sequence>
+            </xsd:sequence>
+          </xsd:complexType>
+        	</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="showRegisteredStudentsExam_WSD_HK1_PortType_showRegisteredStudentsExamResponse">
+    <wsdl:part name="parameters" element="tns:showRegisteredStudentsExamResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="showRegisteredStudentsExam_WSD_HK1_PortType_showRegisteredStudentsExam">
+    <wsdl:part name="parameters" element="tns:showRegisteredStudentsExam">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="showRegisteredStudentsExam_WSD_HK1_PortType">
+    <wsdl:operation name="showRegisteredStudentsExam">
+      <wsdl:input message="tns:showRegisteredStudentsExam_WSD_HK1_PortType_showRegisteredStudentsExam">
+    </wsdl:input>
+      <wsdl:output message="tns:showRegisteredStudentsExam_WSD_HK1_PortType_showRegisteredStudentsExamResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CampusConnect_work_gradeSubmission_showRegisteredStudentsExam_WSD_HK1_Binder" type="tns:showRegisteredStudentsExam_WSD_HK1_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="showRegisteredStudentsExam">
+      <soap:operation soapAction="CampusConnect_work_gradeSubmission_showRegisteredStudentsExam_WSD_HK1_Binder_showRegisteredStudentsExam" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CampusConnect.work.gradeSubmission.showRegisteredStudentsExam_WSD_HK1">
+    <wsdl:port name="CampusConnect_work_gradeSubmission_showRegisteredStudentsExam_WSD_HK1_Port" binding="tns:CampusConnect_work_gradeSubmission_showRegisteredStudentsExam_WSD_HK1_Binder">
+      <soap:address location="http://192.168.0.204:5555/ws/CampusConnect.work.gradeSubmission.showRegisteredStudentsExam_WSD_HK1/CampusConnect_work_gradeSubmission_showRegisteredStudentsExam_WSD_HK1_Port"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

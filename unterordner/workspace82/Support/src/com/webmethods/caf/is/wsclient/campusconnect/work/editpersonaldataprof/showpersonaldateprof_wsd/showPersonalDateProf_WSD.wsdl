@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="showPersonalDateProf_WSD" targetNamespace="http://192.168.0.204/CampusConnect.work.editPersonalDataProf:showPersonalDateProf_WSD" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapjms="http://www.w3.org/2010/soapjms/" xmlns:tns="http://192.168.0.204/CampusConnect.work.editPersonalDataProf:showPersonalDateProf_WSD" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://192.168.0.204/CampusConnect.work.editPersonalDataProf:showPersonalDateProf_WSD" xmlns:tns="http://192.168.0.204/CampusConnect.work.editPersonalDataProf:showPersonalDateProf_WSD" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+          <xsd:element name="showPersonalDataProf" type="tns:showPersonalDataProf"/>
+          <xsd:element name="showPersonalDataProfResponse" type="tns:showPersonalDataProfResponse"/>
+          <xsd:complexType name="showPersonalDataProf">
+            <xsd:sequence>
+              <xsd:element name="profId" type="tns:profId"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:simpleType name="profId">
+            <xsd:restriction base="xsd:decimal">
+              <xsd:minInclusive value="1000001"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+          <xsd:complexType name="showPersonalDataProfResponse">
+            <xsd:sequence>
+              <xsd:element name="outputMessage" nillable="true" type="xsd:string"/>
+              <xsd:element name="profInfo" nillable="true" type="tns:profInfo"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="profInfo">
+            <xsd:sequence>
+              <xsd:element name="firstName" nillable="true" type="xsd:string"/>
+              <xsd:element name="lastName" nillable="true" type="xsd:string"/>
+              <xsd:element name="title" nillable="true" type="xsd:string"/>
+              <xsd:element name="chair" nillable="true" type="xsd:string"/>
+              <xsd:element name="profId" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        	</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="showPersonalDateProf_WSD_PortType_showPersonalDataProf">
+    <wsdl:part name="parameters" element="tns:showPersonalDataProf">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="showPersonalDateProf_WSD_PortType_showPersonalDataProfResponse">
+    <wsdl:part name="parameters" element="tns:showPersonalDataProfResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="showPersonalDateProf_WSD_PortType">
+    <wsdl:operation name="showPersonalDataProf">
+      <wsdl:input message="tns:showPersonalDateProf_WSD_PortType_showPersonalDataProf">
+    </wsdl:input>
+      <wsdl:output message="tns:showPersonalDateProf_WSD_PortType_showPersonalDataProfResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CampusConnect_work_editPersonalDataProf_showPersonalDateProf_WSD_Binder" type="tns:showPersonalDateProf_WSD_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="showPersonalDataProf">
+      <soap:operation soapAction="CampusConnect_work_editPersonalDataProf_showPersonalDateProf_WSD_Binder_showPersonalDataProf" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CampusConnect.work.editPersonalDataProf.showPersonalDateProf_WSD">
+    <wsdl:port name="CampusConnect_work_editPersonalDataProf_showPersonalDateProf_WSD_Port" binding="tns:CampusConnect_work_editPersonalDataProf_showPersonalDateProf_WSD_Binder">
+      <soap:address location="http://192.168.0.204:5555/ws/CampusConnect.work.editPersonalDataProf.showPersonalDateProf_WSD/CampusConnect_work_editPersonalDataProf_showPersonalDateProf_WSD_Port"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='CourseDetailsDefaultviewView' />
+  <property name='preferencesBean' value='CourseDetails' />
+  <design-time-attribute name='portlet' value='courseDetails' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+      <property name='id' value='propertyGroup4' />
+      <property name='label' value='Selected Course' />
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine4' />
+        <property name='label' value='Coursename' />
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText3' />
+          <property name='raw' value='true' />
+          <property name='value' value='#{CourseDetailsDefaultviewView.courseDetails.getCourseDetails.result.course._COURSENAME}' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine5' />
+        <property name='label' value='Term' />
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText4' />
+          <property name='raw' value='true' />
+          <property name='value' value='#{CourseDetailsDefaultviewView.courseDetails.getCourseDetails.result.course._TERM}' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine6' />
+        <property name='label' value='Space' />
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <converter converter-id='javax.faces.BigDecimal'>
+          </converter>
+          <property name='id' value='htmlOutputText' />
+          <property name='raw' value='true' />
+          <property name='value' value='#{CourseDetailsDefaultviewView.courseDetails.getCourseDetails.result.course._AMOUNTREGISTERED}' />
+        </control>
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText1' />
+          <property name='raw' value='true' />
+          <property name='value' value='/' />
+        </control>
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <converter converter-id='javax.faces.BigDecimal'>
+          </converter>
+          <property name='id' value='htmlOutputText5' />
+          <property name='raw' value='true' />
+          <property name='value' value='#{CourseDetailsDefaultviewView.courseDetails.getCourseDetails.result.course._MAXPARTICIPANTS}' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine7' />
+        <property name='label' value='Day' />
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText6' />
+          <property name='raw' value='true' />
+          <property name='value' value='#{CourseDetailsDefaultviewView.courseDetails.getCourseDetails.result.course._COURSEDAY}' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine8' />
+        <property name='label' value='Time' />
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText7' />
+          <property name='raw' value='true' />
+          <property name='value' value='#{CourseDetailsDefaultviewView.courseDetails.getCourseDetails.result.course._COURSETIME}' />
+        </control>
+      </control>
+    </control>
+  </control>
+</view>
