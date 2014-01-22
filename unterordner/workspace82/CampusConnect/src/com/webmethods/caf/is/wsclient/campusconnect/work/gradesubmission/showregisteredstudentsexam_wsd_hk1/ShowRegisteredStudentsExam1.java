@@ -9,7 +9,7 @@ import com.webmethods.caf.faces.data.ws.glue.GlueWSClientContentProvider;
  */
 public class ShowRegisteredStudentsExam1 extends GlueWSClientContentProvider {
 
-	private static final long serialVersionUID = 432037069715020800L;
+	private static final long serialVersionUID = 7011355136261630976L;
 
 	/**
 	 * Default constructor
@@ -41,7 +41,7 @@ public class ShowRegisteredStudentsExam1 extends GlueWSClientContentProvider {
 	 */
 	public class Parameters  implements java.io.Serializable {
 
-		private static final long serialVersionUID = 210941804915770368L;
+		private static final long serialVersionUID = 5231406241368763392L;
 
 		public Parameters() {
 		}

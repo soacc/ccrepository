@@ -22,7 +22,13 @@ public class CourseDetailsDefaultviewView  extends   com.webmethods.caf.faces.be
 	private static final String[][] INITIALIZE_PROPERTY_BINDINGS = new String[][] {
 	};
 	private com.webmethods.caf.coursedetails.CourseDetails courseDetails = null;
-
+	private com.webmethods.caf.is.wsclient.campusconnect.utils.exams.getexamfromcourse_wsd_hk1.GetExamFromCourse3 getExamFromCourse3 = null;
+	private static final String[][] GETEXAMFROMCOURSE3_PROPERTY_BINDINGS = new String[][] {
+		{"#{getExamFromCourse3.authCredentials.authenticationMethod}", "1"},
+		{"#{getExamFromCourse3.authCredentials.requiresAuth}", "true"},
+		{"#{getExamFromCourse3.autoRefresh}", "true"},
+		{"#{getExamFromCourse3.parameters.getExamFromCourse.courseId}", "#{CourseDetailsDefaultviewView.courseDetails.courseID}"},
+	};
 	/**
 	 * Initialize page
 	 */
@@ -43,6 +49,15 @@ public class CourseDetailsDefaultviewView  extends   com.webmethods.caf.faces.be
 		    courseDetails = (com.webmethods.caf.coursedetails.CourseDetails)resolveExpression("#{CourseDetails}");
 		}
 		return courseDetails;
+	}
+
+	public com.webmethods.caf.is.wsclient.campusconnect.utils.exams.getexamfromcourse_wsd_hk1.GetExamFromCourse3 getGetExamFromCourse3()  {
+		if (getExamFromCourse3 == null) {
+		    getExamFromCourse3 = (com.webmethods.caf.is.wsclient.campusconnect.utils.exams.getexamfromcourse_wsd_hk1.GetExamFromCourse3)resolveExpression("#{GetExamFromCourse3}");
+		}
+	
+	    resolveDataBinding(GETEXAMFROMCOURSE3_PROPERTY_BINDINGS, getExamFromCourse3, "getExamFromCourse3", false, false);
+		return getExamFromCourse3;
 	}
 	
 }

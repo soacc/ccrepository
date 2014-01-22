@@ -6,15 +6,6 @@
   <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
   </control>
   <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
-    <property name='id' value='propertyLine13' />
-    <property name='label' value='1.' />
-    <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
-      <property name='id' value='htmlOutputLink31' />
-      <property name='label' value='Search Course' />
-      <property name='value' value='http://sagbase:8585/meta/default/folder/0000009188' />
-    </control>
-  </control>
-  <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
     <property name='id' value='propertyLine12' />
     <property name='label' value='2.' />
     <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
@@ -33,20 +24,11 @@
     </control>
   </control>
   <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
-    <property name='id' value='propertyLine11' />
-    <property name='label' value='4.' />
-    <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
-      <property name='id' value='htmlOutputLink2' />
-      <property name='label' value='Manage Exams' />
-      <property name='value' value='http://sagbase:8585/meta/default/folder/0000009143' />
-    </control>
-  </control>
-  <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
     <property name='id' value='propertyLine15' />
     <property name='label' value='5.' />
     <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
       <property name='id' value='htmlOutputLink32' />
-      <property name='label' value='Edit Personal Data' />
+      <property name='label' value='Pers&#246;nliche Daten' />
       <property name='value' value='http://sagbase:8585/meta/default/folder/0000009403' />
     </control>
   </control>
@@ -55,7 +37,7 @@
     <property name='label' value='6.' />
     <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
       <property name='id' value='htmlOutputLink321' />
-      <property name='label' value='Grades' />
+      <property name='label' value='Noten&#252;bersicht' />
       <property name='value' value='http://sagbase:8585/meta/default/folder/0000010181' />
     </control>
   </control>
@@ -64,7 +46,7 @@
     <property name='label' value='7.' />
     <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
       <property name='id' value='htmlOutputLink3211' />
-      <property name='label' value='Eating' />
+      <property name='label' value='Ausgeliehene B&#252;cher' />
       <property name='value' value='http://sagbase:8585/meta/default/folder/0000009749' />
     </control>
   </control>

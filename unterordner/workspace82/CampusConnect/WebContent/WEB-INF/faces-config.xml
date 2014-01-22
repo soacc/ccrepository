@@ -1123,11 +1123,13 @@
 			<value>true</value>
 		</managed-property>
 	</managed-bean>
+
+
 	<managed-bean>
 		<description>portletbean</description>
-		<display-name>test</display-name>
-		<managed-bean-name>Test</managed-bean-name>
-		<managed-bean-class>com.webmethods.caf.test.Test</managed-bean-class>
+		<display-name>LF070_editStudent2</display-name>
+		<managed-bean-name>Lf070_editstudent2</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.lf070_editstudent2.Lf070_editstudent2</managed-bean-class>
 		<managed-bean-scope>session</managed-bean-scope>
 		<managed-property>
 			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
@@ -1139,9 +1141,9 @@
 	</managed-bean>
 	<managed-bean>
 		<description>pagebean</description>
-		<display-name>Test/default</display-name>
-		<managed-bean-name>TestDefaultviewView</managed-bean-name>
-		<managed-bean-class>com.webmethods.caf.test.TestDefaultviewView</managed-bean-class>
+		<display-name>Lf070_editstudent2/default</display-name>
+		<managed-bean-name>Lf070_editstudent2defaultviewview</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.lf070_editstudent2.Lf070_editstudent2defaultviewview</managed-bean-class>
 		<managed-bean-scope>session</managed-bean-scope>
 		<managed-property>
 			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
@@ -1152,9 +1154,34 @@
 		</managed-property>
 	</managed-bean>
 	<navigation-rule>
-		<from-view-id>/Test/*</from-view-id>
+		<from-view-id>/Lf070_editstudent2/*</from-view-id>
 		<navigation-case>
 			<from-outcome>default</from-outcome>
-			<to-view-id>/Test/default.view</to-view-id>
+			<to-view-id>/Lf070_editstudent2/default.view</to-view-id>
 		</navigation-case>
-	</navigation-rule></faces-config>
+	</navigation-rule>
+	<managed-bean>
+		<managed-bean-name>EditStudent2</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.is.wsclient.campusconnect.work.administration.editstudent2_wsd_hk1.EditStudent21</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>EditStudent22</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.is.wsclient.campusconnect.work.administration.editstudent2_wsd_hk1.EditStudent22</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+</faces-config>

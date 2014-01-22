@@ -46,7 +46,19 @@
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\examderegistration\deregisterexam_wsd_hk1\deregisterExam.java</generatedfile>
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\examderegistration\deregisterexam_wsd_hk1\deregisterExam_WSD_HK1.map</generatedfile>
 </webservice>
-<webservice authenticationMethod="1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.utils.courses:getCourseDetails_WSD_HK1?WSDL" isService="CampusConnect.utils.courses:getCourseDetails_WSD_HK1" name="getCourseDetails_WSD_HK1" package="com.webmethods.caf.is.wsclient.campusconnect.utils.courses.getcoursedetails_wsd_hk1" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/utils/courses/getcoursedetails_wsd_hk1/getCourseDetails_WSD_HK1.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.utils.courses:getCourseDetails_WSD_HK1?WSDL">
+<webservice authenticationMethod="1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.utils.exams:getExamFromCourse_WSD_HK1?WSDL" isService="CampusConnect.utils.exams:getExamFromCourse_WSD_HK1" name="getExamFromCourse_WSD_HK1" package="com.webmethods.caf.is.wsclient.campusconnect.utils.exams.getexamfromcourse_wsd_hk1" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/utils/exams/getexamfromcourse_wsd_hk1/getExamFromCourse_WSD_HK1.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.utils.exams:getExamFromCourse_WSD_HK1?WSDL">
+<wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.utils.exams.getexamfromcourse_wsd_hk1.IgetExamFromCourse_WSD_HK1_PortType">
+<wsclient managedBean="GetExamFromCourse2" operation="getExamFromCourse"/>
+<wsclient managedBean="GetExamFromCourse3" operation="getExamFromCourse"/>
+</wsproxy>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\utils\exams\getexamfromcourse_wsd_hk1\IgetExamFromCourse_WSD_HK1_PortType.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\utils\exams\getexamfromcourse_wsd_hk1\getExamFromCourse_WSD_HK1Helper.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\utils\exams\getexamfromcourse_wsd_hk1\getExamFromCourse.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\utils\exams\getexamfromcourse_wsd_hk1\exam.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\utils\exams\getexamfromcourse_wsd_hk1\getExamFromCourseResponse.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\utils\exams\getexamfromcourse_wsd_hk1\getExamFromCourse_WSD_HK1.map</generatedfile>
+</webservice>
+<webservice authenticationMethod="-1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.utils.courses:getCourseDetails_WSD_HK1?WSDL" isService="CampusConnect.utils.courses:getCourseDetails_WSD_HK1" name="getCourseDetails_WSD_HK1" package="com.webmethods.caf.is.wsclient.campusconnect.utils.courses.getcoursedetails_wsd_hk1" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/utils/courses/getcoursedetails_wsd_hk1/getCourseDetails_WSD_HK1.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.utils.courses:getCourseDetails_WSD_HK1?WSDL">
 <wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.utils.courses.getcoursedetails_wsd_hk1.IgetCourseDetails_WSD_HK1_PortType">
 <wsclient managedBean="GetCourseDetails" operation="getCourseDetails"/>
 </wsproxy>

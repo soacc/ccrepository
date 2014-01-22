@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='Lf070_editstudent2defaultviewview' />
+  <property name='preferencesBean' value='Lf070_editstudent2' />
+  <design-time-attribute name='portlet' value='LF070_editStudent2' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+      <property name='id' value='propertyGroup' />
+      <property name='label' value='Pers&#246;nliche Daten &#228;ndern' />
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine1' />
+        <property name='label' value='Stra&#223;e und Hausnummer' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlInputText1' />
+          <property name='value' value='#{Lf070_editstudent2defaultviewview.lf070_editstudent2.editStudent2.parameters.editStudent2._ADDRESSLINE1}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine2' />
+        <property name='label' value='PLZ und Stadt' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlInputText2' />
+          <property name='value' value='#{Lf070_editstudent2defaultviewview.lf070_editstudent2.editStudent2.parameters.editStudent2._ADDRESSLINE2}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine3' />
+        <property name='label' value='E-Mail-Adresse' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlInputText3' />
+          <property name='value' value='#{Lf070_editstudent2defaultviewview.lf070_editstudent2.editStudent2.parameters.editStudent2._EMAIL}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine4' />
+        <property name='label' value='Telefonnummer' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlInputText4' />
+          <property name='value' value='#{Lf070_editstudent2defaultviewview.lf070_editstudent2.editStudent2.parameters.editStudent2._PHONE}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
+        <property name='action' value='#{Lf070_editstudent2defaultviewview.lf070_editstudent2.editStudent2.refresh}' />
+        <property name='id' value='button' />
+        <property name='value' value='&#196;nderungen speichern' />
+      </control>
+    </control>
+  </control>
+</view>

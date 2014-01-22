@@ -534,8 +534,9 @@
 			</preference>
 		</portlet-preferences>
 	</portlet>
+
 	<portlet>
-		<portlet-name>test</portlet-name>
+		<portlet-name>LF070_editStudent2</portlet-name>
 		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
 		<init-param>
 			<name>ANNOTATED_PORTLET_ACTIONS</name>
@@ -543,18 +544,23 @@
 		</init-param>
 		<init-param>
 			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
-			<value>/Test/default.view</value>
+			<value>/Lf070_editstudent2/default.view</value>
 		</init-param>
 		<supports>
 			<mime-type>text/html</mime-type>
 			<portlet-mode>view</portlet-mode>
 		</supports>
 		<supported-locale>en</supported-locale>
-		<resource-bundle>com.webmethods.caf.test.TestResources</resource-bundle>
+		<resource-bundle>com.webmethods.caf.lf070_editstudent2.LF070_editStudent2Resources</resource-bundle>
 		<portlet-info>
-			<title>test</title>
+			<title>LF070_editStudent2</title>
+			<short-title>editStudent2</short-title>
 		</portlet-info>
-	</portlet>
+		<portlet-preferences>
+			<preference>
+				<name>StudID</name>
+				<read-only>false</read-only>
+			</preference></portlet-preferences></portlet>
 	<user-attribute>
 		<name>user.default.time_zone</name>
 	</user-attribute>

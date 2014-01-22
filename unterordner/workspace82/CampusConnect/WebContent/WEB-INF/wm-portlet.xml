@@ -195,7 +195,8 @@
 				<hidden>true</hidden>
 				<required>false</required>
 				<type>String</type>
-			</preference></portlet-preferences>
+			</preference>
+		</portlet-preferences>
 	</wm-portlet>
 	<wm-portlet>
 		<portlet-name>LF020_deregisterExam</portlet-name>
@@ -261,7 +262,8 @@
 				<hidden>true</hidden>
 				<required>false</required>
 				<type>String</type>
-			</preference></portlet-preferences>
+			</preference>
+		</portlet-preferences>
 	</wm-portlet>
 	<wm-portlet>
 		<portlet-name>LF030_saveStudInfos</portlet-name>
@@ -361,7 +363,9 @@
 				<hidden>true</hidden>
 				<required>false</required>
 				<type>String</type>
-			</preference></portlet-preferences></wm-portlet>
+			</preference>
+		</portlet-preferences>
+	</wm-portlet>
 
 	<wm-portlet>
 		<portlet-name>LF110_searchCourse</portlet-name>
@@ -472,7 +476,9 @@
 				<hidden>true</hidden>
 				<required>false</required>
 				<type>String</type>
-			</preference></portlet-preferences></wm-portlet>
+			</preference>
+		</portlet-preferences>
+	</wm-portlet>
 	<wm-portlet>
 		<portlet-name>LF070_savePersonalDataStud</portlet-name>
 		<category>CampusConnect</category>
@@ -527,7 +533,9 @@
 				<hidden>true</hidden>
 				<required>false</required>
 				<type>String</type>
-			</preference></portlet-preferences></wm-portlet>
+			</preference>
+		</portlet-preferences>
+	</wm-portlet>
 	<wm-portlet>
 		<portlet-name>LF070_showPersonalDataProf</portlet-name>
 		<category>CampusConnect</category>
@@ -582,7 +590,9 @@
 				<hidden>true</hidden>
 				<required>false</required>
 				<type>String</type>
-			</preference></portlet-preferences></wm-portlet>
+			</preference>
+		</portlet-preferences>
+	</wm-portlet>
 	<wm-portlet>
 		<portlet-name>LF020_studExamList</portlet-name>
 		<category>CampusConnect</category>
@@ -739,7 +749,9 @@
 				<hidden>true</hidden>
 				<required>false</required>
 				<type>String</type>
-			</preference></portlet-preferences></wm-portlet>
+			</preference>
+		</portlet-preferences>
+	</wm-portlet>
 	<wm-portlet>
 		<portlet-name>LF090_showRegisteredStudentsExam</portlet-name>
 		<category>CampusConnect</category>
@@ -802,7 +814,9 @@
 				<hidden>true</hidden>
 				<required>false</required>
 				<type>String</type>
-			</preference></portlet-preferences></wm-portlet>
+			</preference>
+		</portlet-preferences>
+	</wm-portlet>
 	<wm-portlet>
 		<portlet-name>LF080_getSingleGrade</portlet-name>
 		<category>CampusConnect</category>
@@ -908,9 +922,62 @@
 				<hidden>true</hidden>
 				<required>false</required>
 				<type>String</type>
-			</preference></portlet-preferences></wm-portlet>
+			</preference>
+		</portlet-preferences>
+	</wm-portlet>
 	<wm-portlet>
-		<portlet-name>test</portlet-name>
+		<portlet-name>LF070_editStudent2</portlet-name>
 		<category>CampusConnect</category>
-	</wm-portlet></wm-portlet-app>
+		<portlet-preferences>
+			<preference>
+				<name>StudID</name>
+				<display-name>Stud ID</display-name>
+				<description></description>
+				<scope>content</scope>
+				<property-editor type="text">
+					<param>
+						<name>validationRegexp</name>
+						<value></value>
+					</param>
+					<param>
+						<name>validationRegexpMsg</name>
+						<value></value>
+					</param>
+					<param>
+						<name>onselect</name>
+						<value></value>
+					</param>
+					<param>
+						<name>style</name>
+						<value>5</value>
+					</param>
+					<param>
+						<name>onblur</name>
+						<value></value>
+					</param>
+					<param>
+						<name>onenter</name>
+						<value></value>
+					</param>
+					<param>
+						<name>onfocus</name>
+						<value></value>
+					</param>
+					<param>
+						<name>onkeypress</name>
+						<value></value>
+					</param>
+					<param>
+						<name>onchange</name>
+						<value></value>
+					</param>
+					<param>
+						<name>disabled</name>
+						<value>2</value>
+					</param>
+				</property-editor>
+				<hidden>true</hidden>
+				<required>false</required>
+				<type>String</type>
+			</preference></portlet-preferences></wm-portlet></wm-portlet-app>
 

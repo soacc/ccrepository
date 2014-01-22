@@ -10,13 +10,13 @@
     <property name='id' value='defaultForm' />
     <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
       <property name='id' value='propertyGroup' />
-      <property name='label' value='All Your Grades' />
+      <property name='label' value='Noten&#252;bersicht' />
       <control component-type='com.webmethods.caf.faces.table.AsyncTable' renderer-type='com.webmethods.caf.faces.table.AsyncTable'>
         <property name='footerClass' value='portlet-section-footer' />
         <property name='headerClass' value='portlet-section-subheader' />
         <property name='id' value='asyncTable' />
         <property name='rowClasses' value='portlet-section-body,portlet-section-alternate' />
-        <property name='rows' value='10' />
+        <property name='rows' value='20' />
         <property name='selectedRowClass' value='portlet-section-selected' />
         <property name='value' value='#{Lf080_getallgradesdefaultviewview.lf080_getallgrades.getAllGrades.result}' />
         <property name='var' value='result' />
@@ -41,7 +41,7 @@
             <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
               <property name='id' value='htmlOutputText3' />
               <property name='raw' value='true' />
-              <property name='value' value='Course Id' />
+              <property name='value' value='Kurs ID' />
             </control>
           </facet>
           <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
@@ -58,7 +58,7 @@
             <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
               <property name='id' value='htmlOutputText1' />
               <property name='raw' value='true' />
-              <property name='value' value='Course Name' />
+              <property name='value' value='Titel' />
             </control>
           </facet>
           <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
@@ -75,7 +75,7 @@
             <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
               <property name='id' value='htmlOutputText5' />
               <property name='raw' value='true' />
-              <property name='value' value='Grade' />
+              <property name='value' value='Note' />
             </control>
           </facet>
           <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>

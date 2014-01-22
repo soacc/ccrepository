@@ -325,6 +325,75 @@
 			<title>TwitterTimeline1</title>
 		</portlet-info>
 	</portlet>
+	<portlet>
+		<portlet-name>studentDashboard</portlet-name>
+		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
+		<init-param>
+			<name>ANNOTATED_PORTLET_ACTIONS</name>
+			<value>true</value>
+		</init-param>
+		<init-param>
+			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
+			<value>/StudentDashboard/default.view</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<supported-locale>en</supported-locale>
+		<resource-bundle>com.webmethods.caf.studentdashboard.StudentDashboardResources</resource-bundle>
+		<portlet-info>
+			<title>studentDashboard</title>
+		</portlet-info>
+	</portlet>
+	<portlet>
+		<portlet-name>getExamFromCourse</portlet-name>
+		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
+		<init-param>
+			<name>ANNOTATED_PORTLET_ACTIONS</name>
+			<value>true</value>
+		</init-param>
+		<init-param>
+			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
+			<value>/GetExamFromCourse/default.view</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<supported-locale>en</supported-locale>
+		<resource-bundle>com.webmethods.caf.getexamfromcourse.GetExamFromCourseResources</resource-bundle>
+		<portlet-info>
+			<title>getExamFromCourse</title>
+		</portlet-info>
+		<portlet-preferences>
+			<preference>
+				<name>CourseID</name>
+				<read-only>false</read-only>
+			</preference>
+		</portlet-preferences>
+	</portlet>
+	<portlet>
+		<portlet-name>navStudent</portlet-name>
+		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
+		<init-param>
+			<name>ANNOTATED_PORTLET_ACTIONS</name>
+			<value>true</value>
+		</init-param>
+		<init-param>
+			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
+			<value>/NavStudent/default.view</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<supported-locale>en</supported-locale>
+		<resource-bundle>com.webmethods.caf.navstudent.NavStudentResources</resource-bundle>
+		<portlet-info>
+			<title>navStudent</title>
+		</portlet-info>
+	</portlet>
 	<user-attribute>
 		<name>user.default.time_zone</name>
 	</user-attribute>

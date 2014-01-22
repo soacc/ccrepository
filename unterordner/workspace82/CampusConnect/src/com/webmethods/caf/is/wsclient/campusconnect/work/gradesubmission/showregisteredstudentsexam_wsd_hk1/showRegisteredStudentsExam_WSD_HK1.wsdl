@@ -21,6 +21,10 @@
           </xsd:complexType>
           <xsd:complexType name="student">
             <xsd:sequence>
+              <xsd:element name="_STUDENTID" nillable="true" type="xsd:string"/>
+              <xsd:element name="_FIRSTNAME" nillable="true" type="xsd:string"/>
+              <xsd:element name="_LASTNAME" nillable="true" type="xsd:string"/>
+              <xsd:element name="_REGISTEREDDATE" nillable="true" type="xsd:string"/>
             </xsd:sequence>
           </xsd:complexType>
         	</xsd:schema>

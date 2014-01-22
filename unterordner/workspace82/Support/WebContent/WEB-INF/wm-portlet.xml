@@ -72,5 +72,27 @@
 	<wm-portlet>
 		<portlet-name>TwitterTimeline1</portlet-name>
 		<category>Support</category>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>studentDashboard</portlet-name>
+		<category>Support</category>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>getExamFromCourse</portlet-name>
+		<category>Support</category>
+		<portlet-preferences>
+			<preference>
+				<name>CourseID</name>
+				<display-name>Course ID</display-name>
+				<description></description>
+				<scope>content</scope>
+				<property-editor type="text"></property-editor>
+				<hidden>true</hidden>
+				<required>false</required>
+				<type>String</type>
+			</preference></portlet-preferences></wm-portlet>
+	<wm-portlet>
+		<portlet-name>navStudent</portlet-name>
+		<category>Support</category>
 	</wm-portlet></wm-portlet-app>
 

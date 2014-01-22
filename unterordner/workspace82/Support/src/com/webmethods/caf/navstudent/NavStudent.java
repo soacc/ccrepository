@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.webmethods.caf.test;
+package com.webmethods.caf.navstudent;
 
 /**
  * @author wir09cdz
@@ -10,15 +10,15 @@ package com.webmethods.caf.test;
 
 import javax.portlet.PortletPreferences;
 
-public class Test  extends   com.webmethods.caf.faces.bean.BaseFacesPreferencesBean {
+public class NavStudent  extends   com.webmethods.caf.faces.bean.BaseFacesPreferencesBean {
 
 	public static final String[] PREFERENCES_NAMES = new String[] {};
-	private com.webmethods.caf.CampusConnect campusConnect = null;
+	private com.webmethods.caf.Support support = null;
 	
 	/**
 	 * Create new preferences bean with list of preference names
 	 */
-	public Test() {
+	public NavStudent() {
 		super(PREFERENCES_NAMES);
 	}
 	
@@ -32,10 +32,10 @@ public class Test  extends   com.webmethods.caf.faces.bean.BaseFacesPreferencesB
 		preferences.store();
 	}
 
-	public com.webmethods.caf.CampusConnect getCampusConnect()  {
-		if (campusConnect == null) {
-		    campusConnect = (com.webmethods.caf.CampusConnect)resolveExpression("#{CampusConnect}");
+	public com.webmethods.caf.Support getSupport()  {
+		if (support == null) {
+		    support = (com.webmethods.caf.Support)resolveExpression("#{Support}");
 		}
-		return campusConnect;
+		return support;
 	}
 }

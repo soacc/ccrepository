@@ -26,6 +26,12 @@ public class CourseDetails  extends   com.webmethods.caf.faces.bean.BaseFacesPre
 		{"#{getCourseDetails.autoRefresh}", "true"},
 		{"#{getCourseDetails.parameters.getCourseDetails.id}", "#{CourseDetailsDefaultviewView.courseDetails.courseID}"},
 	};
+	private static final String[][] GETEXAMFROMCOURSE_PROPERTY_BINDINGS = new String[][] {
+		{"#{getExamFromCourse.authCredentials.authenticationMethod}", "1"},
+		{"#{getExamFromCourse.authCredentials.requiresAuth}", "true"},
+		{"#{getExamFromCourse.autoRefresh}", "true"},
+		{"#{getExamFromCourse.parameters.getExamFromCourse.courseId}", "#{CourseDetailsDefaultviewView.courseDetails.courseID}"},
+	};
 	/**
 	 * Create new preferences bean with list of preference names
 	 */

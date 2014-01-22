@@ -1,14 +1,14 @@
 /**
  * 
  */
-package com.webmethods.caf.test;
+package com.webmethods.caf.navstudent;
 
 /**
  * @author wir09cdz
  *
  */
 
-public class TestDefaultviewView  extends   com.webmethods.caf.faces.bean.BasePageBean {
+public class NavStudentDefaultviewView  extends   com.webmethods.caf.faces.bean.BasePageBean {
 
 	/**
 	 * Determines if a de-serialized file is compatible with this class.
@@ -21,7 +21,7 @@ public class TestDefaultviewView  extends   com.webmethods.caf.faces.bean.BasePa
 	private static final long serialVersionUID = 1L;
 	private static final String[][] INITIALIZE_PROPERTY_BINDINGS = new String[][] {
 	};
-	private com.webmethods.caf.test.Test test = null;
+	private com.webmethods.caf.navstudent.NavStudent navStudent = null;
 
 	/**
 	 * Initialize page
@@ -38,11 +38,11 @@ public class TestDefaultviewView  extends   com.webmethods.caf.faces.bean.BasePa
 		}	
 	}
 
-	public com.webmethods.caf.test.Test getTest()  {
-		if (test == null) {
-		    test = (com.webmethods.caf.test.Test)resolveExpression("#{Test}");
+	public com.webmethods.caf.navstudent.NavStudent getNavStudent()  {
+		if (navStudent == null) {
+		    navStudent = (com.webmethods.caf.navstudent.NavStudent)resolveExpression("#{NavStudent}");
 		}
-		return test;
+		return navStudent;
 	}
 	
 }

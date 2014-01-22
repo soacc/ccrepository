@@ -26,6 +26,11 @@ public class Lf070_savepersonaldatastud  extends   com.webmethods.caf.faces.bean
 		{"#{savePersonalDataStud2.autoRefresh}", "true"},
 		{"#{savePersonalDataStud2.parameters.savePersonalDataStud.studInfo.studId}", "#{Lf070_savepersonaldatastuddefaultviewview.lf070_savepersonaldatastud.studID}"},
 	};
+	private static final String[][] EDITSTUDENT22_PROPERTY_BINDINGS = new String[][] {
+		{"#{EditStudent22.authCredentials.authenticationMethod}", "1"},
+		{"#{EditStudent22.authCredentials.requiresAuth}", "true"},
+		{"#{EditStudent22.autoRefresh}", "true"},
+	};
 	/**
 	 * Create new preferences bean with list of preference names
 	 */
