@@ -10,11 +10,11 @@
     <property name='id' value='defaultForm' />
     <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
       <property name='id' value='propertyGroup' />
-      <property name='label' value='Course Deregistration' />
+      <property name='label' value='Kursabmeldung' />
       <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
         <property name='action' value='#{Lf010_deregistercoursesdefaultviewview.deregisterCourses.refresh}' />
         <property name='id' value='button' />
-        <property name='value' value='Deregister' />
+        <property name='value' value='Abmelden' />
       </control>
       <control component-type='com.webmethods.caf.faces.table.AsyncTable' renderer-type='com.webmethods.caf.faces.table.AsyncTable'>
         <property name='footerClass' value='portlet-section-footer' />
@@ -30,7 +30,7 @@
           <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
             <property name='id' value='htmlOutputText' />
             <property name='raw' value='true' />
-            <property name='value' value='Deregistered for:' />
+            <property name='value' value='Abmeldung erfolgreich f&#252;r:' />
           </control>
         </facet>
         <facet name='footer'>
@@ -53,7 +53,7 @@
             <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
               <property name='id' value='htmlOutputText1' />
               <property name='raw' value='true' />
-              <property name='value' value='Course Id' />
+              <property name='value' value='Kurs ID' />
             </control>
           </facet>
           <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
@@ -70,7 +70,7 @@
             <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
               <property name='id' value='htmlOutputText3' />
               <property name='raw' value='true' />
-              <property name='value' value='Course Name' />
+              <property name='value' value='Titel' />
             </control>
           </facet>
           <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>

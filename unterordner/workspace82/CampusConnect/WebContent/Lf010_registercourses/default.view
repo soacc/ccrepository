@@ -10,11 +10,11 @@
     <property name='id' value='defaultForm' />
     <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
       <property name='id' value='propertyGroup' />
-      <property name='label' value='Course Registration' />
+      <property name='label' value='Ausgew&#228;hlten Kurs anmelden' />
       <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
         <property name='action' value='#{Lf010_registercoursesdefaultviewview.registerCourses.refresh}' />
         <property name='id' value='button' />
-        <property name='value' value='Register' />
+        <property name='value' value='Anmelden' />
       </control>
       <control component-type='com.webmethods.caf.faces.table.AsyncTable' renderer-type='com.webmethods.caf.faces.table.AsyncTable'>
         <property name='footerClass' value='portlet-section-footer' />
@@ -30,7 +30,7 @@
           <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
             <property name='id' value='htmlOutputText' />
             <property name='raw' value='true' />
-            <property name='value' value='Registered for:' />
+            <property name='value' value='Anmeldung erfolgreich f&#252;r:' />
           </control>
         </facet>
         <facet name='footer'>
@@ -53,7 +53,7 @@
             <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
               <property name='id' value='htmlOutputText1' />
               <property name='raw' value='true' />
-              <property name='value' value='Course Id' />
+              <property name='value' value='Kurs ID' />
             </control>
           </facet>
           <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
@@ -70,7 +70,7 @@
             <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
               <property name='id' value='htmlOutputText3' />
               <property name='raw' value='true' />
-              <property name='value' value='Course Name' />
+              <property name='value' value='Titel' />
             </control>
           </facet>
           <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
@@ -78,17 +78,6 @@
             <property name='raw' value='true' />
             <property name='value' value='#{result.courseName}' />
           </control>
-        </control>
-      </control>
-      <control component-type='com.webmethods.caf.faces.panel.PopupPanel' renderer-type='com.webmethods.caf.faces.panel.PopupPanel'>
-        <property name='closeOnClick' value='true' />
-        <property name='for' value='defaultForm:button' />
-        <property name='id' value='popupPanel1' />
-        <property name='styleClass' value='portlet-menu' />
-        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
-          <property name='id' value='htmlOutputText' />
-          <property name='raw' value='true' />
-          <property name='value' value='You may also want to register Exam' />
         </control>
       </control>
     </control>

@@ -19,8 +19,8 @@
     <property name='label' value='2.' />
     <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
       <property name='id' value='htmlOutputLink' />
-      <property name='label' value='Course Registration' />
-      <property name='value' value='http://sagbase:8585/meta/default/folder/0000009091' />
+      <property name='label' value='Kursanmeldung' />
+      <property name='value' value='http://sagbase:8585/meta/default/folder/0000010653' />
     </control>
   </control>
   <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
@@ -28,8 +28,8 @@
     <property name='label' value='3.' />
     <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
       <property name='id' value='htmlOutputLink21' />
-      <property name='label' value='Course Deregistration' />
-      <property name='value' value='http://sagbase:8585/meta/default/folder/0000009135' />
+      <property name='label' value='Angemeldete Kurse' />
+      <property name='value' value='http://sagbase:8585/meta/default/folder/0000010669' />
     </control>
   </control>
   <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>

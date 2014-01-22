@@ -10,10 +10,10 @@
     <property name='id' value='defaultForm' />
     <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
       <property name='id' value='propertyGroup4' />
-      <property name='label' value='Selected Course' />
+      <property name='label' value='Ausgew&#228;hlter Kurs' />
       <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
         <property name='id' value='propertyLine4' />
-        <property name='label' value='Coursename' />
+        <property name='label' value='Titel' />
         <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
           <property name='id' value='htmlOutputText3' />
           <property name='raw' value='true' />
@@ -22,16 +22,16 @@
       </control>
       <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
         <property name='id' value='propertyLine5' />
-        <property name='label' value='Term' />
+        <property name='label' value='Dozent' />
         <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
           <property name='id' value='htmlOutputText4' />
           <property name='raw' value='true' />
-          <property name='value' value='#{CourseDetailsDefaultviewView.courseDetails.getCourseDetails.result.course._TERM}' />
+          <property name='value' value='#{CourseDetailsDefaultviewView.courseDetails.getCourseDetails.result.course._PROFESSORID}' />
         </control>
       </control>
       <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
         <property name='id' value='propertyLine6' />
-        <property name='label' value='Space' />
+        <property name='label' value='Belegungsinfo' />
         <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
           <converter converter-id='javax.faces.BigDecimal'>
           </converter>
@@ -54,7 +54,7 @@
       </control>
       <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
         <property name='id' value='propertyLine7' />
-        <property name='label' value='Day' />
+        <property name='label' value='Wochtentag' />
         <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
           <property name='id' value='htmlOutputText6' />
           <property name='raw' value='true' />
@@ -63,7 +63,7 @@
       </control>
       <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
         <property name='id' value='propertyLine8' />
-        <property name='label' value='Time' />
+        <property name='label' value='Uhrzeit' />
         <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
           <property name='id' value='htmlOutputText7' />
           <property name='raw' value='true' />

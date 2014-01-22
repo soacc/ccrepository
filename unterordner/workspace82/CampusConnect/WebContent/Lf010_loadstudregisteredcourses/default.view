@@ -10,17 +10,24 @@
     <property name='id' value='defaultForm' />
     <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
       <property name='id' value='propertyGroup' />
-      <property name='label' value='Registered Courses' />
+      <property name='label' value='Angemeldete Kurse' />
       <control component-type='com.webmethods.caf.faces.table.AsyncTable' renderer-type='com.webmethods.caf.faces.table.AsyncTable'>
         <property name='footerClass' value='portlet-section-footer' />
         <property name='headerClass' value='portlet-section-subheader' />
         <property name='id' value='asyncTable' />
         <property name='rowClasses' value='portlet-section-body,portlet-section-alternate' />
-        <property name='rows' value='10' />
+        <property name='rows' value='20' />
         <property name='selectedRowClass' value='portlet-section-selected' />
         <property name='value' value='#{Lf010_loadstudregisteredcoursesdefaultviewview.lf010_loadstudregisteredcourses.loadStudRegisteredCourses.result.outCourses}' />
         <property name='var' value='outCourse' />
         <property name='width' value='100%' />
+        <facet name='header'>
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText' />
+            <property name='raw' value='true' />
+            <property name='value' value='Kurs ausw&#228;hlen durch Anklicken' />
+          </control>
+        </facet>
         <facet name='footer'>
           <control component-type='com.webmethods.caf.faces.table.PrevNext' renderer-type='com.webmethods.caf.faces.table.PrevNext'>
             <property name='id' value='prevNext' />
@@ -41,7 +48,7 @@
             <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
               <property name='id' value='htmlOutputText23' />
               <property name='raw' value='true' />
-              <property name='value' value='Course ID' />
+              <property name='value' value='Kurs ID' />
             </control>
           </facet>
           <control component-type='javax.faces.HtmlCommandLink' renderer-type='javax.faces.Link'>
@@ -58,12 +65,12 @@
             <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
               <property name='id' value='htmlOutputText7' />
               <property name='raw' value='true' />
-              <property name='value' value='Title' />
+              <property name='value' value='Titel' />
             </control>
           </facet>
-          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <control component-type='com.webmethods.caf.faces.command.async.Link' renderer-type='com.webmethods.caf.faces.command.async.Link'>
+            <property name='action' value='#{Lf010_loadstudregisteredcoursesdefaultviewview.lf010_loadstudregisteredcourses.courseIDSet}' />
             <property name='id' value='htmlOutputText8' />
-            <property name='raw' value='true' />
             <property name='value' value='#{outCourse._COURSENAME}' />
           </control>
         </control>
@@ -71,7 +78,7 @@
       <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
         <property name='action' value='#{Lf010_loadstudregisteredcoursesdefaultviewview.lf010_loadstudregisteredcourses.loadStudRegisteredCourses.refresh}' />
         <property name='id' value='button' />
-        <property name='value' value='Refreshh' />
+        <property name='value' value='Aktualisieren' />
       </control>
     </control>
   </control>
