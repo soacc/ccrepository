@@ -1,14 +1,14 @@
 /**
  * 
  */
-package com.webmethods.caf.lf030_showenrolledstuds;
+package com.webmethods.caf.professordashboard;
 
 /**
  * @author wir09cdz
  *
  */
 
-public class Lf030_showenrolledstudsdefaultviewview  extends   com.webmethods.caf.faces.bean.BasePageBean {
+public class ProfessorDashboardDefaultviewView  extends   com.webmethods.caf.faces.bean.BasePageBean {
 
 	/**
 	 * Determines if a de-serialized file is compatible with this class.
@@ -21,7 +21,7 @@ public class Lf030_showenrolledstudsdefaultviewview  extends   com.webmethods.ca
 	private static final long serialVersionUID = 1L;
 	private static final String[][] INITIALIZE_PROPERTY_BINDINGS = new String[][] {
 	};
-	private com.webmethods.caf.lf030_showenrolledstuds.Lf030_showenrolledstuds lf030_showenrolledstuds = null;
+	private com.webmethods.caf.professordashboard.ProfessorDashboard professorDashboard = null;
 
 	/**
 	 * Initialize page
@@ -38,11 +38,11 @@ public class Lf030_showenrolledstudsdefaultviewview  extends   com.webmethods.ca
 		}	
 	}
 
-	public com.webmethods.caf.lf030_showenrolledstuds.Lf030_showenrolledstuds getLf030_showenrolledstuds()  {
-		if (lf030_showenrolledstuds == null) {
-		    lf030_showenrolledstuds = (com.webmethods.caf.lf030_showenrolledstuds.Lf030_showenrolledstuds)resolveExpression("#{Lf030_showenrolledstuds}");
+	public com.webmethods.caf.professordashboard.ProfessorDashboard getProfessorDashboard()  {
+		if (professorDashboard == null) {
+		    professorDashboard = (com.webmethods.caf.professordashboard.ProfessorDashboard)resolveExpression("#{ProfessorDashboard}");
 		}
-		return lf030_showenrolledstuds;
+		return professorDashboard;
 	}
 	
 }

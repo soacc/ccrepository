@@ -1,77 +1,11 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <view>
-  <property name='pageManagedBean' value='Lf090_showregisteredstudentsexamdefaultviewview' />
-  <property name='preferencesBean' value='Lf090_showregisteredstudentsexam' />
-  <design-time-attribute name='portlet' value='LF090_showRegisteredStudentsExam' />
-  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
-  </control>
-  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
-    <property name='defaultFocus' value='_first' />
-    <property name='id' value='defaultForm' />
-    <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
-      <property name='id' value='propertyGroup' />
-      <property name='label' value='Show Registered Students Exam' />
-      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
-        <property name='id' value='propertyLine' />
-        <property name='label' value='Exam Id' />
-        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
-          <property name='id' value='htmlInputText' />
-          <property name='value' value='#{Lf090_showregisteredstudentsexamdefaultviewview.lf090_showregisteredstudentsexam.showRegisteredStudentsExam.parameters.showRegisteredStudentsExam.examId}' />
-          <property name='width' value='input20' />
-        </control>
-      </control>
-      <control component-type='com.webmethods.caf.faces.table.AsyncTable' renderer-type='com.webmethods.caf.faces.table.AsyncTable'>
-        <property name='footerClass' value='portlet-section-footer' />
-        <property name='headerClass' value='portlet-section-subheader' />
-        <property name='id' value='asyncTable' />
-        <property name='rowClasses' value='portlet-section-body,portlet-section-alternate' />
-        <property name='rows' value='10' />
-        <property name='selectedRowClass' value='portlet-section-selected' />
-        <property name='value' value='#{Lf090_showregisteredstudentsexamdefaultviewview.lf090_showregisteredstudentsexam.showRegisteredStudentsExam.result.students}' />
-        <property name='var' value='student' />
-        <property name='width' value='100%' />
-        <facet name='header'>
-          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
-            <property name='id' value='htmlOutputText' />
-            <property name='raw' value='true' />
-            <property name='value' value='Students' />
-          </control>
-        </facet>
-        <facet name='footer'>
-          <control component-type='com.webmethods.caf.faces.table.PrevNext' renderer-type='com.webmethods.caf.faces.table.PrevNext'>
-            <property name='id' value='prevNext' />
-            <control component-type='javax.faces.HtmlPanelGroup' renderer-type='com.webmethods.caf.faces.panel.BlockPanel'>
-              <property name='id' value='blockPanel' />
-              <property name='style' value='text-align:center;' />
-              <control component-type='com.webmethods.caf.faces.table.DataTotal' renderer-type='com.webmethods.caf.faces.table.DataTotal'>
-                <property name='id' value='dataTotal' />
-              </control>
-            </control>
-          </control>
-        </facet>
-        <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
-          <property name='id' value='htmlTableColumn' />
-          <property name='label' value='Students[i]' />
-          <property name='sort' value='#{student}' />
-          <facet name='header'>
-            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
-              <property name='id' value='htmlOutputText1' />
-              <property name='raw' value='true' />
-              <property name='value' value='Students[i]' />
-            </control>
-          </facet>
-          <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
-            <property name='id' value='htmlInputText' />
-            <property name='value' value='#{student}' />
-            <property name='width' value='input20' />
-          </control>
-        </control>
-      </control>
-      <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
-        <property name='action' value='#{Lf090_showregisteredstudentsexamdefaultviewview.lf090_showregisteredstudentsexam.showRegisteredStudentsExam.refresh}' />
-        <property name='id' value='button' />
-        <property name='value' value='Refresh' />
-      </control>
-    </control>
-  </control>
+    <property name="pageManagedBean" value="Lf090_showregisteredstudentsexamdefaultviewview" />
+    <property name="preferencesBean" value="Lf090_showregisteredstudentsexam" />
+    <design-time-attribute name="portlet" value="LF090_showRegisteredStudentsExam" />
+    <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'></control>
+	<control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    	<property name='id' value='defaultForm' />
+    	<property name='defaultFocus' value='_first' />
+  	</control>
 </view>

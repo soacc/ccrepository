@@ -90,9 +90,16 @@
 				<hidden>true</hidden>
 				<required>false</required>
 				<type>String</type>
-			</preference></portlet-preferences></wm-portlet>
+			</preference>
+		</portlet-preferences>
+	</wm-portlet>
 	<wm-portlet>
 		<portlet-name>navStudent</portlet-name>
 		<category>Support</category>
-	</wm-portlet></wm-portlet-app>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>professorDashboard</portlet-name>
+		<category>Support</category>
+	</wm-portlet>
+</wm-portlet-app>
 

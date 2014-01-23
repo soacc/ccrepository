@@ -22,18 +22,7 @@ public class Lf090_submitgradedefaultviewview  extends   com.webmethods.caf.face
 	private static final String[][] INITIALIZE_PROPERTY_BINDINGS = new String[][] {
 	};
 	private com.webmethods.caf.lf090_submitgrade.Lf090_submitgrade lf090_submitgrade = null;
-	private com.webmethods.caf.is.wsclient.campusconnect.work.gradesubmission.submitgrade_wsd_hk1.SubmitGrade submitGrade = null;
-	private com.webmethods.caf.faces.data.object.ListTableContentProvider submitGradeProvider = null;
-	private static final String[][] SUBMITGRADEPROVIDER_PROPERTY_BINDINGS = new String[][] {
-		{"#{SubmitGradeProvider.rowType}", "com.webmethods.caf.is.wsclient.campusconnect.work.gradesubmission.submitgrade_wsd_hk1.StudentsGrade"},
-		{"#{SubmitGradeProvider.rowVariable}", "submitGrade"},
-	};
-	private static final String[][] SUBMITGRADE_PROPERTY_BINDINGS = new String[][] {
-		{"#{submitGrade.authCredentials.authenticationMethod}", "1"},
-		{"#{submitGrade.authCredentials.requiresAuth}", "true"},
-		{"#{submitGrade.autoRefresh}", "false"},
-		{"#{submitGrade.parameters.submitGrade}", "#{Lf090_submitgradedefaultviewview.submitGradeProvider.array}"},
-	};
+
 	/**
 	 * Initialize page
 	 */
@@ -54,24 +43,6 @@ public class Lf090_submitgradedefaultviewview  extends   com.webmethods.caf.face
 		    lf090_submitgrade = (com.webmethods.caf.lf090_submitgrade.Lf090_submitgrade)resolveExpression("#{Lf090_submitgrade}");
 		}
 		return lf090_submitgrade;
-	}
-
-	public com.webmethods.caf.is.wsclient.campusconnect.work.gradesubmission.submitgrade_wsd_hk1.SubmitGrade getSubmitGrade()  {
-		if (submitGrade == null) {
-		    submitGrade = (com.webmethods.caf.is.wsclient.campusconnect.work.gradesubmission.submitgrade_wsd_hk1.SubmitGrade)resolveExpression("#{SubmitGrade}");
-		}
-	
-	    resolveDataBinding(SUBMITGRADE_PROPERTY_BINDINGS, submitGrade, "submitGrade", false, false);
-		return submitGrade;
-	}
-
-	public com.webmethods.caf.faces.data.object.ListTableContentProvider getSubmitGradeProvider()  {
-		if (submitGradeProvider == null) {
-		    submitGradeProvider = (com.webmethods.caf.faces.data.object.ListTableContentProvider)resolveExpression("#{SubmitGradeProvider}");
-		}
-	
-	    resolveDataBinding(SUBMITGRADEPROVIDER_PROPERTY_BINDINGS, submitGradeProvider, "submitGradeProvider", false, false);
-		return submitGradeProvider;
 	}
 	
 }

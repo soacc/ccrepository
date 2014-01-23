@@ -297,10 +297,7 @@
 			</preference>
 		</portlet-preferences>
 	</wm-portlet>
-	<wm-portlet>
-		<portlet-name>LF030_showEnrolledStuds</portlet-name>
-		<category>CampusConnect</category>
-	</wm-portlet>
+
 
 
 
@@ -752,14 +749,8 @@
 			</preference>
 		</portlet-preferences>
 	</wm-portlet>
-	<wm-portlet>
-		<portlet-name>LF090_showRegisteredStudentsExam</portlet-name>
-		<category>CampusConnect</category>
-	</wm-portlet>
-	<wm-portlet>
-		<portlet-name>LF090_submitGrade</portlet-name>
-		<category>CampusConnect</category>
-	</wm-portlet>
+
+
 	<wm-portlet>
 		<portlet-name>LF080_getAllGrades</portlet-name>
 		<category>CampusConnect</category>
@@ -979,5 +970,15 @@
 				<hidden>true</hidden>
 				<required>false</required>
 				<type>String</type>
-			</preference></portlet-preferences></wm-portlet></wm-portlet-app>
+			</preference>
+		</portlet-preferences>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>LF090_showRegisteredStudentsExam</portlet-name>
+		<category>CampusConnect</category>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>LF090_submitGrade</portlet-name>
+		<category>CampusConnect</category>
+	</wm-portlet></wm-portlet-app>
 

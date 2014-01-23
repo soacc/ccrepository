@@ -394,6 +394,28 @@
 			<title>navStudent</title>
 		</portlet-info>
 	</portlet>
+	<portlet>
+		<portlet-name>professorDashboard</portlet-name>
+		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
+		<init-param>
+			<name>ANNOTATED_PORTLET_ACTIONS</name>
+			<value>true</value>
+		</init-param>
+		<init-param>
+			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
+			<value>/ProfessorDashboard/default.view</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<supported-locale>en</supported-locale>
+		<resource-bundle>com.webmethods.caf.professordashboard.ProfessorDashboardResources</resource-bundle>
+		<portlet-info>
+			<title>professorDashboard</title>
+		</portlet-info>
+	</portlet>
+
 	<user-attribute>
 		<name>user.default.time_zone</name>
 	</user-attribute>

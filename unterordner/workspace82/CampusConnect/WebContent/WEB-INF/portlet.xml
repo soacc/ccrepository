@@ -222,28 +222,7 @@
 			</preference>
 		</portlet-preferences>
 	</portlet>
-	<portlet>
-		<portlet-name>LF030_showEnrolledStuds</portlet-name>
-		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
-		<init-param>
-			<name>ANNOTATED_PORTLET_ACTIONS</name>
-			<value>true</value>
-		</init-param>
-		<init-param>
-			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
-			<value>/Lf030_showenrolledstuds/default.view</value>
-		</init-param>
-		<supports>
-			<mime-type>text/html</mime-type>
-			<portlet-mode>view</portlet-mode>
-		</supports>
-		<supported-locale>en</supported-locale>
-		<resource-bundle>com.webmethods.caf.lf030_showenrolledstuds.LF030_showEnrolledStudsResources</resource-bundle>
-		<portlet-info>
-			<title>LF030_showEnrolledStuds</title>
-			<short-title>showEnrolledStuds</short-title>
-		</portlet-info>
-	</portlet>
+
 
 
 
@@ -430,50 +409,8 @@
 			</preference>
 		</portlet-preferences>
 	</portlet>
-	<portlet>
-		<portlet-name>LF090_showRegisteredStudentsExam</portlet-name>
-		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
-		<init-param>
-			<name>ANNOTATED_PORTLET_ACTIONS</name>
-			<value>true</value>
-		</init-param>
-		<init-param>
-			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
-			<value>/Lf090_showregisteredstudentsexam/default.view</value>
-		</init-param>
-		<supports>
-			<mime-type>text/html</mime-type>
-			<portlet-mode>view</portlet-mode>
-		</supports>
-		<supported-locale>en</supported-locale>
-		<resource-bundle>com.webmethods.caf.lf090_showregisteredstudentsexam.LF090_showRegisteredStudentsExamResources</resource-bundle>
-		<portlet-info>
-			<title>LF090_showRegisteredStudentsExam</title>
-			<short-title>showRegisteredStudentsExam</short-title>
-		</portlet-info>
-	</portlet>
-	<portlet>
-		<portlet-name>LF090_submitGrade</portlet-name>
-		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
-		<init-param>
-			<name>ANNOTATED_PORTLET_ACTIONS</name>
-			<value>true</value>
-		</init-param>
-		<init-param>
-			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
-			<value>/Lf090_submitgrade/default.view</value>
-		</init-param>
-		<supports>
-			<mime-type>text/html</mime-type>
-			<portlet-mode>view</portlet-mode>
-		</supports>
-		<supported-locale>en</supported-locale>
-		<resource-bundle>com.webmethods.caf.lf090_submitgrade.LF090_submitGradeResources</resource-bundle>
-		<portlet-info>
-			<title>LF090_submitGrade</title>
-			<short-title>submitGrade</short-title>
-		</portlet-info>
-	</portlet>
+
+
 	<portlet>
 		<portlet-name>LF080_getAllGrades</portlet-name>
 		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
@@ -560,7 +497,53 @@
 			<preference>
 				<name>StudID</name>
 				<read-only>false</read-only>
-			</preference></portlet-preferences></portlet>
+			</preference>
+		</portlet-preferences>
+	</portlet>
+	<portlet>
+		<portlet-name>LF090_showRegisteredStudentsExam</portlet-name>
+		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
+		<init-param>
+			<name>ANNOTATED_PORTLET_ACTIONS</name>
+			<value>true</value>
+		</init-param>
+		<init-param>
+			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
+			<value>/Lf090_showregisteredstudentsexam/default.view</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<supported-locale>en</supported-locale>
+		<resource-bundle>com.webmethods.caf.lf090_showregisteredstudentsexam.LF090_showRegisteredStudentsExamResources</resource-bundle>
+		<portlet-info>
+			<title>LF090_showRegisteredStudentsExam</title>
+			<short-title>showRegisteredStudentsExam</short-title>
+		</portlet-info>
+	</portlet>
+	<portlet>
+		<portlet-name>LF090_submitGrade</portlet-name>
+		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
+		<init-param>
+			<name>ANNOTATED_PORTLET_ACTIONS</name>
+			<value>true</value>
+		</init-param>
+		<init-param>
+			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
+			<value>/Lf090_submitgrade/default.view</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<supported-locale>en</supported-locale>
+		<resource-bundle>com.webmethods.caf.lf090_submitgrade.LF090_submitGradeResources</resource-bundle>
+		<portlet-info>
+			<title>LF090_submitGrade</title>
+			<short-title>submitGrade</short-title>
+		</portlet-info>
+	</portlet>
 	<user-attribute>
 		<name>user.default.time_zone</name>
 	</user-attribute>

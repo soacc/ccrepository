@@ -779,4 +779,42 @@
 			<from-outcome>default</from-outcome>
 			<to-view-id>/NavStudent/default.view</to-view-id>
 		</navigation-case>
-	</navigation-rule></faces-config>
+	</navigation-rule>
+	<managed-bean>
+		<description>portletbean</description>
+		<display-name>professorDashboard</display-name>
+		<managed-bean-name>ProfessorDashboard</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.professordashboard.ProfessorDashboard</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<description>pagebean</description>
+		<display-name>ProfessorDashboard/default</display-name>
+		<managed-bean-name>ProfessorDashboardDefaultviewView</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.professordashboard.ProfessorDashboardDefaultviewView</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<navigation-rule>
+		<from-view-id>/ProfessorDashboard/*</from-view-id>
+		<navigation-case>
+			<from-outcome>default</from-outcome>
+			<to-view-id>/ProfessorDashboard/default.view</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+
+</faces-config>
