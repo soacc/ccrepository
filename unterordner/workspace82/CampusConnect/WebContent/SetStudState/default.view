@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='SetStudStateDefaultviewView' />
+  <property name='preferencesBean' value='SetStudState' />
+  <design-time-attribute name='portlet' value='setStudState' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+      <property name='id' value='propertyGroup' />
+      <property name='label' value='Immatrikulationsstatus &#228;ndern' />
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine' />
+        <property name='label' value='Studenten ID' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <converter converter-id='javax.faces.BigDecimal'>
+          </converter>
+          <property name='id' value='htmlInputText' />
+          <property name='value' value='#{SetStudStateDefaultviewView.setStudState.setStudState2.parameters.setStudState.studId}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine1' />
+        <property name='label' value='Status' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <converter converter-id='javax.faces.BigDecimal'>
+          </converter>
+          <property name='id' value='htmlInputText1' />
+          <property name='value' value='#{SetStudStateDefaultviewView.setStudState.setStudState2.parameters.setStudState.activeStatus}' />
+          <property name='width' value='input20' />
+        </control>
+        <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
+          <property name='action' value='#{SetStudStateDefaultviewView.setStudState.setStudState2.refresh}' />
+          <property name='id' value='button' />
+          <property name='value' value='Best&#228;tigen' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine2' />
+        <property name='label' value='Ergebnis der Anfrage' />
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText' />
+          <property name='raw' value='true' />
+          <property name='value' value='#{SetStudStateDefaultviewView.setStudState.setStudState2.result.outputMessage}' />
+        </control>
+      </control>
+    </control>
+  </control>
+</view>

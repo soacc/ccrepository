@@ -67,7 +67,7 @@
       </control>
       <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
         <property name='id' value='propertyLine3' />
-        <property name='label' value='_ADDRESSLINE1' />
+        <property name='label' value='Stra&#223;e und Nummer' />
         <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
           <property name='id' value='htmlOutputText2' />
           <property name='raw' value='true' />

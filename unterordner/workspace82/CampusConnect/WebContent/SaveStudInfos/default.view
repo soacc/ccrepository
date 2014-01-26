@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='SaveStudInfosDefaultviewView' />
+  <property name='preferencesBean' value='SaveStudInfos' />
+  <design-time-attribute name='portlet' value='saveStudInfos' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+      <property name='id' value='propertyGroup' />
+      <property name='label' value='Immatrikulations&#252;bersicht' />
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine' />
+        <property name='label' value='Vorname' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlInputText' />
+          <property name='value' value='#{SaveStudInfosDefaultviewView.saveStudInfos.saveStudInfos3.parameters.saveStudInfos.studDetails._FIRSTNAME}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine1' />
+        <property name='label' value='Nachname' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlInputText1' />
+          <property name='value' value='#{SaveStudInfosDefaultviewView.saveStudInfos.saveStudInfos3.parameters.saveStudInfos.studDetails._LASTNAME}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine2' />
+        <property name='label' value='Stra&#223;e und Nummer' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlInputText2' />
+          <property name='value' value='#{SaveStudInfosDefaultviewView.saveStudInfos.saveStudInfos3.parameters.saveStudInfos.studDetails._ADDRESSLINE1}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine3' />
+        <property name='label' value='PLZ und Stadt' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlInputText3' />
+          <property name='value' value='#{SaveStudInfosDefaultviewView.saveStudInfos.saveStudInfos3.parameters.saveStudInfos.studDetails._ADDRESSLINE2}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine4' />
+        <property name='label' value='Studiengang' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlInputText4' />
+          <property name='value' value='#{SaveStudInfosDefaultviewView.saveStudInfos.saveStudInfos3.parameters.saveStudInfos.studDetails._DEGREEPROGRAM}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine5' />
+        <property name='label' value='Geburtsdatum' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlInputText5' />
+          <property name='value' value='#{SaveStudInfosDefaultviewView.saveStudInfos.saveStudInfos3.parameters.saveStudInfos.studDetails._DOB}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine6' />
+        <property name='label' value='E-Mail-Addresse' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlInputText6' />
+          <property name='value' value='#{SaveStudInfosDefaultviewView.saveStudInfos.saveStudInfos3.parameters.saveStudInfos.studDetails._EMAIL}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine7' />
+        <property name='label' value='Telefonnummer' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlInputText7' />
+          <property name='value' value='#{SaveStudInfosDefaultviewView.saveStudInfos.saveStudInfos3.parameters.saveStudInfos.studDetails._PHONE}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine8' />
+        <property name='label' value='Staatsb&#252;rgerschaft' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlInputText8' />
+          <property name='value' value='#{SaveStudInfosDefaultviewView.saveStudInfos.saveStudInfos3.parameters.saveStudInfos.studDetails.citizenship}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine9' />
+        <property name='label' value='Bereits an anderer Hochschule eingeschrieben' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlInputText9' />
+          <property name='value' value='#{SaveStudInfosDefaultviewView.saveStudInfos.saveStudInfos3.parameters.saveStudInfos.studDetails.isenrolled}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine10' />
+        <property name='label' value='Einstellungstest' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlInputText10' />
+          <property name='value' value='#{SaveStudInfosDefaultviewView.saveStudInfos.saveStudInfos3.parameters.saveStudInfos.studDetails.entrancetest}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine11' />
+        <property name='label' value='NC-Wert' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlInputText11' />
+          <property name='value' value='#{SaveStudInfosDefaultviewView.saveStudInfos.saveStudInfos3.parameters.saveStudInfos.studDetails.nc}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine12' />
+        <property name='label' value='Interview' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlInputText12' />
+          <property name='value' value='#{SaveStudInfosDefaultviewView.saveStudInfos.saveStudInfos3.parameters.saveStudInfos.studDetails.interview}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine13' />
+        <property name='label' value='War schon einmal exmatrikuliert' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlInputText13' />
+          <property name='value' value='#{SaveStudInfosDefaultviewView.saveStudInfos.saveStudInfos3.parameters.saveStudInfos.studDetails.exmatriculated}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine14' />
+        <property name='label' value='Hat bereits einen Hochschulabschluss' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlInputText14' />
+          <property name='value' value='#{SaveStudInfosDefaultviewView.saveStudInfos.saveStudInfos3.parameters.saveStudInfos.studDetails.seconddegree}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine15' />
+        <property name='label' value='Datum des vorherigen Abschlusses' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlInputText15' />
+          <property name='value' value='#{SaveStudInfosDefaultviewView.saveStudInfos.saveStudInfos3.parameters.saveStudInfos.studDetails.datepregraduation}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.table.AsyncTable' renderer-type='com.webmethods.caf.faces.table.AsyncTable'>
+        <property name='footerClass' value='portlet-section-footer' />
+        <property name='headerClass' value='portlet-section-subheader' />
+        <property name='id' value='asyncTable' />
+        <property name='rowClasses' value='portlet-section-body,portlet-section-alternate' />
+        <property name='rows' value='10' />
+        <property name='selectedRowClass' value='portlet-section-selected' />
+        <property name='value' value='#{SaveStudInfosDefaultviewView.documentsProvider2}' />
+        <property name='var' value='document' />
+        <property name='width' value='100%' />
+        <facet name='header'>
+          <control component-type='javax.faces.HtmlPanelGroup' renderer-type='javax.faces.Group'>
+            <property name='id' value='htmlPanelGroup' />
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText' />
+              <property name='raw' value='true' />
+              <property name='value' value='Documents Provider 2' />
+            </control>
+            <control component-type='com.webmethods.caf.faces.table.AddRowButton' renderer-type='com.webmethods.caf.faces.table.AddRowButton'>
+              <property name='id' value='addRowButton' />
+              <property name='label' value='Append Row' />
+            </control>
+          </control>
+        </facet>
+        <facet name='footer'>
+          <control component-type='com.webmethods.caf.faces.table.PrevNext' renderer-type='com.webmethods.caf.faces.table.PrevNext'>
+            <property name='id' value='prevNext' />
+            <control component-type='javax.faces.HtmlPanelGroup' renderer-type='com.webmethods.caf.faces.panel.BlockPanel'>
+              <property name='id' value='blockPanel' />
+              <property name='style' value='text-align:center;' />
+              <control component-type='com.webmethods.caf.faces.table.DataTotal' renderer-type='com.webmethods.caf.faces.table.DataTotal'>
+                <property name='id' value='dataTotal' />
+              </control>
+            </control>
+          </control>
+        </facet>
+        <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+          <property name='id' value='htmlTableColumn' />
+          <property name='label' value='Title' />
+          <property name='sort' value='#{document.title}' />
+          <facet name='header'>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText1' />
+              <property name='raw' value='true' />
+              <property name='value' value='Title' />
+            </control>
+          </facet>
+          <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlInputText' />
+            <property name='value' value='#{document.title}' />
+            <property name='width' value='input20' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+          <property name='id' value='htmlTableColumn1' />
+          <property name='label' value='Type' />
+          <property name='sort' value='#{document.type}' />
+          <facet name='header'>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText2' />
+              <property name='raw' value='true' />
+              <property name='value' value='Type' />
+            </control>
+          </facet>
+          <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlInputText1' />
+            <property name='value' value='#{document.type}' />
+            <property name='width' value='input20' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+          <property name='id' value='htmlTableColumn2' />
+          <property name='label' value='Existing' />
+          <property name='sort' value='#{document.existing}' />
+          <facet name='header'>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText3' />
+              <property name='raw' value='true' />
+              <property name='value' value='Existing' />
+            </control>
+          </facet>
+          <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlInputText2' />
+            <property name='value' value='#{document.existing}' />
+            <property name='width' value='input20' />
+          </control>
+          <control component-type='com.webmethods.caf.faces.table.RemoveRowButton' renderer-type='com.webmethods.caf.faces.table.RemoveRowButton'>
+            <property name='id' value='removeRowButton' />
+            <property name='label' value='Remove' />
+            <property name='row' value='_this' />
+          </control>
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
+        <property name='action' value='#{SaveStudInfosDefaultviewView.saveStudInfos.saveStudInfos3.refresh}' />
+        <property name='id' value='button' />
+        <property name='value' value='Bewerbungsinformationen speichern' />
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine16' />
+        <property name='label' value='Wertung' />
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText' />
+          <property name='raw' value='true' />
+          <property name='value' value='#{SaveStudInfosDefaultviewView.saveStudInfos.saveStudInfos3.result.outputMessage}' />
+        </control>
+      </control>
+    </control>
+  </control>
+</view>

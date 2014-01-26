@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="getIdCard_WSD_HK1" targetNamespace="http://192.168.0.204/CampusConnect.work.enrollment:getIdCard_WSD_HK1" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapjms="http://www.w3.org/2010/soapjms/" xmlns:tns="http://192.168.0.204/CampusConnect.work.enrollment:getIdCard_WSD_HK1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://192.168.0.204/CampusConnect.work.enrollment:getIdCard_WSD_HK1" xmlns:tns="http://192.168.0.204/CampusConnect.work.enrollment:getIdCard_WSD_HK1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+          <xsd:element name="getIdCard" type="tns:getIdCard"/>
+          <xsd:element name="getIdCardResponse" type="tns:getIdCardResponse"/>
+          <xsd:complexType name="getIdCard">
+            <xsd:sequence>
+              <xsd:element name="_STUDENTID" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="getIdCardResponse">
+            <xsd:sequence>
+              <xsd:element name="idCard" nillable="true" type="tns:idCard"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="idCard">
+            <xsd:sequence>
+              <xsd:element name="_FIRSTNAME" type="xsd:string"/>
+              <xsd:element name="_LASTNAME" type="xsd:string"/>
+              <xsd:element name="_ADDRESSLINE1" type="xsd:string"/>
+              <xsd:element name="_ADDRESSLINE2" type="xsd:string"/>
+              <xsd:element name="_DEGREEPROGRAM" type="xsd:string"/>
+              <xsd:element name="_EMAIL" type="xsd:string"/>
+              <xsd:element name="_DOB" type="xsd:string"/>
+              <xsd:element name="_TERM" type="xsd:decimal"/>
+              <xsd:element name="_STUDENTID" nillable="true" type="xsd:string"/>
+              <xsd:element name="currentbegin" nillable="true" type="xsd:string"/>
+              <xsd:element name="currentend" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        	</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getIdCard_WSD_HK1_PortType_getIdCard">
+    <wsdl:part name="parameters" element="tns:getIdCard">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getIdCard_WSD_HK1_PortType_getIdCardResponse">
+    <wsdl:part name="parameters" element="tns:getIdCardResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="getIdCard_WSD_HK1_PortType">
+    <wsdl:operation name="getIdCard">
+      <wsdl:input message="tns:getIdCard_WSD_HK1_PortType_getIdCard">
+    </wsdl:input>
+      <wsdl:output message="tns:getIdCard_WSD_HK1_PortType_getIdCardResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CampusConnect_work_enrollment_getIdCard_WSD_HK1_Binder" type="tns:getIdCard_WSD_HK1_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getIdCard">
+      <soap:operation soapAction="CampusConnect_work_enrollment_getIdCard_WSD_HK1_Binder_getIdCard" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CampusConnect.work.enrollment.getIdCard_WSD_HK1">
+    <wsdl:port name="CampusConnect_work_enrollment_getIdCard_WSD_HK1_Port" binding="tns:CampusConnect_work_enrollment_getIdCard_WSD_HK1_Binder">
+      <soap:address location="http://192.168.0.204:5555/ws/CampusConnect.work.enrollment.getIdCard_WSD_HK1/CampusConnect_work_enrollment_getIdCard_WSD_HK1_Port"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

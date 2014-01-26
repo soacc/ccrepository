@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='DashOffDefaultviewView' />
+  <property name='preferencesBean' value='DashOff' />
+  <design-time-attribute name='portlet' value='dashOff' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+      <property name='id' value='propertyLine12' />
+      <property name='label' value='1.' />
+      <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
+        <property name='id' value='htmlOutputLink' />
+        <property name='label' value='Nutzer&#252;bersicht' />
+        <property name='value' value='http://sagbase:8585/meta/default/folder/0000010891' />
+      </control>
+    </control>
+    <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+      <property name='id' value='propertyLine1511' />
+      <property name='label' value='2.' />
+      <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
+        <property name='id' value='htmlOutputLink3211' />
+        <property name='label' value='Immatrikulations&#252;bersicht' />
+        <property name='value' value='http://sagbase:8585/meta/default/folder/0000010994' />
+      </control>
+    </control>
+    <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+      <property name='id' value='propertyLine151' />
+      <property name='label' value='3.' />
+      <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
+        <property name='id' value='htmlOutputLink321' />
+        <property name='label' value='Verwaltungsinformationen' />
+        <property name='value' value='http://sagbase:8585/meta/default/folder/0000010984' />
+      </control>
+    </control>
+    <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+      <property name='id' value='propertyLine15' />
+      <property name='label' value='4.' />
+      <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
+        <property name='id' value='htmlOutputLink32' />
+        <property name='label' value='Mensa Angebot' />
+        <property name='value' value='http://sagbase:8585/meta/default/folder/0000010983' />
+      </control>
+    </control>
+  </control>
+</view>

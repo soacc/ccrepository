@@ -21,6 +21,7 @@
 			<title>TestPopupPanel</title>
 		</portlet-info>
 	</portlet>
+
 	<user-attribute>
 		<name>user.default.time_zone</name>
 	</user-attribute>

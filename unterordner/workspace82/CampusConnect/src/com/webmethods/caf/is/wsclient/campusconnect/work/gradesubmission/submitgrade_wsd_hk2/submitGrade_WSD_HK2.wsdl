@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="submitGrade_WSD_HK2" targetNamespace="http://192.168.0.204/CampusConnect.work.gradeSubmission:submitGrade_WSD_HK2" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapjms="http://www.w3.org/2010/soapjms/" xmlns:tns="http://192.168.0.204/CampusConnect.work.gradeSubmission:submitGrade_WSD_HK2" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://192.168.0.204/CampusConnect.work.gradeSubmission:submitGrade_WSD_HK2" xmlns:tns="http://192.168.0.204/CampusConnect.work.gradeSubmission:submitGrade_WSD_HK2" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+          <xsd:element name="submitGrade" type="tns:submitGrade"/>
+          <xsd:complexType name="submitGrade">
+            <xsd:sequence>
+              <xsd:element maxOccurs="unbounded" name="StudentsGrade" nillable="true" type="tns:StudentsGrade"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="StudentsGrade">
+            <xsd:sequence>
+              <xsd:element name="StudentId" nillable="true" type="xsd:string"/>
+              <xsd:element name="CourseId" nillable="true" type="xsd:string"/>
+              <xsd:element name="Grade" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        	</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="submitGrade_WSD_HK2_PortType_submitGrade">
+    <wsdl:part name="parameters" element="tns:submitGrade">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="submitGrade_WSD_HK2_PortType">
+    <wsdl:operation name="submitGrade">
+      <wsdl:input message="tns:submitGrade_WSD_HK2_PortType_submitGrade">
+    </wsdl:input>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CampusConnect_work_gradeSubmission_submitGrade_WSD_HK2_Binder" type="tns:submitGrade_WSD_HK2_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="submitGrade">
+      <soap:operation soapAction="CampusConnect_work_gradeSubmission_submitGrade_WSD_HK2_Binder_submitGrade" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CampusConnect.work.gradeSubmission.submitGrade_WSD_HK2">
+    <wsdl:port name="CampusConnect_work_gradeSubmission_submitGrade_WSD_HK2_Port" binding="tns:CampusConnect_work_gradeSubmission_submitGrade_WSD_HK2_Binder">
+      <soap:address location="http://192.168.0.204:5555/ws/CampusConnect.work.gradeSubmission.submitGrade_WSD_HK2/CampusConnect_work_gradeSubmission_submitGrade_WSD_HK2_Port"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

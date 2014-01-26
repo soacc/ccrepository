@@ -16,14 +16,25 @@
           </xsd:simpleType>
           <xsd:complexType name="getAllGradesResponse">
             <xsd:sequence>
-              <xsd:element maxOccurs="unbounded" name="outputGrades" nillable="true" type="tns:outputGrades"/>
+              <xsd:element name="outGrades" nillable="true" type="tns:outGrades"/>
             </xsd:sequence>
           </xsd:complexType>
-          <xsd:complexType name="outputGrades">
+          <xsd:complexType name="outGrades">
+            <xsd:sequence>
+              <xsd:element maxOccurs="unbounded" name="outGrade" nillable="true" type="tns:outGrade"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="outGrade">
             <xsd:sequence>
               <xsd:element name="courseName" nillable="true" type="xsd:string"/>
               <xsd:element name="courseId" nillable="true" type="xsd:string"/>
               <xsd:element name="grade" nillable="true" type="xsd:string"/>
+              <xsd:element name="examtype" nillable="true" type="xsd:string"/>
+              <xsd:element name="_EXAMDATE" nillable="true" type="xsd:string"/>
+              <xsd:element name="_PLASTNAME" nillable="true" type="xsd:string"/>
+              <xsd:element name="_PFIRSTNAME" nillable="true" type="xsd:string"/>
+              <xsd:element name="_PTITEL" nillable="true" type="xsd:string"/>
+              <xsd:element name="try" nillable="true" type="xsd:string"/>
             </xsd:sequence>
           </xsd:complexType>
         	</xsd:schema>

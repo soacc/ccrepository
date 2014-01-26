@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='ShowApplicantListDefaultviewView' />
+  <property name='preferencesBean' value='ShowApplicantList' />
+  <design-time-attribute name='portlet' value='showApplicantList' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+      <property name='id' value='propertyGroup' />
+      <property name='label' value='Show Applicants List' />
+      <control component-type='com.webmethods.caf.faces.table.AsyncTable' renderer-type='com.webmethods.caf.faces.table.AsyncTable'>
+        <property name='footerClass' value='portlet-section-footer' />
+        <property name='headerClass' value='portlet-section-subheader' />
+        <property name='id' value='asyncTable' />
+        <property name='rowClasses' value='portlet-section-body,portlet-section-alternate' />
+        <property name='rows' value='10' />
+        <property name='selectedRowClass' value='portlet-section-selected' />
+        <property name='value' value='#{ShowApplicantListDefaultviewView.showApplicantList.showApplicantsList.result.students}' />
+        <property name='var' value='student' />
+        <property name='width' value='100%' />
+        <facet name='header'>
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText' />
+            <property name='raw' value='true' />
+            <property name='value' value='Students' />
+          </control>
+        </facet>
+        <facet name='footer'>
+          <control component-type='com.webmethods.caf.faces.table.PrevNext' renderer-type='com.webmethods.caf.faces.table.PrevNext'>
+            <property name='id' value='prevNext' />
+            <control component-type='javax.faces.HtmlPanelGroup' renderer-type='com.webmethods.caf.faces.panel.BlockPanel'>
+              <property name='id' value='blockPanel' />
+              <property name='style' value='text-align:center;' />
+              <control component-type='com.webmethods.caf.faces.table.DataTotal' renderer-type='com.webmethods.caf.faces.table.DataTotal'>
+                <property name='id' value='dataTotal' />
+              </control>
+            </control>
+          </control>
+        </facet>
+        <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+          <property name='id' value='htmlTableColumn' />
+          <property name='label' value='_FIRSTNAME' />
+          <property name='sort' value='#{student._FIRSTNAME}' />
+          <facet name='header'>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText1' />
+              <property name='raw' value='true' />
+              <property name='value' value='_FIRSTNAME' />
+            </control>
+          </facet>
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText2' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{student._FIRSTNAME}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+          <property name='id' value='htmlTableColumn1' />
+          <property name='label' value='_LASTNAME' />
+          <property name='sort' value='#{student._LASTNAME}' />
+          <facet name='header'>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText3' />
+              <property name='raw' value='true' />
+              <property name='value' value='_LASTNAME' />
+            </control>
+          </facet>
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText4' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{student._LASTNAME}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+          <property name='id' value='htmlTableColumn2' />
+          <property name='label' value='_REGISTERED' />
+          <property name='sort' value='#{student._REGISTERED}' />
+          <facet name='header'>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText5' />
+              <property name='raw' value='true' />
+              <property name='value' value='_REGISTERED' />
+            </control>
+          </facet>
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText6' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{student._REGISTERED}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+          <property name='id' value='htmlTableColumn3' />
+          <property name='label' value='_ACTIVE' />
+          <property name='sort' value='#{student._ACTIVE}' />
+          <facet name='header'>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText7' />
+              <property name='raw' value='true' />
+              <property name='value' value='_ACTIVE' />
+            </control>
+          </facet>
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <converter converter-id='javax.faces.BigDecimal'>
+            </converter>
+            <property name='id' value='htmlOutputText8' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{student._ACTIVE}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+          <property name='id' value='htmlTableColumn4' />
+          <property name='label' value='ID' />
+          <property name='sort' value='#{student.id}' />
+          <facet name='header'>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText9' />
+              <property name='raw' value='true' />
+              <property name='value' value='ID' />
+            </control>
+          </facet>
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText10' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{student.id}' />
+          </control>
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
+        <property name='action' value='#{ShowApplicantListDefaultviewView.showApplicantList.showApplicantsList.refresh}' />
+        <property name='id' value='button' />
+        <property name='value' value='Refresh' />
+      </control>
+    </control>
+  </control>
+</view>

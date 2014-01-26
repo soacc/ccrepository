@@ -3,5 +3,6 @@
 	<wm-portlet>
 		<portlet-name>TestPopupPanel</portlet-name>
 		<category>TestPortletProject</category>
-	</wm-portlet></wm-portlet-app>
+	</wm-portlet>
+</wm-portlet-app>
 

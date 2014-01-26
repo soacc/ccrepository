@@ -8,10 +8,41 @@
   <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
     <property name='defaultFocus' value='_first' />
     <property name='id' value='defaultForm' />
-    <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
-      <property name='id' value='htmlOutputText' />
-      <property name='raw' value='true' />
-      <property name='value' value='insert text here' />
+    <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+      <property name='id' value='propertyGroup' />
+      <property name='label' value='Note geben' />
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine' />
+        <property name='label' value='Gew&#228;hlter Student' />
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText' />
+          <property name='raw' value='true' />
+          <property name='value' value='#{Lf090_submitgradedefaultviewview.lf090_submitgrade.studID}' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine1' />
+        <property name='label' value='Gew&#228;hlter Kurs' />
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText1' />
+          <property name='raw' value='true' />
+          <property name='value' value='#{Lf090_submitgradedefaultviewview.lf090_submitgrade.courseID}' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine2' />
+        <property name='label' value='Note' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlInputText2' />
+          <property name='value' value='#{Lf090_submitgradedefaultviewview.lf090_submitgrade.submitGrade2.parameters.submitGrade.submitGrade.grade}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
+        <property name='action' value='#{Lf090_submitgradedefaultviewview.lf090_submitgrade.submitGrade2.refresh}' />
+        <property name='id' value='button' />
+        <property name='value' value='Note best&#228;tigen' />
+      </control>
     </control>
   </control>
 </view>

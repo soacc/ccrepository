@@ -69,42 +69,9 @@
 			<to-view-id>/Lf010_registercourses/default.view</to-view-id>
 		</navigation-case>
 	</navigation-rule>
-	<managed-bean>
-		<managed-bean-name>RegisterCourses</managed-bean-name>
-		<managed-bean-class>com.webmethods.caf.is.wsclient.campusconnect.work.courseregistration.registercourses_wsd.RegisterCourses</managed-bean-class>
-		<managed-bean-scope>session</managed-bean-scope>
-		<managed-property>
-			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
-			<display-name>Expire With Page Flow</display-name>
-			<property-name>expireWithPageFlow</property-name>
-			<property-class>java.lang.Boolean</property-class>
-			<value>true</value>
-		</managed-property>
-	</managed-bean>
-	<managed-bean>
-		<managed-bean-name>InputCoursesProvider</managed-bean-name>
-		<managed-bean-class>com.webmethods.caf.faces.data.object.ListTableContentProvider</managed-bean-class>
-		<managed-bean-scope>session</managed-bean-scope>
-		<managed-property>
-			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
-			<display-name>Expire With Page Flow</display-name>
-			<property-name>expireWithPageFlow</property-name>
-			<property-class>java.lang.Boolean</property-class>
-			<value>true</value>
-		</managed-property>
-	</managed-bean>
-	<managed-bean>
-		<managed-bean-name>InputCoursesProvider2</managed-bean-name>
-		<managed-bean-class>com.webmethods.caf.faces.data.object.ListTableContentProvider</managed-bean-class>
-		<managed-bean-scope>session</managed-bean-scope>
-		<managed-property>
-			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
-			<display-name>Expire With Page Flow</display-name>
-			<property-name>expireWithPageFlow</property-name>
-			<property-class>java.lang.Boolean</property-class>
-			<value>true</value>
-		</managed-property>
-	</managed-bean>
+
+
+
 
 
 
@@ -309,53 +276,10 @@
 			<value>true</value>
 		</managed-property>
 	</managed-bean>
-	<managed-bean>
-		<description>portletbean</description>
-		<display-name>LF030_saveStudInfos</display-name>
-		<managed-bean-name>Lf030_savestudinfos</managed-bean-name>
-		<managed-bean-class>com.webmethods.caf.lf030_savestudinfos.Lf030_savestudinfos</managed-bean-class>
-		<managed-bean-scope>session</managed-bean-scope>
-		<managed-property>
-			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
-			<display-name>Expire With Page Flow</display-name>
-			<property-name>expireWithPageFlow</property-name>
-			<property-class>java.lang.Boolean</property-class>
-			<value>true</value>
-		</managed-property>
-	</managed-bean>
-	<managed-bean>
-		<description>pagebean</description>
-		<display-name>Lf030_savestudinfos/default</display-name>
-		<managed-bean-name>Lf030_savestudinfosdefaultviewview</managed-bean-name>
-		<managed-bean-class>com.webmethods.caf.lf030_savestudinfos.Lf030_savestudinfosdefaultviewview</managed-bean-class>
-		<managed-bean-scope>session</managed-bean-scope>
-		<managed-property>
-			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
-			<display-name>Expire With Page Flow</display-name>
-			<property-name>expireWithPageFlow</property-name>
-			<property-class>java.lang.Boolean</property-class>
-			<value>true</value>
-		</managed-property>
-	</managed-bean>
-	<navigation-rule>
-		<from-view-id>/Lf030_savestudinfos/*</from-view-id>
-		<navigation-case>
-			<from-outcome>default</from-outcome>
-			<to-view-id>/Lf030_savestudinfos/default.view</to-view-id>
-		</navigation-case>
-	</navigation-rule>
-	<managed-bean>
-		<managed-bean-name>SaveStudInfos</managed-bean-name>
-		<managed-bean-class>com.webmethods.caf.is.wsclient.campusconnect.work.enrolment.savestudinfos_wsd.SaveStudInfos1</managed-bean-class>
-		<managed-bean-scope>session</managed-bean-scope>
-		<managed-property>
-			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
-			<display-name>Expire With Page Flow</display-name>
-			<property-name>expireWithPageFlow</property-name>
-			<property-class>java.lang.Boolean</property-class>
-			<value>true</value>
-		</managed-property>
-	</managed-bean>
+
+
+
+
 	<managed-bean>
 		<description>portletbean</description>
 		<display-name>LF030_setStudActive</display-name>
@@ -1136,4 +1060,471 @@
 			<from-outcome>default</from-outcome>
 			<to-view-id>/Lf090_submitgrade/default.view</to-view-id>
 		</navigation-case>
-	</navigation-rule></faces-config>
+	</navigation-rule>
+
+	<managed-bean>
+		<managed-bean-name>ShowRegisteredStudentsExam3</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.is.wsclient.campusconnect.work.gradesubmission.showregisteredstudentsexam_wsd_hk1.ShowRegisteredStudentsExam3</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+
+
+
+	<managed-bean>
+		<description>portletbean</description>
+		<display-name>showEnrolledStudents</display-name>
+		<managed-bean-name>ShowEnrolledStudents</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.showenrolledstudents.ShowEnrolledStudents</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<description>pagebean</description>
+		<display-name>ShowEnrolledStudents/default</display-name>
+		<managed-bean-name>ShowEnrolledStudentsDefaultviewView</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.showenrolledstudents.ShowEnrolledStudentsDefaultviewView</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<navigation-rule>
+		<from-view-id>/ShowEnrolledStudents/*</from-view-id>
+		<navigation-case>
+			<from-outcome>default</from-outcome>
+			<to-view-id>/ShowEnrolledStudents/default.view</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<managed-bean>
+		<managed-bean-name>ShowEnrolledStuds2</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.is.wsclient.campusconnect.work.enrollment.showenrolledstuds_wsd.ShowEnrolledStuds2</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<description>portletbean</description>
+		<display-name>startScoring</display-name>
+		<managed-bean-name>StartScoring</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.startscoring.StartScoring</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<description>pagebean</description>
+		<display-name>StartScoring/default</display-name>
+		<managed-bean-name>StartScoringDefaultviewView</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.startscoring.StartScoringDefaultviewView</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<navigation-rule>
+		<from-view-id>/StartScoring/*</from-view-id>
+		<navigation-case>
+			<from-outcome>default</from-outcome>
+			<to-view-id>/StartScoring/default.view</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<managed-bean>
+		<managed-bean-name>StartScoring2</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.is.wsclient.campusconnect.work.enrollment.startscoring_wsd_hk1.StartScoring2</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<description>portletbean</description>
+		<display-name>setStudState</display-name>
+		<managed-bean-name>SetStudState</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.setstudstate.SetStudState</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<description>pagebean</description>
+		<display-name>SetStudState/default</display-name>
+		<managed-bean-name>SetStudStateDefaultviewView</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.setstudstate.SetStudStateDefaultviewView</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<navigation-rule>
+		<from-view-id>/SetStudState/*</from-view-id>
+		<navigation-case>
+			<from-outcome>default</from-outcome>
+			<to-view-id>/SetStudState/default.view</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<managed-bean>
+		<managed-bean-name>SetStudState2</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.is.wsclient.campusconnect.work.enrollment.setstudstate_wsd_hk1.SetStudState2</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<description>portletbean</description>
+		<display-name>setApplicantInfos</display-name>
+		<managed-bean-name>SetApplicantInfos</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.setapplicantinfos.SetApplicantInfos</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<description>pagebean</description>
+		<display-name>SetApplicantInfos/default</display-name>
+		<managed-bean-name>SetApplicantInfosDefaultviewView</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.setapplicantinfos.SetApplicantInfosDefaultviewView</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<navigation-rule>
+		<from-view-id>/SetApplicantInfos/*</from-view-id>
+		<navigation-case>
+			<from-outcome>default</from-outcome>
+			<to-view-id>/SetApplicantInfos/default.view</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<managed-bean>
+		<description>portletbean</description>
+		<display-name>showApplicantList</display-name>
+		<managed-bean-name>ShowApplicantList</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.showapplicantlist.ShowApplicantList</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<description>pagebean</description>
+		<display-name>ShowApplicantList/default</display-name>
+		<managed-bean-name>ShowApplicantListDefaultviewView</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.showapplicantlist.ShowApplicantListDefaultviewView</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<navigation-rule>
+		<from-view-id>/ShowApplicantList/*</from-view-id>
+		<navigation-case>
+			<from-outcome>default</from-outcome>
+			<to-view-id>/ShowApplicantList/default.view</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<managed-bean>
+		<managed-bean-name>ShowApplicantsList</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.is.wsclient.campusconnect.work.enrollment.showapplicantlist_wsd_hk1.ShowApplicantsList1</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>SetApplicantInfos2</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.is.wsclient.campusconnect.work.enrollment.setapplicantinfos_wsd_hk1.SetApplicantInfos2</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>DocumentsProvider</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.faces.data.object.ListTableContentProvider</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<description>portletbean</description>
+		<display-name>saveStudInfos</display-name>
+		<managed-bean-name>SaveStudInfos2</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.savestudinfos.SaveStudInfos2</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+
+	<managed-bean>
+		<description>portletbean</description>
+		<display-name>saveStudInfos</display-name>
+		<managed-bean-name>SaveStudInfos</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.savestudinfos.SaveStudInfos</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<description>pagebean</description>
+		<display-name>SaveStudInfos/default</display-name>
+		<managed-bean-name>SaveStudInfosDefaultviewView</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.savestudinfos.SaveStudInfosDefaultviewView</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<navigation-rule>
+		<from-view-id>/SaveStudInfos/*</from-view-id>
+		<navigation-case>
+			<from-outcome>default</from-outcome>
+			<to-view-id>/SaveStudInfos/default.view</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<managed-bean>
+		<managed-bean-name>SaveStudInfos3</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.is.wsclient.campusconnect.work.enrollment.savestudinfos_wsd_hk2.SaveStudInfos3</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>DocumentsProvider2</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.faces.data.object.ListTableContentProvider</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<description>portletbean</description>
+		<display-name>getIdCard</display-name>
+		<managed-bean-name>GetIdCard</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.getidcard.GetIdCard</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<description>pagebean</description>
+		<display-name>GetIdCard/default</display-name>
+		<managed-bean-name>GetIdCardDefaultviewView</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.getidcard.GetIdCardDefaultviewView</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<navigation-rule>
+		<from-view-id>/GetIdCard/*</from-view-id>
+		<navigation-case>
+			<from-outcome>default</from-outcome>
+			<to-view-id>/GetIdCard/default.view</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<managed-bean>
+		<managed-bean-name>GetIdCard2</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.is.wsclient.campusconnect.work.enrollment.getidcard_wsd_hk1.GetIdCard2</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<description>portletbean</description>
+		<display-name>getApplicantInfos</display-name>
+		<managed-bean-name>GetApplicantInfos</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.getapplicantinfos.GetApplicantInfos</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<description>pagebean</description>
+		<display-name>GetApplicantInfos/default</display-name>
+		<managed-bean-name>GetApplicantInfosDefaultviewView</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.getapplicantinfos.GetApplicantInfosDefaultviewView</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<navigation-rule>
+		<from-view-id>/GetApplicantInfos/*</from-view-id>
+		<navigation-case>
+			<from-outcome>default</from-outcome>
+			<to-view-id>/GetApplicantInfos/default.view</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<managed-bean>
+		<managed-bean-name>GetApplicantInfos2</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.is.wsclient.campusconnect.work.enrollment.getapplicantinfos_wsd_hk1.GetApplicantInfos2</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>RegisterCourses</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.is.wsclient.campusconnect.work.courseregistration.registercourses_wsd_hk2.RegisterCourses</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>InputCoursesProvider</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.faces.data.object.ListTableContentProvider</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>SubmitGrade2</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.is.wsclient.campusconnect.work.gradesubmission.submitgrade_wsd_hk2.SubmitGrade2</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean></faces-config>

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='DashPruefDefaultviewView' />
+  <property name='preferencesBean' value='DashPruef' />
+  <design-time-attribute name='portlet' value='dashPruef' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+      <property name='id' value='propertyLine12' />
+      <property name='label' value='1.' />
+      <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
+        <property name='id' value='htmlOutputLink' />
+        <property name='label' value='Immatrikulationsparameter' />
+        <property name='value' value='http://sagbase:8585/meta/default/folder/0000011011' />
+      </control>
+    </control>
+    <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+      <property name='id' value='propertyLine121' />
+      <property name='label' value='2.' />
+      <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
+        <property name='id' value='htmlOutputLink1' />
+        <property name='label' value='Kurs-/Pr&#252;fungs&#252;bersicht' />
+        <property name='value' value='http://sagbase:8585/meta/default/folder/0000011012' />
+      </control>
+    </control>
+    <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+      <property name='id' value='propertyLine122' />
+      <property name='label' value='3.' />
+      <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
+        <property name='id' value='htmlOutputLink2' />
+        <property name='label' value='Mensa Angebot' />
+        <property name='value' value='http://sagbase:8585/meta/default/folder/0000011013' />
+      </control>
+    </control>
+  </control>
+</view>

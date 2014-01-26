@@ -10,9 +10,9 @@
     <property name='id' value='defaultForm' />
     <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
       <property name='id' value='propertyGroup' />
-      <property name='label' value='Ausgew&#228;hlten Kurs anmelden' />
+      <property name='label' value='F&#252;r ausgew&#228;hlten Kurs anmelden' />
       <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
-        <property name='action' value='#{Lf010_registercoursesdefaultviewview.registerCourses.refresh}' />
+        <property name='action' value='#{Lf010_registercoursesdefaultviewview.lf010_registercourses.registerCourses.refresh}' />
         <property name='id' value='button' />
         <property name='value' value='Anmelden' />
       </control>
@@ -23,7 +23,7 @@
         <property name='rowClasses' value='portlet-section-body,portlet-section-alternate' />
         <property name='rows' value='10' />
         <property name='selectedRowClass' value='portlet-section-selected' />
-        <property name='value' value='#{Lf010_registercoursesdefaultviewview.registerCourses.result}' />
+        <property name='value' value='#{Lf010_registercoursesdefaultviewview.lf010_registercourses.registerCourses.result}' />
         <property name='var' value='result' />
         <property name='width' value='100%' />
         <facet name='header'>

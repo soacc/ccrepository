@@ -33,42 +33,21 @@
 		<portlet-name>showEating_test</portlet-name>
 		<category>Support</category>
 	</wm-portlet>
-	<wm-portlet>
-		<portlet-name>professorNavigation</portlet-name>
-		<category>Support</category>
-	</wm-portlet>
+
 	<wm-portlet>
 		<portlet-name>examderegtest</portlet-name>
 		<category>Support</category>
 	</wm-portlet>
-	<wm-portlet>
-		<portlet-name>Overview_Prof</portlet-name>
-		<category>Support</category>
-	</wm-portlet>
-	<wm-portlet>
-		<portlet-name>loadStudRegisteredCourses_Bugtest</portlet-name>
-		<category>Support</category>
-	</wm-portlet>
-	<wm-portlet>
-		<portlet-name>officeNavigation</portlet-name>
-		<category>Support</category>
-	</wm-portlet>
-	<wm-portlet>
-		<portlet-name>Overview_Off</portlet-name>
-		<category>Support</category>
-	</wm-portlet>
+
+
+
+
 	<wm-portlet>
 		<portlet-name>UniLeipzigLike</portlet-name>
 		<category>Support</category>
 	</wm-portlet>
-	<wm-portlet>
-		<portlet-name>Like</portlet-name>
-		<category>Support</category>
-	</wm-portlet>
-	<wm-portlet>
-		<portlet-name>Overview1</portlet-name>
-		<category>Support</category>
-	</wm-portlet>
+
+
 	<wm-portlet>
 		<portlet-name>TwitterTimeline1</portlet-name>
 		<category>Support</category>
@@ -101,5 +80,24 @@
 		<portlet-name>professorDashboard</portlet-name>
 		<category>Support</category>
 	</wm-portlet>
-</wm-portlet-app>
+	<wm-portlet>
+		<portlet-name>navProf</portlet-name>
+		<category>Support</category>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>dashOff</portlet-name>
+		<category>Support</category>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>navOff</portlet-name>
+		<category>Support</category>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>dashPruef</portlet-name>
+		<category>Support</category>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>navPruef</portlet-name>
+		<category>Support</category>
+	</wm-portlet></wm-portlet-app>
 

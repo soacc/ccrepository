@@ -53,4 +53,32 @@
 			<from-outcome>default</from-outcome>
 			<to-view-id>/TestPopupPanel/default.view</to-view-id>
 		</navigation-case>
-	</navigation-rule></faces-config>
+	</navigation-rule>
+
+
+
+	<managed-bean>
+		<managed-bean-name>ShowPersonalDataStud</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.is.wsclient.campusconnect.work.editpersonaldatastud.showpersonaldatastud_wsd.ShowPersonalDataStud1</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>EditStudent2</managed-bean-name>
+		<managed-bean-class>com.webmethods.caf.is.wsclient.campusconnect.work.administration.editstudent2_wsd_hk1.EditStudent21</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<description>Specifies whether the session bean expires when the pageflow is out of scope</description>
+			<display-name>Expire With Page Flow</display-name>
+			<property-name>expireWithPageFlow</property-name>
+			<property-class>java.lang.Boolean</property-class>
+			<value>true</value>
+		</managed-property>
+	</managed-bean>
+</faces-config>

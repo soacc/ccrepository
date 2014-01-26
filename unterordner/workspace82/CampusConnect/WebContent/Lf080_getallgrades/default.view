@@ -18,8 +18,8 @@
         <property name='rowClasses' value='portlet-section-body,portlet-section-alternate' />
         <property name='rows' value='20' />
         <property name='selectedRowClass' value='portlet-section-selected' />
-        <property name='value' value='#{Lf080_getallgradesdefaultviewview.lf080_getallgrades.getAllGrades.result}' />
-        <property name='var' value='result' />
+        <property name='value' value='#{Lf080_getallgradesdefaultviewview.lf080_getallgrades.getAllGrades.result.outGrades}' />
+        <property name='var' value='outGrade' />
         <property name='width' value='100%' />
         <facet name='footer'>
           <control component-type='com.webmethods.caf.faces.table.PrevNext' renderer-type='com.webmethods.caf.faces.table.PrevNext'>
@@ -36,7 +36,7 @@
         <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
           <property name='id' value='htmlTableColumn1' />
           <property name='label' value='Course Id' />
-          <property name='sort' value='#{result.courseId}' />
+          <property name='sort' value='#{outGrade.courseId}' />
           <facet name='header'>
             <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
               <property name='id' value='htmlOutputText3' />
@@ -47,13 +47,13 @@
           <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
             <property name='id' value='htmlOutputText4' />
             <property name='raw' value='true' />
-            <property name='value' value='#{result.courseId}' />
+            <property name='value' value='#{outGrade.courseId}' />
           </control>
         </control>
         <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
           <property name='id' value='htmlTableColumn' />
           <property name='label' value='Course Name' />
-          <property name='sort' value='#{result.courseName}' />
+          <property name='sort' value='#{outGrade.courseName}' />
           <facet name='header'>
             <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
               <property name='id' value='htmlOutputText1' />
@@ -64,13 +64,91 @@
           <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
             <property name='id' value='htmlOutputText2' />
             <property name='raw' value='true' />
-            <property name='value' value='#{result.courseName}' />
+            <property name='value' value='#{outGrade.courseName}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+          <property name='id' value='htmlTableColumn3' />
+          <property name='label' value='Examtype' />
+          <property name='sort' value='#{outGrade.examtype}' />
+          <facet name='header'>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText7' />
+              <property name='raw' value='true' />
+              <property name='value' value='Pr&#252;fung' />
+            </control>
+          </facet>
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText8' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{outGrade.examtype}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+          <property name='id' value='htmlTableColumn4' />
+          <property name='label' value='_EXAMDATE' />
+          <property name='sort' value='#{outGrade._EXAMDATE}' />
+          <facet name='header'>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText9' />
+              <property name='raw' value='true' />
+              <property name='value' value='Datum' />
+            </control>
+          </facet>
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText10' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{outGrade._EXAMDATE}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+          <property name='id' value='htmlTableColumn5' />
+          <property name='label' value='_PLASTNAME' />
+          <property name='sort' value='#{outGrade._PLASTNAME}' />
+          <facet name='header'>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText11' />
+              <property name='raw' value='true' />
+              <property name='value' value='Pr&#252;fer' />
+            </control>
+          </facet>
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText13' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{outGrade._PTITEL}' />
+          </control>
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText' />
+            <property name='raw' value='true' />
+            <property name='value' value=' ' />
+          </control>
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText12' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{outGrade._PLASTNAME}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+          <property name='id' value='htmlTableColumn8' />
+          <property name='label' value='_try' />
+          <property name='sort' value='#{outGrade._try}' />
+          <facet name='header'>
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText17' />
+              <property name='raw' value='true' />
+              <property name='value' value='Versuche' />
+            </control>
+          </facet>
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText18' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{outGrade._try}' />
           </control>
         </control>
         <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
           <property name='id' value='htmlTableColumn2' />
           <property name='label' value='Grade' />
-          <property name='sort' value='#{result.grade}' />
+          <property name='sort' value='#{outGrade.grade}' />
           <facet name='header'>
             <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
               <property name='id' value='htmlOutputText5' />
@@ -81,7 +159,7 @@
           <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
             <property name='id' value='htmlOutputText6' />
             <property name='raw' value='true' />
-            <property name='value' value='#{result.grade}' />
+            <property name='value' value='#{outGrade.grade}' />
           </control>
         </control>
       </control>

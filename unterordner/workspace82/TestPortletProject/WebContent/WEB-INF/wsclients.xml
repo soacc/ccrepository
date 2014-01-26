@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsclients>
+<webservice authenticationMethod="1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.administration:editStudent2_WSD_HK1?WSDL" isService="CampusConnect.work.administration:editStudent2_WSD_HK1" name="editStudent2_WSD_HK1" package="com.webmethods.caf.is.wsclient.campusconnect.work.administration.editstudent2_wsd_hk1" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/administration/editstudent2_wsd_hk1/editStudent2_WSD_HK1.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.administration:editStudent2_WSD_HK1?WSDL">
+<wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.work.administration.editstudent2_wsd_hk1.IeditStudent2_WSD_HK1_PortType">
+<wsclient managedBean="EditStudent2" operation="editStudent2"/>
+</wsproxy>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\administration\editstudent2_wsd_hk1\IeditStudent2_WSD_HK1_PortType.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\administration\editstudent2_wsd_hk1\editStudent2_WSD_HK1Helper.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\administration\editstudent2_wsd_hk1\editStudent2Response.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\administration\editstudent2_wsd_hk1\editStudent2.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\administration\editstudent2_wsd_hk1\editStudent2_WSD_HK1.map</generatedfile>
+</webservice>
+<webservice authenticationMethod="1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.editPersonalDataStud:showPersonalDataStud_WSD?WSDL" isService="CampusConnect.work.editPersonalDataStud:showPersonalDataStud_WSD" name="showPersonalDataStud_WSD" package="com.webmethods.caf.is.wsclient.campusconnect.work.editpersonaldatastud.showpersonaldatastud_wsd" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/editpersonaldatastud/showpersonaldatastud_wsd/showPersonalDataStud_WSD.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.editPersonalDataStud:showPersonalDataStud_WSD?WSDL">
+<wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.work.editpersonaldatastud.showpersonaldatastud_wsd.IshowPersonalDataStud_WSD_PortType">
+<wsclient managedBean="ShowPersonalDataStud" operation="showPersonalDataStud"/>
+</wsproxy>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\editpersonaldatastud\showpersonaldatastud_wsd\IshowPersonalDataStud_WSD_PortType.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\editpersonaldatastud\showpersonaldatastud_wsd\showPersonalDataStud_WSDHelper.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\editpersonaldatastud\showpersonaldatastud_wsd\showPersonalDataStud.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\editpersonaldatastud\showpersonaldatastud_wsd\showPersonalDataStudResponse.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\editpersonaldatastud\showpersonaldatastud_wsd\studInfo.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\editpersonaldatastud\showpersonaldatastud_wsd\showPersonalDataStud_WSD.map</generatedfile>
+</webservice>
+</wsclients>

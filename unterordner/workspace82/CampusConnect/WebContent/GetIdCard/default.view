@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='GetIdCardDefaultviewView' />
+  <property name='preferencesBean' value='GetIdCard' />
+  <design-time-attribute name='portlet' value='getIdCard' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+      <property name='id' value='propertyGroup' />
+      <property name='label' value='Get Id Card 2' />
+      <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+        <property name='id' value='propertyGroup1' />
+        <property name='label' value='Input Parameters' />
+        <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+          <property name='id' value='propertyGroup2' />
+          <property name='label' value='Get Id Card' />
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine' />
+            <property name='label' value='_STUDENTID' />
+            <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlInputText' />
+              <property name='value' value='#{GetIdCardDefaultviewView.getIdCard.getIdCard2.parameters.getIdCard._STUDENTID}' />
+              <property name='width' value='input20' />
+            </control>
+          </control>
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+        <property name='id' value='propertyGroup3' />
+        <property name='label' value='Output Results' />
+        <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+          <property name='id' value='propertyGroup4' />
+          <property name='label' value='Id Card' />
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine1' />
+            <property name='label' value='_FIRSTNAME' />
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{GetIdCardDefaultviewView.getIdCard.getIdCard2.result.idCard._FIRSTNAME}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine2' />
+            <property name='label' value='_LASTNAME' />
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText1' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{GetIdCardDefaultviewView.getIdCard.getIdCard2.result.idCard._LASTNAME}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine3' />
+            <property name='label' value='_ADDRESSLINE1' />
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText2' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{GetIdCardDefaultviewView.getIdCard.getIdCard2.result.idCard._ADDRESSLINE1}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine4' />
+            <property name='label' value='_ADDRESSLINE2' />
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText3' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{GetIdCardDefaultviewView.getIdCard.getIdCard2.result.idCard._ADDRESSLINE2}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine5' />
+            <property name='label' value='_DEGREEPROGRAM' />
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText4' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{GetIdCardDefaultviewView.getIdCard.getIdCard2.result.idCard._DEGREEPROGRAM}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine6' />
+            <property name='label' value='_EMAIL' />
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText5' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{GetIdCardDefaultviewView.getIdCard.getIdCard2.result.idCard._EMAIL}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine7' />
+            <property name='label' value='_DOB' />
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText6' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{GetIdCardDefaultviewView.getIdCard.getIdCard2.result.idCard._DOB}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine8' />
+            <property name='label' value='_TERM' />
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <converter converter-id='javax.faces.BigDecimal'>
+              </converter>
+              <property name='id' value='htmlOutputText7' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{GetIdCardDefaultviewView.getIdCard.getIdCard2.result.idCard._TERM}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine9' />
+            <property name='label' value='_STUDENTID' />
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText8' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{GetIdCardDefaultviewView.getIdCard.getIdCard2.result.idCard._STUDENTID}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine10' />
+            <property name='label' value='Currentbegin' />
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText9' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{GetIdCardDefaultviewView.getIdCard.getIdCard2.result.idCard.currentbegin}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine11' />
+            <property name='label' value='Currentend' />
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText10' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{GetIdCardDefaultviewView.getIdCard.getIdCard2.result.idCard.currentend}' />
+            </control>
+          </control>
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
+        <property name='action' value='#{GetIdCardDefaultviewView.getIdCard.getIdCard2.refresh}' />
+        <property name='id' value='button' />
+        <property name='value' value='Refresh' />
+      </control>
+    </control>
+  </control>
+</view>

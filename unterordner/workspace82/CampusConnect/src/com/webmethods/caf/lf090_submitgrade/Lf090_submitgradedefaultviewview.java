@@ -22,7 +22,10 @@ public class Lf090_submitgradedefaultviewview  extends   com.webmethods.caf.face
 	private static final String[][] INITIALIZE_PROPERTY_BINDINGS = new String[][] {
 	};
 	private com.webmethods.caf.lf090_submitgrade.Lf090_submitgrade lf090_submitgrade = null;
-
+	private static final String[][] SUBMITGRADEPROVIDER_PROPERTY_BINDINGS = new String[][] {
+		{"#{SubmitGradeProvider.rowType}", "com.webmethods.caf.is.wsclient.campusconnect.work.gradesubmission.submitgrade_wsd_hk1.StudentsGrade"},
+		{"#{SubmitGradeProvider.rowVariable}", "submitGrade"},
+	};
 	/**
 	 * Initialize page
 	 */

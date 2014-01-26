@@ -9,7 +9,7 @@ import com.webmethods.caf.faces.data.ws.glue.GlueWSClientContentProvider;
  */
 public class GetAllGrades1 extends GlueWSClientContentProvider {
 
-	private static final long serialVersionUID = 1792193602514284544L;
+	private static final long serialVersionUID = 6578362113142213632L;
 
 	/**
 	 * Default constructor
@@ -30,6 +30,9 @@ public class GetAllGrades1 extends GlueWSClientContentProvider {
 		// parameters bean
 		parameters = new Parameters();
 		
+		// complex output, just a place holder
+		result = new com.webmethods.caf.is.wsclient.campusconnect.work.studentgrades.getallgrades_wsd_hk1.getAllGradesResponse();
+		
 	}
 	
 	
@@ -38,7 +41,7 @@ public class GetAllGrades1 extends GlueWSClientContentProvider {
 	 */
 	public class Parameters  implements java.io.Serializable {
 
-		private static final long serialVersionUID = 8771551722687276032L;
+		private static final long serialVersionUID = 529337509258358784L;
 
 		public Parameters() {
 		}
@@ -70,8 +73,8 @@ public class GetAllGrades1 extends GlueWSClientContentProvider {
 	/**
 	 * Return method invocation result
 	 */
-	public com.webmethods.caf.is.wsclient.campusconnect.work.studentgrades.getallgrades_wsd_hk1.outputGrades[] getResult() {
-		return (com.webmethods.caf.is.wsclient.campusconnect.work.studentgrades.getallgrades_wsd_hk1.outputGrades[])result;
+	public com.webmethods.caf.is.wsclient.campusconnect.work.studentgrades.getallgrades_wsd_hk1.getAllGradesResponse getResult() {
+		return (com.webmethods.caf.is.wsclient.campusconnect.work.studentgrades.getallgrades_wsd_hk1.getAllGradesResponse)result;
 	}
 	
 

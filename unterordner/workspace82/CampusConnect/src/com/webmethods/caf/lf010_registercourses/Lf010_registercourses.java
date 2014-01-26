@@ -19,6 +19,14 @@ public class Lf010_registercourses  extends   com.webmethods.caf.faces.bean.Base
 	public static final String[] PREFERENCES_NAMES = new String[] {
 		"StudID", "CourseID"
 	};
+	private com.webmethods.caf.is.wsclient.campusconnect.work.courseregistration.registercourses_wsd_hk2.RegisterCourses registerCourses = null;
+	private static final String[][] REGISTERCOURSES_PROPERTY_BINDINGS = new String[][] {
+		{"#{registerCourses.authCredentials.authenticationMethod}", "1"},
+		{"#{registerCourses.authCredentials.requiresAuth}", "true"},
+		{"#{registerCourses.autoRefresh}", "false"},
+		{"#{registerCourses.parameters.registerCoursesInput.inputCourses}", "#{Lf010_registercoursesdefaultviewview.lf010_registercourses.courseID}"},
+		{"#{registerCourses.parameters.registerCoursesInput.studId}", "#{Lf010_registercoursesdefaultviewview.lf010_registercourses.studID}"},
+	};
 	/**
 	 * Create new preferences bean with list of preference names
 	 */
@@ -75,5 +83,14 @@ public class Lf010_registercourses  extends   com.webmethods.caf.faces.bean.Base
 	 */
 	public void setCourseID(String courseID) throws Exception {
 		setPreferenceValue("CourseID", courseID);
+	}
+
+	public com.webmethods.caf.is.wsclient.campusconnect.work.courseregistration.registercourses_wsd_hk2.RegisterCourses getRegisterCourses()  {
+		if (registerCourses == null) {
+		    registerCourses = (com.webmethods.caf.is.wsclient.campusconnect.work.courseregistration.registercourses_wsd_hk2.RegisterCourses)resolveExpression("#{RegisterCourses}");
+		}
+	
+	    resolveDataBinding(REGISTERCOURSES_PROPERTY_BINDINGS, registerCourses, "registerCourses", false, false);
+		return registerCourses;
 	}
 }

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='NavPruefDefaultviewView' />
+  <property name='preferencesBean' value='NavPruef' />
+  <design-time-attribute name='portlet' value='navPruef' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
+      <property name='id' value='htmlOutputLink3212' />
+      <property name='label' value='Dashboard' />
+      <property name='value' value='http://sagbase:8585/user.current.start.page' />
+    </control>
+    <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+      <design-time-attribute name='rolledUp' value='false' />
+      <property name='id' value='htmlOutputText11' />
+      <property name='raw' value='true' />
+      <property name='value' value='   ' />
+    </control>
+    <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+      <design-time-attribute name='rolledUp' value='false' />
+      <property name='id' value='htmlOutputText211' />
+      <property name='raw' value='true' />
+      <property name='value' value='&lt;--&gt;' />
+    </control>
+    <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+      <property name='id' value='htmlOutputText231' />
+      <property name='raw' value='true' />
+      <property name='value' value='   ' />
+    </control>
+    <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
+      <property name='id' value='htmlOutputLink' />
+      <property name='label' value='Immatrikulationsparameter' />
+      <property name='value' value='http://sagbase:8585/meta/default/folder/0000011011' />
+    </control>
+    <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+      <design-time-attribute name='rolledUp' value='false' />
+      <property name='id' value='htmlOutputText111' />
+      <property name='raw' value='true' />
+      <property name='value' value='   ' />
+    </control>
+    <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+      <design-time-attribute name='rolledUp' value='false' />
+      <property name='id' value='htmlOutputText2111' />
+      <property name='raw' value='true' />
+      <property name='value' value='&lt;--&gt;' />
+    </control>
+    <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+      <property name='id' value='htmlOutputText2311' />
+      <property name='raw' value='true' />
+      <property name='value' value='   ' />
+    </control>
+    <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
+      <property name='id' value='htmlOutputLink1' />
+      <property name='label' value='Kurs-/Pr&#252;fungs&#252;bersicht' />
+      <property name='value' value='http://sagbase:8585/meta/default/folder/0000011012' />
+    </control>
+    <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+      <design-time-attribute name='rolledUp' value='false' />
+      <property name='id' value='htmlOutputText1111' />
+      <property name='raw' value='true' />
+      <property name='value' value='   ' />
+    </control>
+    <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+      <design-time-attribute name='rolledUp' value='false' />
+      <property name='id' value='htmlOutputText21111' />
+      <property name='raw' value='true' />
+      <property name='value' value='&lt;--&gt;' />
+    </control>
+    <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+      <property name='id' value='htmlOutputText23111' />
+      <property name='raw' value='true' />
+      <property name='value' value='   ' />
+    </control>
+    <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
+      <property name='id' value='htmlOutputLink11' />
+      <property name='label' value='Mensa Angebot' />
+      <property name='value' value='http://sagbase:8585/meta/default/folder/0000011013' />
+    </control>
+  </control>
+</view>

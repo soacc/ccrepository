@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='StartScoringDefaultviewView' />
+  <property name='preferencesBean' value='StartScoring' />
+  <design-time-attribute name='portlet' value='startScoring' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+      <property name='id' value='propertyGroup' />
+      <property name='label' value='Start Scoring' />
+      <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
+        <property name='action' value='#{StartScoringDefaultviewView.startScoring.startScoring2.refresh}' />
+        <property name='id' value='button' />
+        <property name='value' value='Refreshh' />
+      </control>
+    </control>
+  </control>
+</view>

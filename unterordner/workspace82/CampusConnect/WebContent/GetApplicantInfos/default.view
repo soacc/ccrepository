@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='GetApplicantInfosDefaultviewView' />
+  <property name='preferencesBean' value='GetApplicantInfos' />
+  <design-time-attribute name='portlet' value='getApplicantInfos' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+      <property name='id' value='propertyGroup' />
+      <property name='label' value='Get Applicant Infos 2' />
+      <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+        <property name='id' value='propertyGroup1' />
+        <property name='label' value='Input Parameters' />
+        <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+          <property name='id' value='propertyGroup2' />
+          <property name='label' value='Get Applicant Infos' />
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine' />
+            <property name='label' value='Applicant Id' />
+            <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlInputText' />
+              <property name='value' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.parameters.getApplicantInfos.applicantId}' />
+              <property name='width' value='input20' />
+            </control>
+          </control>
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+        <property name='id' value='propertyGroup3' />
+        <property name='label' value='Output Results' />
+        <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+          <property name='id' value='propertyGroup4' />
+          <property name='label' value='Student' />
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine1' />
+            <property name='label' value='_FIRSTNAME' />
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.result.student._FIRSTNAME}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine2' />
+            <property name='label' value='_LASTNAME' />
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText1' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.result.student._LASTNAME}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine3' />
+            <property name='label' value='_ADDRESSLINE1' />
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText2' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.result.student._ADDRESSLINE1}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine4' />
+            <property name='label' value='_ADDRESSLINE2' />
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText3' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.result.student._ADDRESSLINE2}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine5' />
+            <property name='label' value='_DEGREEPROGRAM' />
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText4' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.result.student._DEGREEPROGRAM}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine6' />
+            <property name='label' value='_EMAIL' />
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText5' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.result.student._EMAIL}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine7' />
+            <property name='label' value='_PHONE' />
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText6' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.result.student._PHONE}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine8' />
+            <property name='label' value='_DOB' />
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText7' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.result.student._DOB}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine9' />
+            <property name='label' value='_TERM' />
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <converter converter-id='javax.faces.BigDecimal'>
+              </converter>
+              <property name='id' value='htmlOutputText8' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.result.student._TERM}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine10' />
+            <property name='label' value='_REGISTERED' />
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <property name='id' value='htmlOutputText9' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.result.student._REGISTERED}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+            <property name='id' value='propertyLine11' />
+            <property name='label' value='_ACTIVE' />
+            <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+              <converter converter-id='javax.faces.BigDecimal'>
+              </converter>
+              <property name='id' value='htmlOutputText10' />
+              <property name='raw' value='true' />
+              <property name='value' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.result.student._ACTIVE}' />
+            </control>
+          </control>
+          <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+            <property name='id' value='propertyGroup5' />
+            <property name='label' value='Enrollment' />
+            <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+              <property name='id' value='propertyLine12' />
+              <property name='label' value='Citizenship' />
+              <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                <property name='id' value='htmlOutputText11' />
+                <property name='raw' value='true' />
+                <property name='value' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.result.student.enrollment.citizenship}' />
+              </control>
+            </control>
+            <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+              <property name='id' value='propertyLine13' />
+              <property name='label' value='Isenrolled' />
+              <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                <property name='id' value='htmlOutputText12' />
+                <property name='raw' value='true' />
+                <property name='value' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.result.student.enrollment.isenrolled}' />
+              </control>
+            </control>
+            <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+              <property name='id' value='propertyLine14' />
+              <property name='label' value='Entrancetest' />
+              <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                <property name='id' value='htmlOutputText13' />
+                <property name='raw' value='true' />
+                <property name='value' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.result.student.enrollment.entrancetest}' />
+              </control>
+            </control>
+            <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+              <property name='id' value='propertyLine15' />
+              <property name='label' value='NC' />
+              <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                <property name='id' value='htmlOutputText14' />
+                <property name='raw' value='true' />
+                <property name='value' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.result.student.enrollment.nc}' />
+              </control>
+            </control>
+            <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+              <property name='id' value='propertyLine16' />
+              <property name='label' value='Interview' />
+              <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                <property name='id' value='htmlOutputText15' />
+                <property name='raw' value='true' />
+                <property name='value' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.result.student.enrollment.interview}' />
+              </control>
+            </control>
+            <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+              <property name='id' value='propertyLine17' />
+              <property name='label' value='Exmatriculated' />
+              <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                <property name='id' value='htmlOutputText16' />
+                <property name='raw' value='true' />
+                <property name='value' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.result.student.enrollment.exmatriculated}' />
+              </control>
+            </control>
+            <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+              <property name='id' value='propertyLine18' />
+              <property name='label' value='Seconddegree' />
+              <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                <property name='id' value='htmlOutputText17' />
+                <property name='raw' value='true' />
+                <property name='value' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.result.student.enrollment.seconddegree}' />
+              </control>
+            </control>
+            <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+              <property name='id' value='propertyLine19' />
+              <property name='label' value='Datepregraduation' />
+              <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                <property name='id' value='htmlOutputText18' />
+                <property name='raw' value='true' />
+                <property name='value' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.result.student.enrollment.datepregraduation}' />
+              </control>
+            </control>
+            <control component-type='com.webmethods.caf.faces.table.AsyncTable' renderer-type='com.webmethods.caf.faces.table.AsyncTable'>
+              <property name='footerClass' value='portlet-section-footer' />
+              <property name='headerClass' value='portlet-section-subheader' />
+              <property name='id' value='asyncTable' />
+              <property name='rowClasses' value='portlet-section-body,portlet-section-alternate' />
+              <property name='rows' value='10' />
+              <property name='selectedRowClass' value='portlet-section-selected' />
+              <property name='value' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.result.student.enrollment.documents}' />
+              <property name='var' value='document' />
+              <property name='width' value='100%' />
+              <facet name='header'>
+                <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                  <property name='id' value='htmlOutputText' />
+                  <property name='raw' value='true' />
+                  <property name='value' value='Documents' />
+                </control>
+              </facet>
+              <facet name='footer'>
+                <control component-type='com.webmethods.caf.faces.table.PrevNext' renderer-type='com.webmethods.caf.faces.table.PrevNext'>
+                  <property name='id' value='prevNext' />
+                  <control component-type='javax.faces.HtmlPanelGroup' renderer-type='com.webmethods.caf.faces.panel.BlockPanel'>
+                    <property name='id' value='blockPanel' />
+                    <property name='style' value='text-align:center;' />
+                    <control component-type='com.webmethods.caf.faces.table.DataTotal' renderer-type='com.webmethods.caf.faces.table.DataTotal'>
+                      <property name='id' value='dataTotal' />
+                    </control>
+                  </control>
+                </control>
+              </facet>
+              <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+                <property name='id' value='htmlTableColumn' />
+                <property name='label' value='Title' />
+                <property name='sort' value='#{document.title}' />
+                <facet name='header'>
+                  <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                    <property name='id' value='htmlOutputText1' />
+                    <property name='raw' value='true' />
+                    <property name='value' value='Title' />
+                  </control>
+                </facet>
+                <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                  <property name='id' value='htmlOutputText2' />
+                  <property name='raw' value='true' />
+                  <property name='value' value='#{document.title}' />
+                </control>
+              </control>
+              <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+                <property name='id' value='htmlTableColumn1' />
+                <property name='label' value='Type' />
+                <property name='sort' value='#{document.type}' />
+                <facet name='header'>
+                  <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                    <property name='id' value='htmlOutputText3' />
+                    <property name='raw' value='true' />
+                    <property name='value' value='Type' />
+                  </control>
+                </facet>
+                <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                  <property name='id' value='htmlOutputText4' />
+                  <property name='raw' value='true' />
+                  <property name='value' value='#{document.type}' />
+                </control>
+              </control>
+              <control component-type='com.webmethods.caf.faces.table.html.HtmlTableColumn' renderer-type='com.webmethods.caf.faces.render.table.IExtendedColumnRenderer'>
+                <property name='id' value='htmlTableColumn2' />
+                <property name='label' value='Existing' />
+                <property name='sort' value='#{document.existing}' />
+                <facet name='header'>
+                  <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                    <property name='id' value='htmlOutputText5' />
+                    <property name='raw' value='true' />
+                    <property name='value' value='Existing' />
+                  </control>
+                </facet>
+                <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                  <property name='id' value='htmlOutputText6' />
+                  <property name='raw' value='true' />
+                  <property name='value' value='#{document.existing}' />
+                </control>
+              </control>
+            </control>
+            <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+              <property name='id' value='propertyLine20' />
+              <property name='label' value='Completed' />
+              <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                <property name='id' value='htmlOutputText19' />
+                <property name='raw' value='true' />
+                <property name='value' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.result.student.enrollment.completed}' />
+              </control>
+            </control>
+            <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+              <property name='id' value='propertyLine21' />
+              <property name='label' value='Payed' />
+              <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                <property name='id' value='htmlOutputText20' />
+                <property name='raw' value='true' />
+                <property name='value' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.result.student.enrollment.payed}' />
+              </control>
+            </control>
+            <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+              <property name='id' value='propertyLine22' />
+              <property name='label' value='Scoringresult' />
+              <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+                <property name='id' value='htmlOutputText21' />
+                <property name='raw' value='true' />
+                <property name='value' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.result.student.enrollment.scoringresult}' />
+              </control>
+            </control>
+          </control>
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
+        <property name='action' value='#{GetApplicantInfosDefaultviewView.getApplicantInfos.getApplicantInfos2.refresh}' />
+        <property name='id' value='button' />
+        <property name='value' value='Refresh' />
+      </control>
+    </control>
+  </control>
+</view>
