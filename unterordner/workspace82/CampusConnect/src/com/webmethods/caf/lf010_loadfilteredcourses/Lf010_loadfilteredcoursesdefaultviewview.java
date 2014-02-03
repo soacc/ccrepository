@@ -22,7 +22,16 @@ public class Lf010_loadfilteredcoursesdefaultviewview  extends   com.webmethods.
 	private static final String[][] INITIALIZE_PROPERTY_BINDINGS = new String[][] {
 	};
 	private com.webmethods.caf.lf010_loadfilteredcourses.Lf010_loadfilteredcourses lf010_loadfilteredcourses = null;
-
+	private com.webmethods.caf.faces.data.object.ListTableContentProvider inputCoursesProvider5 = null;
+	private static final String[][] INPUTCOURSESPROVIDER5_PROPERTY_BINDINGS = new String[][] {
+		{"#{InputCoursesProvider5.rowType}", "java.lang.String"},
+		{"#{InputCoursesProvider5.rowVariable}", "inputCourse"},
+	};
+	private static final String[][] GETCOURSEDETAILS_PROPERTY_BINDINGS = new String[][] {
+		{"#{GetCourseDetails.authCredentials.authenticationMethod}", "1"},
+		{"#{GetCourseDetails.authCredentials.requiresAuth}", "true"},
+		{"#{GetCourseDetails.autoRefresh}", "false"},
+	};
 	/**
 	 * Initialize page
 	 */
@@ -43,6 +52,15 @@ public class Lf010_loadfilteredcoursesdefaultviewview  extends   com.webmethods.
 		    lf010_loadfilteredcourses = (com.webmethods.caf.lf010_loadfilteredcourses.Lf010_loadfilteredcourses)resolveExpression("#{Lf010_loadfilteredcourses}");
 		}
 		return lf010_loadfilteredcourses;
+	}
+
+	public com.webmethods.caf.faces.data.object.ListTableContentProvider getInputCoursesProvider5()  {
+		if (inputCoursesProvider5 == null) {
+		    inputCoursesProvider5 = (com.webmethods.caf.faces.data.object.ListTableContentProvider)resolveExpression("#{InputCoursesProvider5}");
+		}
+	
+	    resolveDataBinding(INPUTCOURSESPROVIDER5_PROPERTY_BINDINGS, inputCoursesProvider5, "inputCoursesProvider5", false, false);
+		return inputCoursesProvider5;
 	}
 	
 }

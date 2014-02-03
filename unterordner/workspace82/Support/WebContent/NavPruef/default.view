@@ -8,75 +8,29 @@
   <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
     <property name='defaultFocus' value='_first' />
     <property name='id' value='defaultForm' />
-    <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
-      <property name='id' value='htmlOutputLink3212' />
-      <property name='label' value='Dashboard' />
+    <control component-type='com.webmethods.caf.faces.output.Icon' renderer-type='com.webmethods.caf.faces.output.Icon'>
+      <property name='id' value='icon1111' />
+      <property name='url' value='http://www.pictureupload.de/originals/pictures/010214174346_Dashboard.png' />
       <property name='value' value='http://sagbase:8585/user.current.start.page' />
     </control>
-    <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
-      <design-time-attribute name='rolledUp' value='false' />
-      <property name='id' value='htmlOutputText11' />
-      <property name='raw' value='true' />
-      <property name='value' value='   ' />
+    <control component-type='com.webmethods.caf.faces.output.Icon' renderer-type='com.webmethods.caf.faces.output.Icon'>
+      <property name='id' value='icon111' />
+      <property name='url' value='http://www.pictureupload.de/originals/pictures/010214174358_Kursabmeldung.png' />
+      <property name='value' value='http://sagbase:8585/meta/default/folder/0000011703' />
     </control>
-    <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
-      <design-time-attribute name='rolledUp' value='false' />
-      <property name='id' value='htmlOutputText211' />
-      <property name='raw' value='true' />
-      <property name='value' value='&lt;--&gt;' />
-    </control>
-    <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
-      <property name='id' value='htmlOutputText231' />
-      <property name='raw' value='true' />
-      <property name='value' value='   ' />
-    </control>
-    <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
-      <property name='id' value='htmlOutputLink' />
-      <property name='label' value='Immatrikulationsparameter' />
-      <property name='value' value='http://sagbase:8585/meta/default/folder/0000011011' />
-    </control>
-    <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
-      <design-time-attribute name='rolledUp' value='false' />
-      <property name='id' value='htmlOutputText111' />
-      <property name='raw' value='true' />
-      <property name='value' value='   ' />
-    </control>
-    <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
-      <design-time-attribute name='rolledUp' value='false' />
-      <property name='id' value='htmlOutputText2111' />
-      <property name='raw' value='true' />
-      <property name='value' value='&lt;--&gt;' />
-    </control>
-    <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
-      <property name='id' value='htmlOutputText2311' />
-      <property name='raw' value='true' />
-      <property name='value' value='   ' />
-    </control>
-    <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
-      <property name='id' value='htmlOutputLink1' />
-      <property name='label' value='Kurs-/Pr&#252;fungs&#252;bersicht' />
+    <control component-type='com.webmethods.caf.faces.output.Icon' renderer-type='com.webmethods.caf.faces.output.Icon'>
+      <property name='id' value='icon1' />
+      <property name='url' value='http://www.pictureupload.de/originals/pictures/010214224054_kpverw.png' />
       <property name='value' value='http://sagbase:8585/meta/default/folder/0000011012' />
     </control>
-    <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
-      <design-time-attribute name='rolledUp' value='false' />
-      <property name='id' value='htmlOutputText1111' />
-      <property name='raw' value='true' />
-      <property name='value' value='   ' />
+    <control component-type='com.webmethods.caf.faces.output.Icon' renderer-type='com.webmethods.caf.faces.output.Icon'>
+      <property name='id' value='icon' />
+      <property name='url' value='http://www.pictureupload.de/originals/pictures/010214174542_Verealtungsinfo.png' />
+      <property name='value' value='http://sagbase:8585/meta/default/folder/0000011604' />
     </control>
-    <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
-      <design-time-attribute name='rolledUp' value='false' />
-      <property name='id' value='htmlOutputText21111' />
-      <property name='raw' value='true' />
-      <property name='value' value='&lt;--&gt;' />
-    </control>
-    <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
-      <property name='id' value='htmlOutputText23111' />
-      <property name='raw' value='true' />
-      <property name='value' value='   ' />
-    </control>
-    <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
-      <property name='id' value='htmlOutputLink11' />
-      <property name='label' value='Mensa Angebot' />
+    <control component-type='com.webmethods.caf.faces.output.Icon' renderer-type='com.webmethods.caf.faces.output.Icon'>
+      <property name='id' value='icon2' />
+      <property name='url' value='http://www.pictureupload.de/originals/pictures/010214174519_Mensa.png' />
       <property name='value' value='http://sagbase:8585/meta/default/folder/0000011013' />
     </control>
   </control>

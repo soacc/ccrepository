@@ -101,11 +101,11 @@
           <property name='value' value='#{Lf070_showpersonaldatastuddefaultviewview.lf070_showpersonaldatastud.showPersonalDataStud.result.studInfo._PHONE}' />
         </control>
       </control>
-    </control>
-    <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
-      <property name='action' value='#{Lf070_showpersonaldatastuddefaultviewview.lf070_showpersonaldatastud.showPersonalDataStud.refresh}' />
-      <property name='id' value='button' />
-      <property name='value' value='Aktualisieren' />
+      <control component-type='com.webmethods.caf.faces.output.HtmlButton' renderer-type='javax.faces.Button'>
+        <property name='id' value='htmlButton' />
+        <property name='label' value='Pers&#246;nliche Daten &#228;ndern' />
+        <property name='value' value='http://sagbase:8585/meta/default/folder/0000011550' />
+      </control>
     </control>
   </control>
 </view>

@@ -10,10 +10,10 @@
     <property name='id' value='defaultForm' />
     <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
       <property name='id' value='propertyGroup' />
-      <property name='label' value='Search Courses' />
+      <property name='label' value='Kurssuche' />
       <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
         <property name='id' value='propertyLine' />
-        <property name='label' value='Enter Search String' />
+        <property name='label' value='Suche nach' />
         <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
           <property name='id' value='htmlInputText' />
           <property name='value' value='#{Lf110_searchcoursedefaultviewview.lf110_searchcourse.searchCourse3.parameters.searchCourse.searchString}' />
@@ -22,7 +22,7 @@
         <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
           <property name='action' value='#{Lf110_searchcoursedefaultviewview.lf110_searchcourse.searchCourse3.refresh}' />
           <property name='id' value='button' />
-          <property name='value' value='Search' />
+          <property name='value' value='Suche' />
         </control>
       </control>
       <control component-type='com.webmethods.caf.faces.table.AsyncTable' renderer-type='com.webmethods.caf.faces.table.AsyncTable'>
@@ -39,17 +39,20 @@
           <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
             <property name='id' value='htmlOutputText' />
             <property name='raw' value='true' />
-            <property name='value' value='Result of your request:' />
+            <property name='value' value='Ergebnis der Anfrage:' />
           </control>
         </facet>
         <facet name='footer'>
           <control component-type='com.webmethods.caf.faces.table.PrevNext' renderer-type='com.webmethods.caf.faces.table.PrevNext'>
             <property name='id' value='prevNext' />
+            <property name='nextText' value='Weiter &gt;&gt;' />
+            <property name='prevText' value='&lt;&lt; Zur&#252;ck' />
             <control component-type='javax.faces.HtmlPanelGroup' renderer-type='com.webmethods.caf.faces.panel.BlockPanel'>
               <property name='id' value='blockPanel' />
               <property name='style' value='text-align:center;' />
               <control component-type='com.webmethods.caf.faces.table.DataTotal' renderer-type='com.webmethods.caf.faces.table.DataTotal'>
                 <property name='id' value='dataTotal' />
+                <property name='standardMsg' value='{0} - {1} von {2}' />
               </control>
             </control>
           </control>
@@ -62,7 +65,7 @@
             <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
               <property name='id' value='htmlOutputText23' />
               <property name='raw' value='true' />
-              <property name='value' value='Course ID' />
+              <property name='value' value='Kurs ID' />
             </control>
           </facet>
           <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
@@ -79,7 +82,7 @@
             <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
               <property name='id' value='htmlOutputText7' />
               <property name='raw' value='true' />
-              <property name='value' value='Course Name' />
+              <property name='value' value='Titel' />
             </control>
           </facet>
           <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
@@ -96,7 +99,7 @@
             <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
               <property name='id' value='htmlOutputText1' />
               <property name='raw' value='true' />
-              <property name='value' value='Degreeprogramm' />
+              <property name='value' value='Studiengang' />
             </control>
           </facet>
           <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
@@ -130,7 +133,7 @@
             <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
               <property name='id' value='htmlOutputText9' />
               <property name='raw' value='true' />
-              <property name='value' value='Term' />
+              <property name='value' value='Semester' />
             </control>
           </facet>
           <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
@@ -147,7 +150,7 @@
             <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
               <property name='id' value='htmlOutputText13' />
               <property name='raw' value='true' />
-              <property name='value' value='Day' />
+              <property name='value' value='Wochentag' />
             </control>
           </facet>
           <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
@@ -164,7 +167,7 @@
             <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
               <property name='id' value='htmlOutputText15' />
               <property name='raw' value='true' />
-              <property name='value' value='Time' />
+              <property name='value' value='Uhrzeit' />
             </control>
           </facet>
           <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
@@ -181,7 +184,7 @@
             <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
               <property name='id' value='htmlOutputText17' />
               <property name='raw' value='true' />
-              <property name='value' value='Room' />
+              <property name='value' value='Raum' />
             </control>
           </facet>
           <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
@@ -199,7 +202,7 @@
               <property name='id' value='htmlOutputText11' />
               <property name='label' value='ggg' />
               <property name='raw' value='true' />
-              <property name='value' value='Paticipants' />
+              <property name='value' value='Belegungsinfo' />
             </control>
           </facet>
           <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>

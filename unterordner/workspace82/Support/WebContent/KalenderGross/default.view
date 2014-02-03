@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='KalenderGrossDefaultviewView' />
+  <property name='preferencesBean' value='KalenderGross' />
+  <design-time-attribute name='portlet' value='KalenderGross' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.output.IncludeHTML' renderer-type='com.webmethods.caf.faces.output.IncludeHTML'>
+      <property name='id' value='includeHTML' />
+      <property name='value' value='/KalenderGross/Kalender.html' />
+    </control>
+    <control component-type='com.webmethods.caf.faces.output.HtmlButton' renderer-type='javax.faces.Button'>
+      <property name='id' value='htmlButton' />
+      <property name='label' value='Zur&#252;ck' />
+      <property name='value' value='http://sagbase:8585/user.current.start.page' />
+    </control>
+  </control>
+</view>

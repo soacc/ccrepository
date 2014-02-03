@@ -14,18 +14,6 @@ public class Lf070_showpersonaldatastud  extends   com.webmethods.caf.faces.bean
 
 	private com.webmethods.caf.CampusConnect campusConnect = null;
 	private com.webmethods.caf.is.wsclient.campusconnect.work.editpersonaldatastud.showpersonaldatastud_wsd.ShowPersonalDataStud1 showPersonalDataStud = null;
-	/**
-	 * List of portlet preference names
-	 */
-	public static final String[] PREFERENCES_NAMES = new String[] {
-		"StudID"
-	};
-	private static final String[][] SHOWPERSONALDATASTUD_PROPERTY_BINDINGS = new String[][] {
-		{"#{showPersonalDataStud.authCredentials.authenticationMethod}", "1"},
-		{"#{showPersonalDataStud.authCredentials.requiresAuth}", "true"},
-		{"#{showPersonalDataStud.autoRefresh}", "true"},
-		{"#{showPersonalDataStud.parameters.showPersonalDataStud.studId}", "#{Lf070_showpersonaldatastuddefaultviewview.lf070_showpersonaldatastud.studID}"},
-	};
 	private static final String[][] EDITSTUDENT22_PROPERTY_BINDINGS = new String[][] {
 		{"#{editStudent22.authCredentials.authenticationMethod}", "1"},
 		{"#{editStudent22.authCredentials.requiresAuth}", "true"},
@@ -36,6 +24,18 @@ public class Lf070_showpersonaldatastud  extends   com.webmethods.caf.faces.bean
 		{"#{editStudent23.authCredentials.authenticationMethod}", "1"},
 		{"#{editStudent23.authCredentials.requiresAuth}", "true"},
 		{"#{editStudent23.autoRefresh}", "false"},
+	};
+	/**
+	 * List of portlet preference names
+	 */
+	public static final String[] PREFERENCES_NAMES = new String[] {
+		"StudID", "Hidden"
+	};
+	private static final String[][] SHOWPERSONALDATASTUD_PROPERTY_BINDINGS = new String[][] {
+		{"#{showPersonalDataStud.authCredentials.authenticationMethod}", "1"},
+		{"#{showPersonalDataStud.authCredentials.requiresAuth}", "true"},
+		{"#{showPersonalDataStud.autoRefresh}", "true"},
+		{"#{showPersonalDataStud.parameters.showPersonalDataStud.studId}", "#{Lf070_showpersonaldatastuddefaultviewview.lf070_showpersonaldatastud.studID}"},
 	};
 	/**
 	 * Create new preferences bean with list of preference names
@@ -85,5 +85,22 @@ public class Lf070_showpersonaldatastud  extends   com.webmethods.caf.faces.bean
 	 */
 	public void setStudID(String studID) throws Exception {
 		setPreferenceValue("StudID", studID);
+	}
+
+	/**
+	 * The algorithm for this 'smart' preference getter is:
+	 * 1) Check the Request Map (skip this step if it isn't a 'smart' preference)
+	 * 2) Check the Member variable
+	 * 3) Fall back to the PortletPreferences
+	 */
+	public String getHidden() throws Exception {
+		return (String) getPreferenceValue("Hidden", String.class);
+	}
+
+	/**
+	 * Invoke {@link #storePreferences} to persist these changes
+	 */
+	public void setHidden(String hidden) throws Exception {
+		setPreferenceValue("Hidden", hidden);
 	}
 }

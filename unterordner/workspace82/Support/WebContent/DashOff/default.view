@@ -13,8 +13,8 @@
       <property name='label' value='1.' />
       <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
         <property name='id' value='htmlOutputLink' />
-        <property name='label' value='Nutzer&#252;bersicht' />
-        <property name='value' value='http://sagbase:8585/meta/default/folder/0000010891' />
+        <property name='label' value='Kurssuche' />
+        <property name='value' value='http://sagbase:8585/meta/default/folder/0000011867' />
       </control>
     </control>
     <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
@@ -22,8 +22,8 @@
       <property name='label' value='2.' />
       <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
         <property name='id' value='htmlOutputLink3211' />
-        <property name='label' value='Immatrikulations&#252;bersicht' />
-        <property name='value' value='http://sagbase:8585/meta/default/folder/0000010994' />
+        <property name='label' value='Nutzer&#252;bersicht' />
+        <property name='value' value='http://sagbase:8585/meta/default/folder/0000010891' />
       </control>
     </control>
     <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
@@ -31,13 +31,31 @@
       <property name='label' value='3.' />
       <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
         <property name='id' value='htmlOutputLink321' />
+        <property name='label' value='Immatrikulations&#252;bersicht' />
+        <property name='value' value='http://sagbase:8585/meta/default/folder/0000010994' />
+      </control>
+    </control>
+    <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+      <property name='id' value='propertyLine15111' />
+      <property name='label' value='4.' />
+      <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
+        <property name='id' value='htmlOutputLink32111' />
+        <property name='label' value='Immatrikulationsparameter' />
+        <property name='value' value='http://sagbase:8585/meta/default/folder/0000011869' />
+      </control>
+    </control>
+    <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+      <property name='id' value='propertyLine15112' />
+      <property name='label' value='5.' />
+      <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
+        <property name='id' value='htmlOutputLink32112' />
         <property name='label' value='Verwaltungsinformationen' />
         <property name='value' value='http://sagbase:8585/meta/default/folder/0000010984' />
       </control>
     </control>
     <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
       <property name='id' value='propertyLine15' />
-      <property name='label' value='4.' />
+      <property name='label' value='6.' />
       <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
         <property name='id' value='htmlOutputLink32' />
         <property name='label' value='Mensa Angebot' />

@@ -11,11 +11,19 @@
     <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
       <property name='id' value='propertyGroup' />
       <property name='label' value='Pers&#246;nliche Daten &#228;ndern' />
+      <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+        <property name='id' value='htmlOutputText' />
+        <property name='raw' value='true' />
+        <property name='value' value='Achten Sie darauf, dass alle Daten korrekt eingegeben werden. Das Studentenb&#252;ro &#252;bernimmt keine Verantwortung f&#252;r falsche Daten!' />
+      </control>
       <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
         <property name='id' value='propertyLine1' />
-        <property name='label' value='Stra&#223;e und Hausnummer' />
+        <property name='label' value='Stra&#223;e und Nummer' />
         <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
           <property name='id' value='htmlInputText1' />
+          <property name='required' value='true' />
+          <property name='requiredMessage' value='Sie m&#252;ssen eine Stra&#223;e und Hausnummer angeben!' />
+          <property name='useClientSideValidation' value='false' />
           <property name='value' value='#{Lf070_editstudent2defaultviewview.lf070_editstudent2.editStudent2.parameters.editStudent2._ADDRESSLINE1}' />
           <property name='width' value='input20' />
         </control>
@@ -25,6 +33,9 @@
         <property name='label' value='PLZ und Stadt' />
         <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
           <property name='id' value='htmlInputText2' />
+          <property name='required' value='true' />
+          <property name='requiredMessage' value='Sie m&#252;ssen eine PLZ und Stadt angeben!' />
+          <property name='useClientSideValidation' value='false' />
           <property name='value' value='#{Lf070_editstudent2defaultviewview.lf070_editstudent2.editStudent2.parameters.editStudent2._ADDRESSLINE2}' />
           <property name='width' value='input20' />
         </control>
@@ -34,6 +45,9 @@
         <property name='label' value='E-Mail-Adresse' />
         <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
           <property name='id' value='htmlInputText3' />
+          <property name='required' value='true' />
+          <property name='requiredMessage' value='Sie m&#252;ssen eine E-Mail-Addresse angeben!' />
+          <property name='useClientSideValidation' value='false' />
           <property name='value' value='#{Lf070_editstudent2defaultviewview.lf070_editstudent2.editStudent2.parameters.editStudent2._EMAIL}' />
           <property name='width' value='input20' />
         </control>
@@ -43,6 +57,9 @@
         <property name='label' value='Telefonnummer' />
         <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
           <property name='id' value='htmlInputText4' />
+          <property name='required' value='true' />
+          <property name='requiredMessage' value='Sie m&#252;ssen eine Telefonnummer angeben!' />
+          <property name='useClientSideValidation' value='false' />
           <property name='value' value='#{Lf070_editstudent2defaultviewview.lf070_editstudent2.editStudent2.parameters.editStudent2._PHONE}' />
           <property name='width' value='input20' />
         </control>
@@ -51,6 +68,11 @@
         <property name='action' value='#{Lf070_editstudent2defaultviewview.lf070_editstudent2.editStudent2.refresh}' />
         <property name='id' value='button' />
         <property name='value' value='&#196;nderungen speichern' />
+      </control>
+      <control component-type='com.webmethods.caf.faces.output.HtmlButton' renderer-type='javax.faces.Button'>
+        <property name='id' value='htmlButton' />
+        <property name='label' value='Zur&#252;ck' />
+        <property name='value' value='http://sagbase:8585/meta/default/folder/0000010728' />
       </control>
     </control>
   </control>

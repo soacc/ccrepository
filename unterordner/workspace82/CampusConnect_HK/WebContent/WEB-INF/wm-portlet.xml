@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wm-portlet-app version="1.0">
+
+
+
+
+	<wm-portlet>
+		<portlet-name>KursDetailsProfessor</portlet-name>
+		<category>CampusConnect_HK</category>
+		<portlet-preferences>
+			<preference>
+				<name>ProfID</name>
+				<display-name>Prof ID</display-name>
+				<description></description>
+				<scope>content</scope>
+				<property-editor type="text"></property-editor>
+				<hidden>true</hidden>
+				<required>false</required>
+				<type>String</type>
+			</preference>
+			<preference>
+				<name>CourseID</name>
+				<display-name>Course ID</display-name>
+				<description></description>
+				<scope>content</scope>
+				<property-editor type="text"></property-editor>
+				<hidden>true</hidden>
+				<required>false</required>
+				<type>String</type>
+			</preference>
+			<preference>
+				<name>StudID</name>
+				<display-name>Stud ID</display-name>
+				<description></description>
+				<scope>content</scope>
+				<property-editor type="text"></property-editor>
+				<hidden>true</hidden>
+				<required>false</required>
+				<type>String</type>
+			</preference>
+			<preference>
+				<name>Grade</name>
+				<display-name></display-name>
+				<description></description>
+				<scope>content</scope>
+				<property-editor type="text"></property-editor>
+				<hidden>true</hidden>
+				<required>false</required>
+				<type>String</type>
+			</preference>
+		</portlet-preferences>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>NotenÄndern</portlet-name>
+		<category>CampusConnect_HK</category>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>Immatrikulationsübersicht</portlet-name>
+		<category>CampusConnect_HK</category>
+	</wm-portlet>
+
+
+	<wm-portlet>
+		<portlet-name>getExmaReasons</portlet-name>
+		<category>CampusConnect_HK</category>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>Links</portlet-name>
+		<category>CampusConnect_HK</category>
+		<portlet-preferences>
+			<preference>
+				<name>Var</name>
+				<display-name></display-name>
+				<description></description>
+				<scope>content</scope>
+				<property-editor type="text"></property-editor>
+				<hidden>true</hidden>
+				<required>false</required>
+				<type>String</type>
+			</preference>
+			<preference>
+				<name>var1</name>
+				<display-name></display-name>
+				<description></description>
+				<scope>content</scope>
+				<property-editor type="text"></property-editor>
+				<hidden>true</hidden>
+				<required>false</required>
+				<type>String</type>
+			</preference>
+		</portlet-preferences>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>Rechts</portlet-name>
+		<category>CampusConnect_HK</category>
+		<portlet-preferences>
+			<preference>
+				<name>Var</name>
+				<display-name></display-name>
+				<description></description>
+				<scope>content</scope>
+				<property-editor type="text"></property-editor>
+				<hidden>true</hidden>
+				<required>false</required>
+				<type>String</type>
+			</preference>
+		</portlet-preferences>
+	</wm-portlet>
+
+
+
+	<wm-portlet>
+		<portlet-name>Karte</portlet-name>
+		<category>CampusConnect_HK</category>
+	</wm-portlet></wm-portlet-app>
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wm-portlet-app version="1.0">
+
+
+
+
+
+
+
+	<wm-portlet>
+		<portlet-name>allinone</portlet-name>
+		<category>DashStudent</category>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>allinoneProf</portlet-name>
+		<category>DashStudent</category>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>allinonePruef</portlet-name>
+		<category>DashStudent</category>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>allinoneOff</portlet-name>
+		<category>DashStudent</category>
+	</wm-portlet></wm-portlet-app>
+

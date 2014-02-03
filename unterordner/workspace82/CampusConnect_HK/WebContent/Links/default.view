@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='LinksDefaultviewView' />
+  <property name='preferencesBean' value='Links' />
+  <design-time-attribute name='portlet' value='Links' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+      <property name='id' value='propertyLine' />
+      <property name='label' value='Hier starten' />
+      <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+        <property name='id' value='htmlInputText' />
+        <property name='value' value='#{LinksDefaultviewView.links.var1}' />
+        <property name='width' value='input20' />
+      </control>
+      <control component-type='javax.faces.HtmlCommandButton' renderer-type='javax.faces.Button'>
+        <property name='action' value='#{LinksDefaultviewView.links.action}' />
+        <property name='id' value='htmlCommandButton' />
+        <property name='value' value='Go' />
+      </control>
+    </control>
+  </control>
+</view>

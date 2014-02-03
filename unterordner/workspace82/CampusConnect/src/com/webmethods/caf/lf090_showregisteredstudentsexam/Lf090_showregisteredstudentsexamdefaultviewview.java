@@ -22,7 +22,16 @@ public class Lf090_showregisteredstudentsexamdefaultviewview  extends   com.webm
 	private static final String[][] INITIALIZE_PROPERTY_BINDINGS = new String[][] {
 	};
 	private com.webmethods.caf.lf090_showregisteredstudentsexam.Lf090_showregisteredstudentsexam lf090_showregisteredstudentsexam = null;
-
+	private static final String[][] LF090_SHOWREGISTEREDSTUDENTSEXAMPROVIDER_PROPERTY_BINDINGS = new String[][] {
+		{"#{Lf090_showregisteredstudentsexamProvider.object}", "#{Lf090_showregisteredstudentsexamdefaultviewview.lf090_showregisteredstudentsexam}"},
+	};
+	private static final String[][] LF090_SHOWREGISTEREDSTUDENTSEXAMDEFAULTVIEWVIEWPROVIDER_PROPERTY_BINDINGS = new String[][] {
+		{"#{Lf090_showregisteredstudentsexamdefaultviewviewProvider.object}", "#{Lf090_showregisteredstudentsexamdefaultviewview}"},
+	};
+	private com.webmethods.caf.faces.data.object.ELSelectItemProvider studentProvider = null;
+	private static final String[][] STUDENTPROVIDER_PROPERTY_BINDINGS = new String[][] {
+		{"#{StudentProvider.object}", "#{Lf090_showregisteredstudentsexamdefaultviewview.lf090_showregisteredstudentsexam.showRegisteredStudentsExam3.result.students.student}"},
+	};
 	/**
 	 * Initialize page
 	 */
@@ -43,6 +52,15 @@ public class Lf090_showregisteredstudentsexamdefaultviewview  extends   com.webm
 		    lf090_showregisteredstudentsexam = (com.webmethods.caf.lf090_showregisteredstudentsexam.Lf090_showregisteredstudentsexam)resolveExpression("#{Lf090_showregisteredstudentsexam}");
 		}
 		return lf090_showregisteredstudentsexam;
+	}
+
+	public com.webmethods.caf.faces.data.object.ELSelectItemProvider getStudentProvider()  {
+		if (studentProvider == null) {
+		    studentProvider = (com.webmethods.caf.faces.data.object.ELSelectItemProvider)resolveExpression("#{StudentProvider}");
+		}
+	
+	    resolveDataBinding(STUDENTPROVIDER_PROPERTY_BINDINGS, studentProvider, "studentProvider", false, false);
+		return studentProvider;
 	}
 	
 }

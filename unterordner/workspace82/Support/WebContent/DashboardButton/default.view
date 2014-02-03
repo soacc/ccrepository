@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='DashboardButtonDefaultviewView' />
+  <property name='preferencesBean' value='DashboardButton' />
+  <design-time-attribute name='portlet' value='DashboardButton' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.output.Icon' renderer-type='com.webmethods.caf.faces.output.Icon'>
+      <property name='id' value='icon1111' />
+      <property name='url' value='http://www.pictureupload.de/originals/pictures/310114154056_Dashboard.png' />
+      <property name='urlMouseover' value='http://www.pictureupload.de/originals/pictures/310114154029_Dashboard_over.png' />
+      <property name='value' value='http://sagbase:8585/user.current.start.page' />
+    </control>
+  </control>
+</view>

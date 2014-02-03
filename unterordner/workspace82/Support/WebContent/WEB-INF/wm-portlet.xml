@@ -4,14 +4,8 @@
 		<portlet-name>SoftwareAG_Logo</portlet-name>
 		<category>Support</category>
 	</wm-portlet>
-	<wm-portlet>
-		<portlet-name>studentNavigation</portlet-name>
-		<category>Support</category>
-	</wm-portlet>
-	<wm-portlet>
-		<portlet-name>Overview</portlet-name>
-		<category>Support</category>
-	</wm-portlet>
+
+
 
 	<wm-portlet>
 		<portlet-name>courseDetails</portlet-name>
@@ -29,15 +23,9 @@
 			</preference>
 		</portlet-preferences>
 	</wm-portlet>
-	<wm-portlet>
-		<portlet-name>showEating_test</portlet-name>
-		<category>Support</category>
-	</wm-portlet>
 
-	<wm-portlet>
-		<portlet-name>examderegtest</portlet-name>
-		<category>Support</category>
-	</wm-portlet>
+
+
 
 
 
@@ -56,22 +44,7 @@
 		<portlet-name>studentDashboard</portlet-name>
 		<category>Support</category>
 	</wm-portlet>
-	<wm-portlet>
-		<portlet-name>getExamFromCourse</portlet-name>
-		<category>Support</category>
-		<portlet-preferences>
-			<preference>
-				<name>CourseID</name>
-				<display-name>Course ID</display-name>
-				<description></description>
-				<scope>content</scope>
-				<property-editor type="text"></property-editor>
-				<hidden>true</hidden>
-				<required>false</required>
-				<type>String</type>
-			</preference>
-		</portlet-preferences>
-	</wm-portlet>
+
 	<wm-portlet>
 		<portlet-name>navStudent</portlet-name>
 		<category>Support</category>
@@ -98,6 +71,35 @@
 	</wm-portlet>
 	<wm-portlet>
 		<portlet-name>navPruef</portlet-name>
+		<category>Support</category>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>DashboardButton</portlet-name>
+		<category>Support</category>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>KalenderKlein</portlet-name>
+		<category>Support</category>
+	</wm-portlet>
+
+	<wm-portlet>
+		<portlet-name>Karte2</portlet-name>
+		<category>Support</category>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>KalenderGross</portlet-name>
+		<category>Support</category>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>Impressum</portlet-name>
+		<category>Support</category>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>Impressumb</portlet-name>
+		<category>Support</category>
+	</wm-portlet>
+	<wm-portlet>
+		<portlet-name>KarteVerw</portlet-name>
 		<category>Support</category>
 	</wm-portlet></wm-portlet-app>
 

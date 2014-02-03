@@ -16,7 +16,7 @@
         <property name='headerClass' value='portlet-section-subheader' />
         <property name='id' value='asyncTable' />
         <property name='rowClasses' value='portlet-section-body,portlet-section-alternate' />
-        <property name='rows' value='20' />
+        <property name='rows' value='5' />
         <property name='selectedRowClass' value='portlet-section-selected' />
         <property name='value' value='#{Lf010_loadfilteredcoursesdefaultviewview.lf010_loadfilteredcourses.loadFilteredCourses8.result.outputCourses}' />
         <property name='var' value='outputCourse' />
@@ -25,17 +25,20 @@
           <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
             <property name='id' value='htmlOutputText' />
             <property name='raw' value='true' />
-            <property name='value' value='Kurs ausw&#228;hlen durch Anklicken' />
+            <property name='value' value='Anklicken zum Ausw&#228;hlen' />
           </control>
         </facet>
         <facet name='footer'>
           <control component-type='com.webmethods.caf.faces.table.PrevNext' renderer-type='com.webmethods.caf.faces.table.PrevNext'>
             <property name='id' value='prevNext' />
+            <property name='nextText' value='Weiter &gt;&gt;' />
+            <property name='prevText' value='&lt;&lt; Zur&#252;ck' />
             <control component-type='javax.faces.HtmlPanelGroup' renderer-type='com.webmethods.caf.faces.panel.BlockPanel'>
               <property name='id' value='blockPanel' />
               <property name='style' value='text-align:center;' />
               <control component-type='com.webmethods.caf.faces.table.DataTotal' renderer-type='com.webmethods.caf.faces.table.DataTotal'>
                 <property name='id' value='dataTotal' />
+                <property name='standardMsg' value='{0} - {1} von {2}' />
               </control>
             </control>
           </control>
@@ -75,10 +78,124 @@
           </control>
         </control>
       </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+        <property name='id' value='propertyGroup1' />
+        <property name='label' value='Ausgew&#228;hlter Kurs' />
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='id' value='propertyLine3' />
+          <property name='label' value='Titel' />
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText3' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{Lf010_loadfilteredcoursesdefaultviewview.lf010_loadfilteredcourses.getCourseDetails.result.course._COURSENAME}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='id' value='propertyLine51' />
+          <property name='label' value='Dozent' />
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText2' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{Lf010_loadfilteredcoursesdefaultviewview.lf010_loadfilteredcourses.getCourseDetails.result.course._PTITEL}' />
+          </control>
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText91' />
+            <property name='raw' value='true' />
+            <property name='value' value=' ' />
+          </control>
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText41' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{Lf010_loadfilteredcoursesdefaultviewview.lf010_loadfilteredcourses.getCourseDetails.result.course._PFIRSTNAME}' />
+          </control>
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText101' />
+            <property name='raw' value='true' />
+            <property name='value' value=' ' />
+          </control>
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText81' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{Lf010_loadfilteredcoursesdefaultviewview.lf010_loadfilteredcourses.getCourseDetails.result.course._PLASTNAME}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='id' value='propertyLine13' />
+          <property name='label' value='Lehrstuhl' />
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText13' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{Lf010_loadfilteredcoursesdefaultviewview.lf010_loadfilteredcourses.getCourseDetails.result.course._PCHAIR}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='id' value='propertyLine6' />
+          <property name='label' value='Wochentag' />
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText6' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{Lf010_loadfilteredcoursesdefaultviewview.lf010_loadfilteredcourses.getCourseDetails.result.course._COURSEDAY}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='id' value='propertyLine7' />
+          <property name='label' value='Uhrzeit' />
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText7' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{Lf010_loadfilteredcoursesdefaultviewview.lf010_loadfilteredcourses.getCourseDetails.result.course._COURSETIME}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='id' value='propertyLine61' />
+          <property name='label' value='Belegungsinfo' />
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <converter converter-id='javax.faces.BigDecimal'>
+            </converter>
+            <property name='id' value='htmlOutputText' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{Lf010_loadfilteredcoursesdefaultviewview.lf010_loadfilteredcourses.getCourseDetails.result.course._AMOUNTREGISTERED}' />
+          </control>
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <property name='id' value='htmlOutputText1' />
+            <property name='raw' value='true' />
+            <property name='value' value='/' />
+          </control>
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+            <converter converter-id='javax.faces.BigDecimal'>
+            </converter>
+            <property name='id' value='htmlOutputText51' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{Lf010_loadfilteredcoursesdefaultviewview.lf010_loadfilteredcourses.getCourseDetails.result.course._MAXPARTICIPANTS}' />
+          </control>
+        </control>
+      </control>
+      <control component-type='javax.faces.Parameter' renderer-type=''>
+      </control>
       <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
-        <property name='action' value='#{Lf010_loadfilteredcoursesdefaultviewview.lf010_loadfilteredcourses.loadFilteredCourses8.refresh}' />
-        <property name='id' value='button' />
-        <property name='value' value='Aktualisieren' />
+        <property name='action' value='#{Lf010_loadfilteredcoursesdefaultviewview.lf010_loadfilteredcourses.action}' />
+        <property name='id' value='button1' />
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText5' />
+          <property name='raw' value='true' />
+          <property name='value' value='Kurs ' />
+        </control>
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText9' />
+          <property name='raw' value='true' />
+          <property name='value' value='anmelden' />
+        </control>
+      </control>
+      <control component-type='javax.faces.Parameter' renderer-type=''>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine' />
+        <property name='label' value='Ergebnis' />
+        <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlOutputText8' />
+          <property name='raw' value='true' />
+          <property name='value' value='#{Lf010_loadfilteredcoursesdefaultviewview.lf010_loadfilteredcourses.feldID}' />
+        </control>
       </control>
     </control>
   </control>

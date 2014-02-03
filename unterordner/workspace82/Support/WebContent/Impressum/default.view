@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='ImpressumDefaultviewView' />
+  <property name='preferencesBean' value='Impressum' />
+  <design-time-attribute name='portlet' value='Impressum' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='javax.faces.HtmlOutputLink' renderer-type='javax.faces.Link'>
+      <property name='id' value='htmlOutputLink' />
+      <property name='label' value='Impressum' />
+      <property name='value' value='http://sagbase:8585/ui/skins/wm_skin_pearls/images/Impressum.html' />
+    </control>
+  </control>
+</view>

@@ -18,7 +18,7 @@ public class Lf070_editstudent2  extends   com.webmethods.caf.faces.bean.BaseFac
 	 * List of portlet preference names
 	 */
 	public static final String[] PREFERENCES_NAMES = new String[] {
-		"StudID"
+		"StudID", "Hidden"
 	};
 	private static final String[][] EDITSTUDENT2_PROPERTY_BINDINGS = new String[][] {
 		{"#{editStudent2.authCredentials.authenticationMethod}", "1"},
@@ -74,5 +74,22 @@ public class Lf070_editstudent2  extends   com.webmethods.caf.faces.bean.BaseFac
 	 */
 	public void setStudID(String studID) throws Exception {
 		setPreferenceValue("StudID", studID);
+	}
+
+	/**
+	 * The algorithm for this 'smart' preference getter is:
+	 * 1) Check the Request Map (skip this step if it isn't a 'smart' preference)
+	 * 2) Check the Member variable
+	 * 3) Fall back to the PortletPreferences
+	 */
+	public String getHidden() throws Exception {
+		return (String) getPreferenceValue("Hidden", String.class);
+	}
+
+	/**
+	 * Invoke {@link #storePreferences} to persist these changes
+	 */
+	public void setHidden(String hidden) throws Exception {
+		setPreferenceValue("Hidden", hidden);
 	}
 }

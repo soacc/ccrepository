@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='Pq__NotenndernDefaultviewView_0fe' />
+  <property name='preferencesBean' value='Pq__Notenndern_00b' />
+  <design-time-attribute name='portlet' value='Noten&#196;ndern' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+      <property name='id' value='propertyGroup2' />
+      <property name='label' value='Note nachtr&#228;glich &#228;ndern' />
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine' />
+        <property name='label' value='Studenten ID' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <validator validator-id='com.webmethods.caf.faces.validator.RegExp'>
+          </validator>
+          <property name='id' value='htmlInputText' />
+          <property name='value' value='#{Pq__NotenndernDefaultviewView_0fe.pq__Notenndern_00b.submitGrade.parameters.submitGrade.studentId}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine1' />
+        <property name='label' value='Kurs ID' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlInputText1' />
+          <property name='value' value='#{Pq__NotenndernDefaultviewView_0fe.pq__Notenndern_00b.submitGrade.parameters.submitGrade.courseId}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+        <property name='id' value='propertyLine2' />
+        <property name='label' value='Neue Note' />
+        <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+          <property name='id' value='htmlInputText2' />
+          <property name='value' value='#{Pq__NotenndernDefaultviewView_0fe.pq__Notenndern_00b.submitGrade.parameters.submitGrade.grade}' />
+          <property name='width' value='input20' />
+        </control>
+      </control>
+      <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
+        <property name='action' value='#{Pq__NotenndernDefaultviewView_0fe.pq__Notenndern_00b.submitGrade.refresh}' />
+        <property name='id' value='button' />
+        <property name='value' value='Note &#228;ndern' />
+      </control>
+      <control component-type='com.webmethods.caf.faces.output.HtmlButton' renderer-type='javax.faces.Button'>
+        <property name='id' value='htmlButton' />
+        <property name='label' value='Zur&#252;ck' />
+        <property name='value' value='http://sagbase:8585/meta/default/folder/0000010818' />
+      </control>
+    </control>
+  </control>
+</view>

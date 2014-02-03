@@ -9,10 +9,8 @@
     <property name='defaultFocus' value='_first' />
     <property name='id' value='defaultForm' />
     <control component-type='javax.faces.HtmlGraphicImage' renderer-type='javax.faces.Image'>
-      <property name='height' value='99px' />
       <property name='id' value='htmlGraphicImage' />
-      <property name='url' value='http://www.uni-leipzig.de/~schaufuss/wp-content/uploads/2013/08/Logo.jpg' />
-      <property name='width' value='612px' />
+      <property name='url' value='http://www.pictureupload.de/originals/pictures/020214025335_Unbenannt-7.png' />
     </control>
   </control>
 </view>

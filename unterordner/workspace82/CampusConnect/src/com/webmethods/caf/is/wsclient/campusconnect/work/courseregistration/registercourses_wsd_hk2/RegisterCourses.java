@@ -9,7 +9,7 @@ import com.webmethods.caf.faces.data.ws.glue.GlueWSClientContentProvider;
  */
 public class RegisterCourses extends GlueWSClientContentProvider {
 
-	private static final long serialVersionUID = 3470183866624077824L;
+	private static final long serialVersionUID = 3007353854201460736L;
 
 	/**
 	 * Default constructor
@@ -30,6 +30,9 @@ public class RegisterCourses extends GlueWSClientContentProvider {
 		// parameters bean
 		parameters = new Parameters();
 		
+		// complex output, just a place holder
+		result = new com.webmethods.caf.is.wsclient.campusconnect.work.courseregistration.registercourses_wsd_hk2.registerCoursesOutput();
+		
 	}
 	
 	
@@ -38,7 +41,7 @@ public class RegisterCourses extends GlueWSClientContentProvider {
 	 */
 	public class Parameters  implements java.io.Serializable {
 
-		private static final long serialVersionUID = 8671607802229329920L;
+		private static final long serialVersionUID = 3984971344873593856L;
 
 		public Parameters() {
 		}
@@ -70,8 +73,8 @@ public class RegisterCourses extends GlueWSClientContentProvider {
 	/**
 	 * Return method invocation result
 	 */
-	public com.webmethods.caf.is.wsclient.campusconnect.work.courseregistration.registercourses_wsd_hk2.registeredCourses[] getResult() {
-		return (com.webmethods.caf.is.wsclient.campusconnect.work.courseregistration.registercourses_wsd_hk2.registeredCourses[])result;
+	public com.webmethods.caf.is.wsclient.campusconnect.work.courseregistration.registercourses_wsd_hk2.registerCoursesOutput getResult() {
+		return (com.webmethods.caf.is.wsclient.campusconnect.work.courseregistration.registercourses_wsd_hk2.registerCoursesOutput)result;
 	}
 	
 

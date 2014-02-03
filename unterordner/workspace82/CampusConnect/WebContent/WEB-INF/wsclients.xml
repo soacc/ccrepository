@@ -10,6 +10,17 @@
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\searchcourse\searchcourse_wsd\courses.java</generatedfile>
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\searchcourse\searchcourse_wsd\searchCourse_WSD.map</generatedfile>
 </webservice>
+<webservice authenticationMethod="-1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.courseRegistration:registercoursestest?WSDL" isService="CampusConnect.work.courseRegistration:registercoursestest" name="registercoursestest" package="com.webmethods.caf.is.wsclient.campusconnect.work.courseregistration.registercoursestest" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/courseregistration/registercoursestest/registercoursestest.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.courseRegistration:registercoursestest?WSDL">
+<wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.work.courseregistration.registercoursestest.Iregistercoursestest_PortType">
+<wsclient managedBean="RegisterCourses2" operation="registerCourses"/>
+</wsproxy>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\registercoursestest\Iregistercoursestest_PortType.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\registercoursestest\registercoursestestHelper.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\registercoursestest\registerCoursesInput.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\registercoursestest\registeredCourses.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\registercoursestest\registerCoursesOutput.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\registercoursestest\registercoursestest.map</generatedfile>
+</webservice>
 <webservice authenticationMethod="1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.editPersonalDataStud:savePersonalDataStud_WSD_HK1?WSDL" isService="CampusConnect.work.editPersonalDataStud:savePersonalDataStud_WSD_HK1" name="savePersonalDataStud_WSD_HK1" package="com.webmethods.caf.is.wsclient.campusconnect.work.editpersonaldatastud.savepersonaldatastud_wsd_hk1" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/editpersonaldatastud/savepersonaldatastud_wsd_hk1/savePersonalDataStud_WSD_HK1.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.editPersonalDataStud:savePersonalDataStud_WSD_HK1?WSDL">
 <wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.work.editpersonaldatastud.savepersonaldatastud_wsd_hk1.IsavePersonalDataStud_WSD_HK1_PortType">
 <wsclient managedBean="SavePersonalDataStud2" operation="savePersonalDataStud"/>
@@ -43,17 +54,6 @@
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\enrolment\setstudactive_wsd\setStudActive.java</generatedfile>
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\enrolment\setstudactive_wsd\setStudActive_WSD.map</generatedfile>
 </webservice>
-<webservice authenticationMethod="1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.administration:editStudent2_WSD_HK1?WSDL" isService="CampusConnect.work.administration:editStudent2_WSD_HK1" name="editStudent2_WSD_HK1" package="com.webmethods.caf.is.wsclient.campusconnect.work.administration.editstudent2_wsd_hk1" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/administration/editstudent2_wsd_hk1/editStudent2_WSD_HK1.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.administration:editStudent2_WSD_HK1?WSDL">
-<wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.work.administration.editstudent2_wsd_hk1.IeditStudent2_WSD_HK1_PortType">
-<wsclient managedBean="EditStudent22" operation="editStudent2"/>
-<wsclient managedBean="EditStudent2" operation="editStudent2"/>
-</wsproxy>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\administration\editstudent2_wsd_hk1\IeditStudent2_WSD_HK1_PortType.java</generatedfile>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\administration\editstudent2_wsd_hk1\editStudent2_WSD_HK1Helper.java</generatedfile>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\administration\editstudent2_wsd_hk1\editStudent2.java</generatedfile>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\administration\editstudent2_wsd_hk1\editStudent2Response.java</generatedfile>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\administration\editstudent2_wsd_hk1\editStudent2_WSD_HK1.map</generatedfile>
-</webservice>
 <webservice authenticationMethod="1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.enrollment:getIdCard_WSD_HK1?WSDL" isService="CampusConnect.work.enrollment:getIdCard_WSD_HK1" name="getIdCard_WSD_HK1" package="com.webmethods.caf.is.wsclient.campusconnect.work.enrollment.getidcard_wsd_hk1" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/enrollment/getidcard_wsd_hk1/getIdCard_WSD_HK1.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.enrollment:getIdCard_WSD_HK1?WSDL">
 <wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.work.enrollment.getidcard_wsd_hk1.IgetIdCard_WSD_HK1_PortType">
 <wsclient managedBean="GetIdCard2" operation="getIdCard"/>
@@ -65,27 +65,16 @@
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\enrollment\getidcard_wsd_hk1\idCard.java</generatedfile>
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\enrollment\getidcard_wsd_hk1\getIdCard_WSD_HK1.map</generatedfile>
 </webservice>
-<webservice authenticationMethod="-1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.courseDeregistration:loadStudRegisteredCourses_WSD_HK1?WSDL" isService="CampusConnect.work.courseDeregistration:loadStudRegisteredCourses_WSD_HK1" name="loadStudRegisteredCourses_WSD_HK1" package="com.webmethods.caf.is.wsclient.campusconnect.work.coursederegistration.loadstudregisteredcourses_wsd_hk1" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/coursederegistration/loadstudregisteredcourses_wsd_hk1/loadStudRegisteredCourses_WSD_HK1.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.courseDeregistration:loadStudRegisteredCourses_WSD_HK1?WSDL">
-<wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.work.coursederegistration.loadstudregisteredcourses_wsd_hk1.IloadStudRegisteredCourses_WSD_HK1_PortType">
-<wsclient managedBean="LoadStudRegisteredCourses" operation="loadStudRegisteredCourses"/>
+<webservice authenticationMethod="1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.administration:editStudent2_WSD_HK1?WSDL" isService="CampusConnect.work.administration:editStudent2_WSD_HK1" name="editStudent2_WSD_HK1" package="com.webmethods.caf.is.wsclient.campusconnect.work.administration.editstudent2_wsd_hk1" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/administration/editstudent2_wsd_hk1/editStudent2_WSD_HK1.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.administration:editStudent2_WSD_HK1?WSDL">
+<wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.work.administration.editstudent2_wsd_hk1.IeditStudent2_WSD_HK1_PortType">
+<wsclient managedBean="EditStudent22" operation="editStudent2"/>
+<wsclient managedBean="EditStudent2" operation="editStudent2"/>
 </wsproxy>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\coursederegistration\loadstudregisteredcourses_wsd_hk1\IloadStudRegisteredCourses_WSD_HK1_PortType.java</generatedfile>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\coursederegistration\loadstudregisteredcourses_wsd_hk1\loadStudRegisteredCourses_WSD_HK1Helper.java</generatedfile>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\coursederegistration\loadstudregisteredcourses_wsd_hk1\loadStudRegisteredCourses.java</generatedfile>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\coursederegistration\loadstudregisteredcourses_wsd_hk1\course.java</generatedfile>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\coursederegistration\loadstudregisteredcourses_wsd_hk1\loadStudRegisteredCoursesResponse.java</generatedfile>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\coursederegistration\loadstudregisteredcourses_wsd_hk1\loadStudRegisteredCourses_WSD_HK1.map</generatedfile>
-</webservice>
-<webservice authenticationMethod="-1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.examRegistration:registerExam_WSD?WSDL" isService="CampusConnect.work.examRegistration:registerExam_WSD" name="registerExam_WSD" package="com.webmethods.caf.is.wsclient.campusconnect.work.examregistration.registerexam_wsd" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/examregistration/registerexam_wsd/registerExam_WSD.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.examRegistration:registerExam_WSD?WSDL">
-<wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.work.examregistration.registerexam_wsd.IregisterExam_WSD_PortType">
-<wsclient managedBean="RegisterExam" operation="registerExam"/>
-<wsclient managedBean="RegisterExam2" operation="registerExam"/>
-</wsproxy>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\examregistration\registerexam_wsd\IregisterExam_WSD_PortType.java</generatedfile>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\examregistration\registerexam_wsd\registerExam_WSDHelper.java</generatedfile>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\examregistration\registerexam_wsd\registerExam.java</generatedfile>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\examregistration\registerexam_wsd\registerExamResponse.java</generatedfile>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\examregistration\registerexam_wsd\registerExam_WSD.map</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\administration\editstudent2_wsd_hk1\IeditStudent2_WSD_HK1_PortType.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\administration\editstudent2_wsd_hk1\editStudent2_WSD_HK1Helper.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\administration\editstudent2_wsd_hk1\editStudent2.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\administration\editstudent2_wsd_hk1\editStudent2Response.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\administration\editstudent2_wsd_hk1\editStudent2_WSD_HK1.map</generatedfile>
 </webservice>
 <webservice authenticationMethod="1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.enrollment:setApplicantInfos_WSD_HK1?WSDL" isService="CampusConnect.work.enrollment:setApplicantInfos_WSD_HK1" name="setApplicantInfos_WSD_HK1" package="com.webmethods.caf.is.wsclient.campusconnect.work.enrollment.setapplicantinfos_wsd_hk1" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/enrollment/setapplicantinfos_wsd_hk1/setApplicantInfos_WSD_HK1.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.enrollment:setApplicantInfos_WSD_HK1?WSDL">
 <wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.work.enrollment.setapplicantinfos_wsd_hk1.IsetApplicantInfos_WSD_HK1_PortType">
@@ -99,6 +88,28 @@
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\enrollment\setapplicantinfos_wsd_hk1\document.java</generatedfile>
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\enrollment\setapplicantinfos_wsd_hk1\setApplicantInfos_WSD_HK1.map</generatedfile>
 </webservice>
+<webservice authenticationMethod="-1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.examRegistration:registerExam_WSD?WSDL" isService="CampusConnect.work.examRegistration:registerExam_WSD" name="registerExam_WSD" package="com.webmethods.caf.is.wsclient.campusconnect.work.examregistration.registerexam_wsd" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/examregistration/registerexam_wsd/registerExam_WSD.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.examRegistration:registerExam_WSD?WSDL">
+<wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.work.examregistration.registerexam_wsd.IregisterExam_WSD_PortType">
+<wsclient managedBean="RegisterExam" operation="registerExam"/>
+<wsclient managedBean="RegisterExam2" operation="registerExam"/>
+</wsproxy>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\examregistration\registerexam_wsd\IregisterExam_WSD_PortType.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\examregistration\registerexam_wsd\registerExam_WSDHelper.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\examregistration\registerexam_wsd\registerExam.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\examregistration\registerexam_wsd\registerExamResponse.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\examregistration\registerexam_wsd\registerExam_WSD.map</generatedfile>
+</webservice>
+<webservice authenticationMethod="-1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.courseDeregistration:loadStudRegisteredCourses_WSD_HK1?WSDL" isService="CampusConnect.work.courseDeregistration:loadStudRegisteredCourses_WSD_HK1" name="loadStudRegisteredCourses_WSD_HK1" package="com.webmethods.caf.is.wsclient.campusconnect.work.coursederegistration.loadstudregisteredcourses_wsd_hk1" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/coursederegistration/loadstudregisteredcourses_wsd_hk1/loadStudRegisteredCourses_WSD_HK1.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.courseDeregistration:loadStudRegisteredCourses_WSD_HK1?WSDL">
+<wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.work.coursederegistration.loadstudregisteredcourses_wsd_hk1.IloadStudRegisteredCourses_WSD_HK1_PortType">
+<wsclient managedBean="LoadStudRegisteredCourses" operation="loadStudRegisteredCourses"/>
+</wsproxy>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\coursederegistration\loadstudregisteredcourses_wsd_hk1\IloadStudRegisteredCourses_WSD_HK1_PortType.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\coursederegistration\loadstudregisteredcourses_wsd_hk1\loadStudRegisteredCourses_WSD_HK1Helper.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\coursederegistration\loadstudregisteredcourses_wsd_hk1\loadStudRegisteredCourses.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\coursederegistration\loadstudregisteredcourses_wsd_hk1\loadStudRegisteredCoursesResponse.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\coursederegistration\loadstudregisteredcourses_wsd_hk1\course.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\coursederegistration\loadstudregisteredcourses_wsd_hk1\loadStudRegisteredCourses_WSD_HK1.map</generatedfile>
+</webservice>
 <webservice authenticationMethod="1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.studentGrades:getSingleGrade_WSD_HK1?WSDL" isService="CampusConnect.work.studentGrades:getSingleGrade_WSD_HK1" name="getSingleGrade_WSD_HK1" package="com.webmethods.caf.is.wsclient.campusconnect.work.studentgrades.getsinglegrade_wsd_hk1" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/studentgrades/getsinglegrade_wsd_hk1/getSingleGrade_WSD_HK1.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.studentGrades:getSingleGrade_WSD_HK1?WSDL">
 <wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.work.studentgrades.getsinglegrade_wsd_hk1.IgetSingleGrade_WSD_HK1_PortType">
 <wsclient managedBean="GetSingleGrade" operation="getSingleGrade"/>
@@ -108,6 +119,28 @@
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\studentgrades\getsinglegrade_wsd_hk1\getSingleGrade.java</generatedfile>
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\studentgrades\getsinglegrade_wsd_hk1\getSingleGradeResponse.java</generatedfile>
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\studentgrades\getsinglegrade_wsd_hk1\getSingleGrade_WSD_HK1.map</generatedfile>
+</webservice>
+<webservice authenticationMethod="1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.utils.courses:getCourseDetails_WSD_HK1?WSDL" isService="CampusConnect.utils.courses:getCourseDetails_WSD_HK1" name="getCourseDetails_WSD_HK1" package="com.webmethods.caf.is.wsclient.campusconnect.utils.courses.getcoursedetails_wsd_hk1" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/utils/courses/getcoursedetails_wsd_hk1/getCourseDetails_WSD_HK1.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.utils.courses:getCourseDetails_WSD_HK1?WSDL">
+<wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.utils.courses.getcoursedetails_wsd_hk1.IgetCourseDetails_WSD_HK1_PortType">
+<wsclient managedBean="GetCourseDetails" operation="getCourseDetails"/>
+<wsclient managedBean="GetCourseDetails2" operation="getCourseDetails"/>
+</wsproxy>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\utils\courses\getcoursedetails_wsd_hk1\IgetCourseDetails_WSD_HK1_PortType.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\utils\courses\getcoursedetails_wsd_hk1\getCourseDetails_WSD_HK1Helper.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\utils\courses\getcoursedetails_wsd_hk1\getCourseDetails.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\utils\courses\getcoursedetails_wsd_hk1\getCourseDetailsResponse.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\utils\courses\getcoursedetails_wsd_hk1\course.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\utils\courses\getcoursedetails_wsd_hk1\getCourseDetails_WSD_HK1.map</generatedfile>
+</webservice>
+<webservice authenticationMethod="1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.enrolment:showEnrolledStuds_WSD?WSDL" isService="CampusConnect.work.enrolment:showEnrolledStuds_WSD" name="showEnrolledStuds_WSD" package="com.webmethods.caf.is.wsclient.campusconnect.work.enrolment.showenrolledstuds_wsd" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/enrolment/showenrolledstuds_wsd/showEnrolledStuds_WSD.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.enrolment:showEnrolledStuds_WSD?WSDL">
+<wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.work.enrolment.showenrolledstuds_wsd.IshowEnrolledStuds_WSD_PortType">
+<wsclient managedBean="ShowEnrolledStuds" operation="showEnrolledStuds"/>
+</wsproxy>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\enrolment\showenrolledstuds_wsd\IshowEnrolledStuds_WSD_PortType.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\enrolment\showenrolledstuds_wsd\showEnrolledStuds_WSDHelper.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\enrolment\showenrolledstuds_wsd\showEnrolledStuds.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\enrolment\showenrolledstuds_wsd\studDetails.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\enrolment\showenrolledstuds_wsd\showEnrolledStuds_WSD.map</generatedfile>
 </webservice>
 <webservice authenticationMethod="1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.enrollment:showApplicantList_WSD_HK1?WSDL" isService="CampusConnect.work.enrollment:showApplicantList_WSD_HK1" name="showApplicantList_WSD_HK1" package="com.webmethods.caf.is.wsclient.campusconnect.work.enrollment.showapplicantlist_wsd_hk1" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/enrollment/showapplicantlist_wsd_hk1/showApplicantList_WSD_HK1.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.enrollment:showApplicantList_WSD_HK1?WSDL">
 <wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.work.enrollment.showapplicantlist_wsd_hk1.IshowApplicantList_WSD_HK1_PortType">
@@ -120,16 +153,6 @@
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\enrollment\showapplicantlist_wsd_hk1\enrollment.java</generatedfile>
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\enrollment\showapplicantlist_wsd_hk1\student.java</generatedfile>
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\enrollment\showapplicantlist_wsd_hk1\showApplicantList_WSD_HK1.map</generatedfile>
-</webservice>
-<webservice authenticationMethod="1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.enrolment:showEnrolledStuds_WSD?WSDL" isService="CampusConnect.work.enrolment:showEnrolledStuds_WSD" name="showEnrolledStuds_WSD" package="com.webmethods.caf.is.wsclient.campusconnect.work.enrolment.showenrolledstuds_wsd" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/enrolment/showenrolledstuds_wsd/showEnrolledStuds_WSD.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.enrolment:showEnrolledStuds_WSD?WSDL">
-<wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.work.enrolment.showenrolledstuds_wsd.IshowEnrolledStuds_WSD_PortType">
-<wsclient managedBean="ShowEnrolledStuds" operation="showEnrolledStuds"/>
-</wsproxy>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\enrolment\showenrolledstuds_wsd\IshowEnrolledStuds_WSD_PortType.java</generatedfile>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\enrolment\showenrolledstuds_wsd\showEnrolledStuds_WSDHelper.java</generatedfile>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\enrolment\showenrolledstuds_wsd\showEnrolledStuds.java</generatedfile>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\enrolment\showenrolledstuds_wsd\studDetails.java</generatedfile>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\enrolment\showenrolledstuds_wsd\showEnrolledStuds_WSD.map</generatedfile>
 </webservice>
 <webservice authenticationMethod="-1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.examDeregistration:deregisterExam_WSD?WSDL" isService="CampusConnect.work.examDeregistration:deregisterExam_WSD" name="deregisterExam_WSD" package="com.webmethods.caf.is.wsclient.campusconnect.work.examderegistration.deregisterexam_wsd" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/examderegistration/deregisterexam_wsd/deregisterExam_WSD.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.examDeregistration:deregisterExam_WSD?WSDL">
 <wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.work.examderegistration.deregisterexam_wsd.IderegisterExam_WSD_PortType">
@@ -170,7 +193,7 @@
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\gradesubmission\submitgrade_wsd_hk1\StudentsGrade.java</generatedfile>
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\gradesubmission\submitgrade_wsd_hk1\submitGrade_WSD_HK1.map</generatedfile>
 </webservice>
-<webservice authenticationMethod="1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.gradeSubmission:submitGrade_WSD_HK2?WSDL" isService="CampusConnect.work.gradeSubmission:submitGrade_WSD_HK2" name="submitGrade_WSD_HK2" package="com.webmethods.caf.is.wsclient.campusconnect.work.gradesubmission.submitgrade_wsd_hk2" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/gradesubmission/submitgrade_wsd_hk2/submitGrade_WSD_HK2.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.gradeSubmission:submitGrade_WSD_HK2?WSDL">
+<webservice authenticationMethod="-1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.gradeSubmission:submitGrade_WSD_HK2?WSDL" isService="CampusConnect.work.gradeSubmission:submitGrade_WSD_HK2" name="submitGrade_WSD_HK2" package="com.webmethods.caf.is.wsclient.campusconnect.work.gradesubmission.submitgrade_wsd_hk2" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/gradesubmission/submitgrade_wsd_hk2/submitGrade_WSD_HK2.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.gradeSubmission:submitGrade_WSD_HK2?WSDL">
 <wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.work.gradesubmission.submitgrade_wsd_hk2.IsubmitGrade_WSD_HK2_PortType">
 <wsclient managedBean="SubmitGrade2" operation="submitGrade"/>
 </wsproxy>
@@ -190,15 +213,15 @@
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\personaldata\showpersonaldata_wsd\student.java</generatedfile>
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\personaldata\showpersonaldata_wsd\showPersonalData_WSD.map</generatedfile>
 </webservice>
-<webservice authenticationMethod="1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.courseRegistration:loadFilteredCourses_WSD_HK1?WSDL" isService="CampusConnect.work.courseRegistration:loadFilteredCourses_WSD_HK1" name="loadFilteredCourses_WSD_HK1" package="com.webmethods.caf.is.wsclient.campusconnect.work.courseregistration.loadfilteredcourses_wsd_hk1" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/courseregistration/loadfilteredcourses_wsd_hk1/loadFilteredCourses_WSD_HK1.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.courseRegistration:loadFilteredCourses_WSD_HK1?WSDL">
+<webservice authenticationMethod="-1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.courseRegistration:loadFilteredCourses_WSD_HK1?WSDL" isService="CampusConnect.work.courseRegistration:loadFilteredCourses_WSD_HK1" name="loadFilteredCourses_WSD_HK1" package="com.webmethods.caf.is.wsclient.campusconnect.work.courseregistration.loadfilteredcourses_wsd_hk1" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/courseregistration/loadfilteredcourses_wsd_hk1/loadFilteredCourses_WSD_HK1.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.courseRegistration:loadFilteredCourses_WSD_HK1?WSDL">
 <wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.work.courseregistration.loadfilteredcourses_wsd_hk1.IloadFilteredCourses_WSD_HK1_PortType">
 <wsclient managedBean="LoadFilteredCourses8" operation="loadFilteredCourses"/>
 </wsproxy>
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\loadfilteredcourses_wsd_hk1\IloadFilteredCourses_WSD_HK1_PortType.java</generatedfile>
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\loadfilteredcourses_wsd_hk1\loadFilteredCourses_WSD_HK1Helper.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\loadfilteredcourses_wsd_hk1\loadFilteredCoursesOutput.java</generatedfile>
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\loadfilteredcourses_wsd_hk1\fCL.java</generatedfile>
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\loadfilteredcourses_wsd_hk1\loadFilteredCoursesInput.java</generatedfile>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\loadfilteredcourses_wsd_hk1\loadFilteredCoursesOutput.java</generatedfile>
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\loadfilteredcourses_wsd_hk1\loadFilteredCourses_WSD_HK1.map</generatedfile>
 </webservice>
 <webservice authenticationMethod="1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.editPersonalDataStud:showPersonalDataStud_WSD?WSDL" isService="CampusConnect.work.editPersonalDataStud:showPersonalDataStud_WSD" name="showPersonalDataStud_WSD" package="com.webmethods.caf.is.wsclient.campusconnect.work.editpersonaldatastud.showpersonaldatastud_wsd" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/editpersonaldatastud/showpersonaldatastud_wsd/showPersonalDataStud_WSD.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.editPersonalDataStud:showPersonalDataStud_WSD?WSDL">
@@ -328,16 +351,6 @@
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\loadfilteredcourses_wsd\loadFilteredCoursesInput.java</generatedfile>
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\loadfilteredcourses_wsd\loadFilteredCourses_WSD.map</generatedfile>
 </webservice>
-<webservice authenticationMethod="1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.courseRegistration:registerCourses_WSD_HK2?WSDL" isService="CampusConnect.work.courseRegistration:registerCourses_WSD_HK2" name="registerCourses_WSD_HK2" package="com.webmethods.caf.is.wsclient.campusconnect.work.courseregistration.registercourses_wsd_hk2" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/courseregistration/registercourses_wsd_hk2/registerCourses_WSD_HK2.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.courseRegistration:registerCourses_WSD_HK2?WSDL">
-<wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.work.courseregistration.registercourses_wsd_hk2.IregisterCourses_WSD_HK2_PortType">
-<wsclient managedBean="RegisterCourses" operation="registerCourses"/>
-</wsproxy>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\registercourses_wsd_hk2\IregisterCourses_WSD_HK2_PortType.java</generatedfile>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\registercourses_wsd_hk2\registerCourses_WSD_HK2Helper.java</generatedfile>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\registercourses_wsd_hk2\registerCoursesInput.java</generatedfile>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\registercourses_wsd_hk2\registeredCourses.java</generatedfile>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\registercourses_wsd_hk2\registerCourses_WSD_HK2.map</generatedfile>
-</webservice>
 <webservice authenticationMethod="1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.enrolment:saveStudInfos_WSD?WSDL" isService="CampusConnect.work.enrolment:saveStudInfos_WSD" name="saveStudInfos_WSD" package="com.webmethods.caf.is.wsclient.campusconnect.work.enrolment.savestudinfos_wsd" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/enrolment/savestudinfos_wsd/saveStudInfos_WSD.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.enrolment:saveStudInfos_WSD?WSDL">
 <wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.work.enrolment.savestudinfos_wsd.IsaveStudInfos_WSD_PortType">
 <wsclient managedBean="SaveStudInfos" operation="saveStudInfos"/>
@@ -349,6 +362,18 @@
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\enrolment\savestudinfos_wsd\saveStudInfosResponse.java</generatedfile>
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\enrolment\savestudinfos_wsd\saveStudInfos_WSD.map</generatedfile>
 </webservice>
+<webservice authenticationMethod="-1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.courseRegistration:registerCourses_WSD_HK2?WSDL" isService="CampusConnect.work.courseRegistration:registerCourses_WSD_HK2" name="registerCourses_WSD_HK2" package="com.webmethods.caf.is.wsclient.campusconnect.work.courseregistration.registercourses_wsd_hk2" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/courseregistration/registercourses_wsd_hk2/registerCourses_WSD_HK2.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.courseRegistration:registerCourses_WSD_HK2?WSDL">
+<wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.work.courseregistration.registercourses_wsd_hk2.IregisterCourses_WSD_HK2_PortType">
+<wsclient managedBean="RegisterCourses" operation="registerCourses"/>
+</wsproxy>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\registercourses_wsd_hk2\IregisterCourses_WSD_HK2_PortType.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\registercourses_wsd_hk2\registerCourses_WSD_HK2Helper.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\registercourses_wsd_hk2\registerCoursesInput.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\registercourses_wsd_hk2\registerCoursesOutput.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\registercourses_wsd_hk2\hiddenDoc.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\registercourses_wsd_hk2\registeredCourses.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\courseregistration\registercourses_wsd_hk2\registerCourses_WSD_HK2.map</generatedfile>
+</webservice>
 <webservice authenticationMethod="1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.enrollment:setStudState_WSD_HK1?WSDL" isService="CampusConnect.work.enrollment:setStudState_WSD_HK1" name="setStudState_WSD_HK1" package="com.webmethods.caf.is.wsclient.campusconnect.work.enrollment.setstudstate_wsd_hk1" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/enrollment/setstudstate_wsd_hk1/setStudState_WSD_HK1.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.enrollment:setStudState_WSD_HK1?WSDL">
 <wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.work.enrollment.setstudstate_wsd_hk1.IsetStudState_WSD_HK1_PortType">
 <wsclient managedBean="SetStudState2" operation="setStudState"/>
@@ -359,14 +384,16 @@
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\enrollment\setstudstate_wsd_hk1\setStudStateResponse.java</generatedfile>
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\enrollment\setstudstate_wsd_hk1\setStudState_WSD_HK1.map</generatedfile>
 </webservice>
-<webservice authenticationMethod="1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.courseDeregistration:deregisterCourses_WSD?WSDL" isService="CampusConnect.work.courseDeregistration:deregisterCourses_WSD" name="deregisterCourses_WSD" package="com.webmethods.caf.is.wsclient.campusconnect.work.coursederegistration.deregistercourses_wsd" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/coursederegistration/deregistercourses_wsd/deregisterCourses_WSD.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.courseDeregistration:deregisterCourses_WSD?WSDL">
+<webservice authenticationMethod="-1" isConnectionURL="http://sagbase:5555/ws/CampusConnect.work.courseDeregistration:deregisterCourses_WSD?WSDL" isService="CampusConnect.work.courseDeregistration:deregisterCourses_WSD" name="deregisterCourses_WSD" package="com.webmethods.caf.is.wsclient.campusconnect.work.coursederegistration.deregistercourses_wsd" password="{DES}vrFIelCdkow=" requiresAuth="true" soapLibrary="glue" useNamespaceForPackage="false" username="Administrator" wsdlFile="src/com/webmethods/caf/is/wsclient/campusconnect/work/coursederegistration/deregistercourses_wsd/deregisterCourses_WSD.wsdl" wsdlURL="http://sagbase:5555/ws/CampusConnect.work.courseDeregistration:deregisterCourses_WSD?WSDL">
 <wsproxy className="com.webmethods.caf.is.wsclient.campusconnect.work.coursederegistration.deregistercourses_wsd.IderegisterCourses_WSD_PortType">
+<wsclient managedBean="DeregisterCourses2" operation="deregisterCourses"/>
 <wsclient managedBean="DeregisterCourses" operation="deregisterCourses"/>
 </wsproxy>
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\coursederegistration\deregistercourses_wsd\IderegisterCourses_WSD_PortType.java</generatedfile>
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\coursederegistration\deregistercourses_wsd\deregisterCourses_WSDHelper.java</generatedfile>
-<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\coursederegistration\deregistercourses_wsd\deletedCourses.java</generatedfile>
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\coursederegistration\deregistercourses_wsd\deregisterCourses.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\coursederegistration\deregistercourses_wsd\deregisterCoursesResponse.java</generatedfile>
+<generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\coursederegistration\deregistercourses_wsd\deletedCourses.java</generatedfile>
 <generatedfile>com\webmethods\caf\is\wsclient\campusconnect\work\coursederegistration\deregistercourses_wsd\deregisterCourses_WSD.map</generatedfile>
 </webservice>
 </wsclients>

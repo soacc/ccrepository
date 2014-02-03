@@ -9,7 +9,7 @@ import com.webmethods.caf.faces.data.ws.glue.GlueWSClientContentProvider;
  */
 public class SubmitGrade2 extends GlueWSClientContentProvider {
 
-	private static final long serialVersionUID = 782945400123712512L;
+	private static final long serialVersionUID = 1334315508613736448L;
 
 	/**
 	 * Default constructor
@@ -38,7 +38,7 @@ public class SubmitGrade2 extends GlueWSClientContentProvider {
 	 */
 	public class Parameters  implements java.io.Serializable {
 
-		private static final long serialVersionUID = 1435198015431350272L;
+		private static final long serialVersionUID = 6754416452205651968L;
 
 		public Parameters() {
 		}

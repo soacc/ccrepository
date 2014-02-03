@@ -12,6 +12,7 @@
           <xsd:complexType name="loadStudRegisteredCoursesResponse">
             <xsd:sequence>
               <xsd:element name="outCourses" nillable="true" type="tns:outCourses"/>
+              <xsd:element name="hidden" nillable="true" type="xsd:string"/>
             </xsd:sequence>
           </xsd:complexType>
           <xsd:complexType name="outCourses">

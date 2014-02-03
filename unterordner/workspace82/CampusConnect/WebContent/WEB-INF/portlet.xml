@@ -1,38 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <portlet-app version="1.0" xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd ">
 
-	<portlet>
-		<portlet-name>LF010_registerCourses</portlet-name>
-		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
-		<init-param>
-			<name>ANNOTATED_PORTLET_ACTIONS</name>
-			<value>true</value>
-		</init-param>
-		<init-param>
-			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
-			<value>/Lf010_registercourses/default.view</value>
-		</init-param>
-		<supports>
-			<mime-type>text/html</mime-type>
-			<portlet-mode>view</portlet-mode>
-		</supports>
-		<supported-locale>en</supported-locale>
-		<resource-bundle>com.webmethods.caf.lf010_registercourses.LF010_registerCoursesResources</resource-bundle>
-		<portlet-info>
-			<title>LF010_registerCourses</title>
-			<short-title>registerCourses</short-title>
-		</portlet-info>
-		<portlet-preferences>
-			<preference>
-				<name>StudID</name>
-				<read-only>false</read-only>
-			</preference>
-			<preference>
-				<name>CourseID</name>
-				<read-only>false</read-only>
-			</preference>
-		</portlet-preferences>
-	</portlet>
+
 
 	<portlet>
 		<portlet-name>LF010_loadStudRegisteredCourses</portlet-name>
@@ -64,108 +33,14 @@
 				<name>CourseID</name>
 				<read-only>false</read-only>
 			</preference>
-		</portlet-preferences>
+			<preference>
+				<name>FeldID</name>
+				<read-only>false</read-only>
+			</preference></portlet-preferences>
 	</portlet>
-	<portlet>
-		<portlet-name>LF010_deregisterCourses</portlet-name>
-		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
-		<init-param>
-			<name>ANNOTATED_PORTLET_ACTIONS</name>
-			<value>true</value>
-		</init-param>
-		<init-param>
-			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
-			<value>/Lf010_deregistercourses/default.view</value>
-		</init-param>
-		<supports>
-			<mime-type>text/html</mime-type>
-			<portlet-mode>view</portlet-mode>
-		</supports>
-		<supported-locale>en</supported-locale>
-		<resource-bundle>com.webmethods.caf.lf010_deregistercourses.LF010_deregisterCoursesResources</resource-bundle>
-		<portlet-info>
-			<title>LF010_deregisterCourses</title>
-			<short-title>deregisterCourses</short-title>
-		</portlet-info>
-		<portlet-preferences>
-			<preference>
-				<name>StudID</name>
-				<read-only>false</read-only>
-			</preference>
-			<preference>
-				<name>CourseID</name>
-				<read-only>false</read-only>
-			</preference>
-		</portlet-preferences>
-	</portlet>
-	<portlet>
-		<portlet-name>LF020_registerExam</portlet-name>
-		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
-		<init-param>
-			<name>ANNOTATED_PORTLET_ACTIONS</name>
-			<value>true</value>
-		</init-param>
-		<init-param>
-			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
-			<value>/Lf020_registerexam/default.view</value>
-		</init-param>
-		<supports>
-			<mime-type>text/html</mime-type>
-			<portlet-mode>view</portlet-mode>
-		</supports>
-		<supported-locale>en</supported-locale>
-		<resource-bundle>com.webmethods.caf.lf020_registerexam.LF020_registerExamResources</resource-bundle>
-		<portlet-info>
-			<title>LF020_registerExam</title>
-			<short-title>registerExam</short-title>
-		</portlet-info>
-		<portlet-preferences>
-			<preference>
-				<name>StudID</name>
-				<read-only>false</read-only>
-			</preference>
-			<preference>
-				<name>ExamID</name>
-				<read-only>false</read-only>
-			</preference>
-			<preference>
-				<name>Token</name>
-				<read-only>false</read-only>
-			</preference>
-		</portlet-preferences>
-	</portlet>
-	<portlet>
-		<portlet-name>LF020_deregisterExam</portlet-name>
-		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
-		<init-param>
-			<name>ANNOTATED_PORTLET_ACTIONS</name>
-			<value>true</value>
-		</init-param>
-		<init-param>
-			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
-			<value>/Lf020_deregisterexam/default.view</value>
-		</init-param>
-		<supports>
-			<mime-type>text/html</mime-type>
-			<portlet-mode>view</portlet-mode>
-		</supports>
-		<supported-locale>en</supported-locale>
-		<resource-bundle>com.webmethods.caf.lf020_deregisterexam.LF020_deregisterExamResources</resource-bundle>
-		<portlet-info>
-			<title>LF020_deregisterExam</title>
-			<short-title>deregisterExam</short-title>
-		</portlet-info>
-		<portlet-preferences>
-			<preference>
-				<name>StudID</name>
-				<read-only>false</read-only>
-			</preference>
-			<preference>
-				<name>ExamID</name>
-				<read-only>false</read-only>
-			</preference>
-		</portlet-preferences>
-	</portlet>
+
+
+
 
 	<portlet>
 		<portlet-name>LF030_setStudActive</portlet-name>
@@ -233,6 +108,10 @@
 				<name>StudID</name>
 				<read-only>false</read-only>
 			</preference>
+			<preference>
+				<name>Hidden</name>
+				<read-only>false</read-only>
+			</preference>
 		</portlet-preferences>
 	</portlet>
 
@@ -288,36 +167,13 @@
 				<name>CourseID</name>
 				<read-only>false</read-only>
 			</preference>
-		</portlet-preferences>
-	</portlet>
-	<portlet>
-		<portlet-name>LF070_savePersonalDataStud</portlet-name>
-		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
-		<init-param>
-			<name>ANNOTATED_PORTLET_ACTIONS</name>
-			<value>true</value>
-		</init-param>
-		<init-param>
-			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
-			<value>/Lf070_savepersonaldatastud/default.view</value>
-		</init-param>
-		<supports>
-			<mime-type>text/html</mime-type>
-			<portlet-mode>view</portlet-mode>
-		</supports>
-		<supported-locale>en</supported-locale>
-		<resource-bundle>com.webmethods.caf.lf070_savepersonaldatastud.LF070_savePersonalDataStudResources</resource-bundle>
-		<portlet-info>
-			<title>LF070_savePersonalDataStud</title>
-			<short-title>savePersonalDataStud</short-title>
-		</portlet-info>
-		<portlet-preferences>
 			<preference>
-				<name>StudID</name>
+				<name>FeldID</name>
 				<read-only>false</read-only>
 			</preference>
 		</portlet-preferences>
 	</portlet>
+
 	<portlet>
 		<portlet-name>LF070_showPersonalDataProf</portlet-name>
 		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
@@ -469,6 +325,10 @@
 		<portlet-preferences>
 			<preference>
 				<name>StudID</name>
+				<read-only>false</read-only>
+			</preference>
+			<preference>
+				<name>Hidden</name>
 				<read-only>false</read-only>
 			</preference>
 		</portlet-preferences>
@@ -712,6 +572,7 @@
 			<title>getApplicantInfos</title>
 		</portlet-info>
 	</portlet>
+
 	<user-attribute>
 		<name>user.default.time_zone</name>
 	</user-attribute>

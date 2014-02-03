@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='RechtsDefaultviewView' />
+  <property name='preferencesBean' value='Rechts' />
+  <design-time-attribute name='portlet' value='Rechts' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+      <property name='id' value='propertyLine' />
+      <property name='label' value='Hier &#228;ndern' />
+      <control component-type='javax.faces.HtmlInputText' renderer-type='javax.faces.Text'>
+        <property name='id' value='htmlInputText' />
+        <property name='value' value='#{RechtsDefaultviewView.rechts.var}' />
+        <property name='width' value='input20' />
+      </control>
+      <control component-type='com.webmethods.caf.faces.output.HtmlButton' renderer-type='javax.faces.Button'>
+        <property name='id' value='htmlButton' />
+        <property name='label' value='Go' />
+      </control>
+    </control>
+    <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+      <property name='id' value='htmlOutputText' />
+      <property name='raw' value='true' />
+      <property name='value' value='#{RechtsDefaultviewView.rechts.var}' />
+    </control>
+    <control component-type='com.webmethods.caf.faces.select.AutocompleteTextInput' renderer-type='com.webmethods.caf.faces.select.AutocompleteTextInput'>
+      <property name='id' value='autocompleteTextInput' />
+      <property name='width' value='input20' />
+    </control>
+    <control component-type='javax.faces.HtmlOutputLabel' renderer-type='javax.faces.Label'>
+      <property name='for' value='htmlOutputText1' />
+      <property name='id' value='htmlOutputLabel' />
+      <property name='separator' value=':' />
+      <property name='value' value='_character' />
+    </control>
+    <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
+      <converter converter-id='javax.faces.Character'>
+      </converter>
+      <property name='id' value='htmlOutputText1' />
+      <property name='raw' value='true' />
+      <property name='value' value='#{RechtsDefaultviewView._character}' />
+    </control>
+  </control>
+</view>

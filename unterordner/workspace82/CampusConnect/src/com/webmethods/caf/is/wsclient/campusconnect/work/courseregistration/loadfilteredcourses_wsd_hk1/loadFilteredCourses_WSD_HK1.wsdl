@@ -7,6 +7,7 @@
           <xsd:complexType name="loadFilteredCoursesInput">
             <xsd:sequence>
               <xsd:element name="studId" nillable="true" type="tns:studId"/>
+              <xsd:element name="hidden" nillable="true" type="xsd:string"/>
             </xsd:sequence>
           </xsd:complexType>
           <xsd:simpleType name="studId">
@@ -17,6 +18,7 @@
           <xsd:complexType name="loadFilteredCoursesOutput">
             <xsd:sequence>
               <xsd:element name="outputCourses" nillable="true" type="tns:outputCourses"/>
+              <xsd:element name="hidden" nillable="true" type="xsd:string"/>
             </xsd:sequence>
           </xsd:complexType>
           <xsd:complexType name="outputCourses">

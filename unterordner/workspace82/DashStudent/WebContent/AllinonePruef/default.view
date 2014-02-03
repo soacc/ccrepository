@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='AllinonePruefDefaultviewView' />
+  <property name='preferencesBean' value='AllinonePruef' />
+  <design-time-attribute name='portlet' value='allinonePruef' />
+  <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+  </control>
+  <control component-type='javax.faces.HtmlForm' renderer-type='javax.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='defaultForm' />
+    <control component-type='com.webmethods.caf.faces.output.Icon' renderer-type='com.webmethods.caf.faces.output.Icon'>
+      <property name='id' value='icon1' />
+      <property name='url' value='http://www.pictureupload.de/originals/pictures/310114133856_Kurssuche.png' />
+      <property name='value' value='http://sagbase:8585/meta/default/folder/0000011703' />
+    </control>
+    <control component-type='com.webmethods.caf.faces.output.Icon' renderer-type='com.webmethods.caf.faces.output.Icon'>
+      <property name='id' value='icon12' />
+      <property name='url' value='http://www.pictureupload.de/originals/pictures/020214000905_kpvw.png' />
+      <property name='value' value='http://sagbase:8585/meta/default/folder/0000011012' />
+    </control>
+    <control component-type='com.webmethods.caf.faces.output.Icon' renderer-type='com.webmethods.caf.faces.output.Icon'>
+      <property name='id' value='icon16' />
+      <property name='url' value='http://www.pictureupload.de/originals/pictures/310114142103_verwaltungsinfo.png' />
+      <property name='value' value='http://sagbase:8585/meta/default/folder/0000011604' />
+    </control>
+    <control component-type='com.webmethods.caf.faces.output.Icon' renderer-type='com.webmethods.caf.faces.output.Icon'>
+      <property name='id' value='icon14' />
+      <property name='url' value='http://www.pictureupload.de/originals/pictures/310114143431_nudeln.png' />
+      <property name='value' value='http://sagbase:8585/meta/default/folder/0000011013' />
+    </control>
+  </control>
+</view>

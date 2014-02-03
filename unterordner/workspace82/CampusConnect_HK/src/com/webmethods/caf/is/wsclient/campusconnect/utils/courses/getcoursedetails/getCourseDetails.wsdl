@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<wsdl:definitions name="CampusConnect_utils_courses" targetNamespace="http://sagbase/"
+			xmlns:wsdns1="http://localhost/CampusConnect/utils/courses/getCourseDetails"
+			xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+			xmlns:tns="http://sagbase/"
+			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+			xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+			xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+	<wsdl:types>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://localhost/CampusConnect/utils/courses/getCourseDetails" xmlns:tns="http://localhost/CampusConnect/utils/courses/getCourseDetails">
+          <xsd:complexType name="__getCourseDetailsInput">
+            <xsd:sequence>
+              <xsd:element name="id" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="__getCourseDetailsOutput">
+            <xsd:sequence>
+              <xsd:element name="course" nillable="true" type="tns:__course"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="__course">
+            <xsd:sequence>
+              <xsd:element name="_DEGREEPROGRAM" type="xsd:string"/>
+              <xsd:element name="_EQUIVALENTID" type="xsd:decimal"/>
+              <xsd:element name="_PROFESSORID" type="xsd:decimal"/>
+              <xsd:element name="_COURSENAME" type="xsd:string"/>
+              <xsd:element name="_TERM" type="xsd:string"/>
+              <xsd:element name="_MAXPARTICIPANTS" type="xsd:decimal"/>
+              <xsd:element name="_COURSEDAY" type="xsd:string"/>
+              <xsd:element name="_COURSETIME" type="xsd:string"/>
+              <xsd:element name="_COURSEROOM" type="xsd:string"/>
+              <xsd:element name="_COURSEFINISH" type="xsd:decimal"/>
+              <xsd:element name="_AMOUNTREGISTERED" type="xsd:decimal"/>
+              <xsd:element name="_PLASTNAME" nillable="true" type="xsd:string"/>
+              <xsd:element name="_PFIRSTNAME" nillable="true" type="xsd:string"/>
+              <xsd:element name="_PCHAIR" nillable="true" type="xsd:string"/>
+              <xsd:element name="_PTITEL" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:schema>
+
+	</wsdl:types>
+	
+	<wsdl:message name="getCourseDetailsInput">
+		<wsdl:part name="id" type="xsd:string"/>
+	</wsdl:message>
+	
+	<wsdl:message name="getCourseDetailsOutput">
+		<wsdl:part name="course" type="wsdns1:__course"/>
+	</wsdl:message>
+	<wsdl:portType name="CampusConnect_utils_coursesPortType">
+		<wsdl:operation name="getCourseDetails">
+			<wsdl:input message="tns:getCourseDetailsInput"/>
+			<wsdl:output message="tns:getCourseDetailsOutput"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="CampusConnect_utils_coursesBinding" type="tns:CampusConnect_utils_coursesPortType">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="getCourseDetails">
+			<soap:operation soapAction=""/>
+			<wsdl:input>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://sagbase/CampusConnect.utils.courses" use="encoded"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://sagbase/CampusConnect.utils.courses" use="encoded"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="CampusConnect_utils_coursesService">
+		<wsdl:port name="CampusConnect_utils_coursesPort0" binding="tns:CampusConnect_utils_coursesBinding">
+			<soap:address location="http://sagbase:5555/soap/rpc"/>
+		</wsdl:port>
+	</wsdl:service>
+	</wsdl:definitions>

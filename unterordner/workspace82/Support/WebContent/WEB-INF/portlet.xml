@@ -22,48 +22,8 @@
 		</portlet-info>
 	</portlet>
 
-	<portlet>
-		<portlet-name>studentNavigation</portlet-name>
-		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
-		<init-param>
-			<name>ANNOTATED_PORTLET_ACTIONS</name>
-			<value>true</value>
-		</init-param>
-		<init-param>
-			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
-			<value>/StudentNavigation/default.view</value>
-		</init-param>
-		<supports>
-			<mime-type>text/html</mime-type>
-			<portlet-mode>view</portlet-mode>
-		</supports>
-		<supported-locale>en</supported-locale>
-		<resource-bundle>com.webmethods.caf.studentnavigation.StudentNavigationResources</resource-bundle>
-		<portlet-info>
-			<title>studentNavigation</title>
-		</portlet-info>
-	</portlet>
-	<portlet>
-		<portlet-name>Overview</portlet-name>
-		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
-		<init-param>
-			<name>ANNOTATED_PORTLET_ACTIONS</name>
-			<value>true</value>
-		</init-param>
-		<init-param>
-			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
-			<value>/Overview/default.view</value>
-		</init-param>
-		<supports>
-			<mime-type>text/html</mime-type>
-			<portlet-mode>view</portlet-mode>
-		</supports>
-		<supported-locale>en</supported-locale>
-		<resource-bundle>com.webmethods.caf.overview.OverviewResources</resource-bundle>
-		<portlet-info>
-			<title>Overview</title>
-		</portlet-info>
-	</portlet>
+
+
 
 
 	<portlet>
@@ -93,49 +53,9 @@
 			</preference>
 		</portlet-preferences>
 	</portlet>
-	<portlet>
-		<portlet-name>showEating_test</portlet-name>
-		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
-		<init-param>
-			<name>ANNOTATED_PORTLET_ACTIONS</name>
-			<value>true</value>
-		</init-param>
-		<init-param>
-			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
-			<value>/ShowEating_test/default.view</value>
-		</init-param>
-		<supports>
-			<mime-type>text/html</mime-type>
-			<portlet-mode>view</portlet-mode>
-		</supports>
-		<supported-locale>en</supported-locale>
-		<resource-bundle>com.webmethods.caf.showeating_test.ShowEating_testResources</resource-bundle>
-		<portlet-info>
-			<title>showEating_test</title>
-		</portlet-info>
-	</portlet>
 
-	<portlet>
-		<portlet-name>examderegtest</portlet-name>
-		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
-		<init-param>
-			<name>ANNOTATED_PORTLET_ACTIONS</name>
-			<value>true</value>
-		</init-param>
-		<init-param>
-			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
-			<value>/Examderegtest/default.view</value>
-		</init-param>
-		<supports>
-			<mime-type>text/html</mime-type>
-			<portlet-mode>view</portlet-mode>
-		</supports>
-		<supported-locale>en</supported-locale>
-		<resource-bundle>com.webmethods.caf.examderegtest.ExamderegtestResources</resource-bundle>
-		<portlet-info>
-			<title>examderegtest</title>
-		</portlet-info>
-	</portlet>
+
+
 
 
 
@@ -206,33 +126,7 @@
 			<title>studentDashboard</title>
 		</portlet-info>
 	</portlet>
-	<portlet>
-		<portlet-name>getExamFromCourse</portlet-name>
-		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
-		<init-param>
-			<name>ANNOTATED_PORTLET_ACTIONS</name>
-			<value>true</value>
-		</init-param>
-		<init-param>
-			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
-			<value>/GetExamFromCourse/default.view</value>
-		</init-param>
-		<supports>
-			<mime-type>text/html</mime-type>
-			<portlet-mode>view</portlet-mode>
-		</supports>
-		<supported-locale>en</supported-locale>
-		<resource-bundle>com.webmethods.caf.getexamfromcourse.GetExamFromCourseResources</resource-bundle>
-		<portlet-info>
-			<title>getExamFromCourse</title>
-		</portlet-info>
-		<portlet-preferences>
-			<preference>
-				<name>CourseID</name>
-				<read-only>false</read-only>
-			</preference>
-		</portlet-preferences>
-	</portlet>
+
 	<portlet>
 		<portlet-name>navStudent</portlet-name>
 		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
@@ -379,6 +273,154 @@
 		<resource-bundle>com.webmethods.caf.navpruef.NavPruefResources</resource-bundle>
 		<portlet-info>
 			<title>navPruef</title>
+		</portlet-info>
+	</portlet>
+	<portlet>
+		<portlet-name>DashboardButton</portlet-name>
+		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
+		<init-param>
+			<name>ANNOTATED_PORTLET_ACTIONS</name>
+			<value>true</value>
+		</init-param>
+		<init-param>
+			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
+			<value>/DashboardButton/default.view</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<supported-locale>en</supported-locale>
+		<resource-bundle>com.webmethods.caf.dashboardbutton.DashboardButtonResources</resource-bundle>
+		<portlet-info>
+			<title>DashboardButton</title>
+		</portlet-info>
+	</portlet>
+	<portlet>
+		<portlet-name>KalenderKlein</portlet-name>
+		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
+		<init-param>
+			<name>ANNOTATED_PORTLET_ACTIONS</name>
+			<value>true</value>
+		</init-param>
+		<init-param>
+			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
+			<value>/KalenderKlein/default.view</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<supported-locale>en</supported-locale>
+		<resource-bundle>com.webmethods.caf.kalenderklein.KalenderKleinResources</resource-bundle>
+		<portlet-info>
+			<title>KalenderKlein</title>
+		</portlet-info>
+	</portlet>
+
+	<portlet>
+		<portlet-name>Karte2</portlet-name>
+		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
+		<init-param>
+			<name>ANNOTATED_PORTLET_ACTIONS</name>
+			<value>true</value>
+		</init-param>
+		<init-param>
+			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
+			<value>/Karte2/default.view</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<supported-locale>en</supported-locale>
+		<resource-bundle>com.webmethods.caf.karte2.Karte2Resources</resource-bundle>
+		<portlet-info>
+			<title>Karte2</title>
+		</portlet-info>
+	</portlet>
+	<portlet>
+		<portlet-name>KalenderGross</portlet-name>
+		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
+		<init-param>
+			<name>ANNOTATED_PORTLET_ACTIONS</name>
+			<value>true</value>
+		</init-param>
+		<init-param>
+			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
+			<value>/KalenderGross/default.view</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<supported-locale>en</supported-locale>
+		<resource-bundle>com.webmethods.caf.kalendergross.KalenderGrossResources</resource-bundle>
+		<portlet-info>
+			<title>KalenderGross</title>
+		</portlet-info>
+	</portlet>
+	<portlet>
+		<portlet-name>Impressum</portlet-name>
+		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
+		<init-param>
+			<name>ANNOTATED_PORTLET_ACTIONS</name>
+			<value>true</value>
+		</init-param>
+		<init-param>
+			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
+			<value>/Impressum/default.view</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<supported-locale>en</supported-locale>
+		<resource-bundle>com.webmethods.caf.impressum.ImpressumResources</resource-bundle>
+		<portlet-info>
+			<title>Impressum</title>
+		</portlet-info>
+	</portlet>
+	<portlet>
+		<portlet-name>Impressumb</portlet-name>
+		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
+		<init-param>
+			<name>ANNOTATED_PORTLET_ACTIONS</name>
+			<value>true</value>
+		</init-param>
+		<init-param>
+			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
+			<value>/Impressumb/default.view</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<supported-locale>en</supported-locale>
+		<resource-bundle>com.webmethods.caf.impressumb.ImpressumbResources</resource-bundle>
+		<portlet-info>
+			<title>Impressumb</title>
+		</portlet-info>
+	</portlet>
+	<portlet>
+		<portlet-name>KarteVerw</portlet-name>
+		<portlet-class>com.webmethods.caf.faces.portlet.FacesPortlet</portlet-class>
+		<init-param>
+			<name>ANNOTATED_PORTLET_ACTIONS</name>
+			<value>true</value>
+		</init-param>
+		<init-param>
+			<name>com.webmethods.caf.faces.portlet.INIT_VIEW</name>
+			<value>/KarteVerw/default.view</value>
+		</init-param>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<supported-locale>en</supported-locale>
+		<resource-bundle>com.webmethods.caf.karteverw.KarteVerwResources</resource-bundle>
+		<portlet-info>
+			<title>KarteVerw</title>
 		</portlet-info>
 	</portlet>
 	<user-attribute>

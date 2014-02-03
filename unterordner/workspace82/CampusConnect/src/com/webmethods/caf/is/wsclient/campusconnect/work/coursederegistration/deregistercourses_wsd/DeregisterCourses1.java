@@ -9,7 +9,7 @@ import com.webmethods.caf.faces.data.ws.glue.GlueWSClientContentProvider;
  */
 public class DeregisterCourses1 extends GlueWSClientContentProvider {
 
-	private static final long serialVersionUID = 8432449309718388736L;
+	private static final long serialVersionUID = 6437164600299720704L;
 
 	/**
 	 * Default constructor
@@ -30,6 +30,9 @@ public class DeregisterCourses1 extends GlueWSClientContentProvider {
 		// parameters bean
 		parameters = new Parameters();
 		
+		// complex output, just a place holder
+		result = new com.webmethods.caf.is.wsclient.campusconnect.work.coursederegistration.deregistercourses_wsd.deregisterCoursesResponse();
+		
 	}
 	
 	
@@ -38,7 +41,7 @@ public class DeregisterCourses1 extends GlueWSClientContentProvider {
 	 */
 	public class Parameters  implements java.io.Serializable {
 
-		private static final long serialVersionUID = 7787021717285100544L;
+		private static final long serialVersionUID = 4628957228760298496L;
 
 		public Parameters() {
 		}
@@ -70,8 +73,8 @@ public class DeregisterCourses1 extends GlueWSClientContentProvider {
 	/**
 	 * Return method invocation result
 	 */
-	public com.webmethods.caf.is.wsclient.campusconnect.work.coursederegistration.deregistercourses_wsd.deletedCourses[] getResult() {
-		return (com.webmethods.caf.is.wsclient.campusconnect.work.coursederegistration.deregistercourses_wsd.deletedCourses[])result;
+	public com.webmethods.caf.is.wsclient.campusconnect.work.coursederegistration.deregistercourses_wsd.deregisterCoursesResponse getResult() {
+		return (com.webmethods.caf.is.wsclient.campusconnect.work.coursederegistration.deregistercourses_wsd.deregisterCoursesResponse)result;
 	}
 	
 

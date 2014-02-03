@@ -29,6 +29,7 @@
               <property name='style' value='text-align:center;' />
               <control component-type='com.webmethods.caf.faces.table.DataTotal' renderer-type='com.webmethods.caf.faces.table.DataTotal'>
                 <property name='id' value='dataTotal' />
+                <property name='standardMsg' value='{0}-{1} von {2}' />
               </control>
             </control>
           </control>

@@ -10,7 +10,7 @@
     <property name='id' value='defaultForm' />
     <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
       <property name='id' value='propertyGroup' />
-      <property name='label' value='Kursliste' />
+      <property name='label' value='Teilnhemer&#252;bersicht' />
       <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
         <property name='id' value='propertyLine' />
         <property name='label' value='Kurs ID' />
@@ -31,18 +31,11 @@
         <property name='headerClass' value='portlet-section-subheader' />
         <property name='id' value='asyncTable' />
         <property name='rowClasses' value='portlet-section-body,portlet-section-alternate' />
-        <property name='rows' value='10' />
+        <property name='rows' value='20' />
         <property name='selectedRowClass' value='portlet-section-selected' />
         <property name='value' value='#{Lf090_showregisteredstudentsexamdefaultviewview.lf090_showregisteredstudentsexam.showRegisteredStudentsExam3.result.students}' />
         <property name='var' value='student' />
         <property name='width' value='100%' />
-        <facet name='header'>
-          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
-            <property name='id' value='htmlOutputText' />
-            <property name='raw' value='true' />
-            <property name='value' value='Students' />
-          </control>
-        </facet>
         <facet name='footer'>
           <control component-type='com.webmethods.caf.faces.table.PrevNext' renderer-type='com.webmethods.caf.faces.table.PrevNext'>
             <property name='id' value='prevNext' />
@@ -66,9 +59,9 @@
               <property name='value' value='Studenten ID' />
             </control>
           </facet>
-          <control component-type='javax.faces.HtmlCommandLink' renderer-type='javax.faces.Link'>
-            <property name='action' value='#{Lf090_showregisteredstudentsexamdefaultviewview.lf090_showregisteredstudentsexam.studIdSet}' />
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='javax.faces.Text'>
             <property name='id' value='htmlOutputText2' />
+            <property name='raw' value='true' />
             <property name='value' value='#{student._STUDENTID}' />
           </control>
         </control>
@@ -122,6 +115,16 @@
             <property name='raw' value='true' />
             <property name='value' value='#{student._REGISTEREDDATE}' />
           </control>
+        </control>
+      </control>
+      <control component-type='javax.faces.HtmlSelectOneMenu' renderer-type='javax.faces.Menu'>
+        <property name='disabledClass' value='disabled' />
+        <property name='enabledClass' value='enabled' />
+        <property name='id' value='htmlSelectOneMenu' />
+        <property name='width' value='input20' />
+        <control component-type='javax.faces.SelectItem' renderer-type=''>
+          <property name='id' value='selectItem' />
+          <property name='itemValue' value='#{Lf090_showregisteredstudentsexamdefaultviewview.studentProvider}' />
         </control>
       </control>
     </control>
